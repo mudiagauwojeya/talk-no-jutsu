@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "title": "Naruto",
+        "author": "Masashi Kishimoto",
+        "release": "1999",
+        "status": "completed",
+        "description": "It tells the story of Naruto Uzumaki, a young ninja who seeks to gain recognition from his peers and also dreams of becoming the Hokage, the leader of his village.",
+        "genre": " Action, Adult, Adventure, Comedy, Doujinshi, Drama, Fantasy, Martial arts, Shounen"
+    },
+    {
+        "id": 2,
+        "title": "One Piece",
+        "author": "Eiichiro Oda",
+        "release": "1997",
+        "status": "ongoing",
+        "description": "Enter Monkey D. Luffy, a 17-year-old boy that defies your standard definition of a pirate. Rather than the popular persona of a wicked, hardened, toothless pirate who ransacks villages for fun. Luffy’s reason for being a pirate is one of pure wonder; the thought of an exciting adventure and meeting new and intriguing people. along with finding One Piece, are his reasons of becoming a pirate. Following in the footsteps of his childhood hero, Luffy and his crew travel across the Grand Line. experiencing crazy adventures, unveiling dark mysteries and battling strong enemies, all in order to reach One Piece.",
+        "genre": " Action, Adventure, Comedy, Drama, Fantasy, Shounen"
+    },
+    {
+        "id": 3,
+        "title": "One-Punch Man",
+        "author": "One, Murata Yuusuke",
+        "release": "2009",
+        "status": "ongoing",
+        "description": "One-Punch Man is a super hero who has trained so hard that his hair has fallen out, and who can overcome any enemy with one punch. However, because he is so strong, he has become bored and frustrated with winning all his battles so easily.",
+        "genre": " Action, Comedy, Fantasy, Mature, Mystery, Psychological, Sci fi, Seinen, Supernatural"
+    },
+    {
+        "id": 4,
+        "title": "Boku No Hero Academia",
+        "author": "Horikoshi Kouhei",
+        "release": "2014",
+        "status": "ongoing",
+        "description": "The story is set in the modern day, except people with special powers have become commonplace throughout the world. A boy named Izuku Midoriya has no powers, but he still dreams.",
+        "genre": " Action, Comedy, Fantasy, School life, Sci fi, Shounen"
+    },
+    {
+        "id": 5,
+        "title": "World Trigger",
+        "author": "Ashihara Daisuke",
+        "release": "2013",
+        "status": "ongoing",
+        "description": "In Mikado City (280 000 inhabitants), a 'gate' to another world is opened unexpectedly one day. Creatures called 'Neighbors' begin appearing from it, many people are scared of them because Earth's arms do not work against them, but a cryptic group begins fighting off the Neighbors.",
+        "genre": "Action, Adult, Comedy, Doujinshi, School life, Sci-fi, Shounen, Supernatural"
+    },
+    {
+        "id": 6,
+        "title": "Hunter X Hunter",
+        "author": "Togashi Yoshihiro",
+        "release": "1998",
+        "status": "ongoing",
+        "description": "Gon Freecss originally thought his father was dead but found out this was a lie and his father was actually alive and a hunter famous throughout the world.Whether it was hunting down treasure, dangerous outlaws on the loose, rare animals, or lost civilizations, there were plenty of adventures available to go on. This led to Gon pursuing his father and looking to follow in those famous footsteps by going on major adventures of his own.",
+        "genre": "Action, Adventure, Drama, Fantasy, Psychological, Shounen, Supernatural, Tragedy"
+    },
+    {
+        "id": 7,
+        "title": "History's Strongest Disciple Kenichi",
+        "author": "Matsuena Syun",
+        "release": "2002",
+        "status": "completed",
+        "description": "Kenichi Shirahama a 16-year old high school student as well as a longtime sufferer at the hands of bullies, befriends Miu and eventually learned martial arts from several masters in Miu's father's dojo. As a result of learning from many grand masters, Kenichi becomes the strongest disciple in history.",
+        "genre": "Action, Adventure, Comedy, Drama, Ecchi, Harem, Martial arts, Romance, School life, Shounen"
+    },
+    {
+        "id": 8,
+        "title": "Shingeki No Kyojin",
+        "author": "Isayama Hajime",
+        "release": "2009",
+        "status": "ongoing",
+        "description": "Several hundred years ago, humans were nearly exterminated by titans. Titans are typically several stories tall, seem to have no intelligence, devour human beings and, worst of all, seem to do it for the pleasure rather than as a food source. A small percentage of humanity survived by walling themselves in a city protected by extremely high walls, even taller than the biggest of giants.",
+        "genre": "Shounen, Mature, Action, Drama, Fantasy, Horror, Mystery, Psychological, Tragedy"
+    },
+    {
+        "id": 9,
+        "title": "Detective Conan",
+        "author": "Aoyama Gosho",
+        "release": "1997",
+        "status": "ongoing",
+        "description": "Follows the experiences of Shinichi Kudo (also called Jimmy Kudo in Case Closed), a young detective prodigy who had been accidentally shrunk right into a child's body as a result of toxin he was force fed by members of a criminal syndicate.",
+        "genre": "Adventure, Comedy, Drama, Mystery, Romance, School life, Shounen"
+    },
+    {
+        "id": 10,
+        "title": "The Breaker",
+        "author": "Geuk-Jin Jeon, Jin-Hwan Park",
+        "release": "2004",
+        "status": "completed",
+        "description": "The new English teacher, Chun-Woo, is not your ordinary teacher. Shioon, a victim of constant bullying, unexpectedly witnesses Chun-Woo's fighting power, and begs him to make him his disciple.",
+        "genre": "Action, Comedy, Drama, Martial arts, Romance, School life, Seinen, Supernatural, Webtoons, Manhwa"
+    },
+    {
+        "id": 11,
+        "title": "The Breaker: New Waves",
+        "author": "Geuk-Jin Jeon, Jin-Hwan Park",
+        "release": "2016",
+        "status": "completed",
+        "description": "After his master Goomonryong destroys his ki-center, Shioon leaves the world of the Murim for a normal life to which he believes his master was trying to return him. But for a boy who holds the Phoenix medallion of the Sunwoo clan and the knowledge of the Black Heaven & Earth Technique, the world of the Murim will come to him...",
+        "genre": "Action, Comedy, Drama, Martial arts, Romance, School life, Seinen, Supernatural, Tragedy, Manhwa"
+    },
+    {
+        "id": 12,
+        "title": "Area D",
+        "author": "Nanatsuki Kyouichi",
+        "release": "2013",
+        "status": "completed",
+        "description": "The 'prison survival action' story is set after the sudden emergence of special powers in certain pockets of humanity. To deal with these so-called ",
+        "genre": "Action, Adult, Cooking, Ecchi, Fantasy, Romance, Shounen, Supernatural"
+    },
+    {
+        "id": 13,
+        "title": "Code Geass: Lelouch Of The Rebellion",
+        "author": "Goro Taniguchi, Ichiro Okouchi",
+        "release": "2006",
+        "status": "ongoing",
+        "description": "The Empire of Britannia invaded Japan using giant robot weapons called Knightmare Frames. Japan was reduced to Area 11, an imperial colony, and its people referred to as the Elevens. At the time, Lelouch, a young Britannian boy exiled to Japan, vowed to his Japanese friend Suzaku that he would destroy Britannia.",
+        "genre": "Action, Drama, Mecha, School life, Seinen, Supernatural, Tragedy"
+    },
+    {
+        "id": 14,
+        "title": "Fairy Tail",
+        "author": "Mashima Hiro",
+        "release": "2011",
+        "status": "completed",
+        "description": "Celestial wizard Lucy wants to join the Fairy Tail, a guild for the most powerful wizards. But instead, her ambitions land her in the clutches of a gang of unsavory pirates led by a devious magician. Her only hope is Natsu, a strange boy she happens to meet on her travels.",
+        "genre": "Action, Adventure, Comedy, Drama, Ecchi, Fantasy, Shounen"
+    },
+    {
+        "id": 15,
+        "title": "Boruto: Naruto Next Generations",
+        "author": "Kodachi Ukyo, Ikemoto Mikio",
+        "release": "2018",
+        "status": "ongoing",
+        "description": "Naruto was a young shinobi with an incorrigible knack for mischief. He achieved his dream to become the greatest ninja in the village and his face sits atop the Hokage monument. But this is not his story... A new generation of ninja are ready to take the stage, led by Naruto's own son, Boruto!",
+        "genre": "Action, Adventure, Comedy, Drama, Fantasy, Shounen"
+    },
+    {
+        "id": 16,
+        "title": "Air Gear",
+        "author": "Oh! Great",
+        "release": "2010",
+        "status": "completed",
+        "description": "Itsuki Minami needs no introduction – everybody’s heard of the “Babyface” of the Eastside. He’s the toughest kid at Higashi Junior High School, easy on the eyes but dangerously tough when he needs to be. Plus, Itsuki lives with the mysterious and sexy Noyamano sisters. Life is never dull, but it becomes dangerous...",
+        "genre": "Action, Comedy, Drama, Ecchi, Fantasy, Harem, Romance, School life, Sci fi, Shounen, Sports"
+    },
+    {
+        "id": 17,
+        "title": "Bleach",
+        "author": "Kubo Tite",
+        "release": "2001",
+        "status": "completed",
+        "description": "It follows the adventures of Ichigo Kurosaki. Kurosaki is a soul reaper commonly known as Shinigami in Japan and he gained powers from Rukia Kuchiki. In his quest to defend humans from evil spirits, Kurosaki pushes them into after life.",
+        "genre": "Action, Adult, Adventure, Comedy, Doujinshi, Drama, Fantasy, Horror, Martial arts, Shounen, Supernatural"
+    },
+    {
+        "id": 18,
+        "title": "Death Note",
+        "author": "Ohba Tsugumi",
+        "release": "2003",
+        "status": "completed",
+        "description": "The storyline follows a high school student who falls upon a supernatural book from a shinigami named Ryuk that allows its user the power to kill anyone whose name and face he understands, Light Yagami.",
+        "genre": "Action, Adult, Adventure, Comedy, Doujinshi, Drama, Fantasy, Horror, Mystery, Psychological, Shounen, Supernatural, Tragedy"
+    },
+    {
+        "id": 19,
+        "title": "Full Metal Alchemist",
+        "author": "Hiromu Arakawa",
+        "release": "2001",
+        "status": "completed",
+        "description": "The story proceeds with the alchemist brothers named Edward Elric and Alphonse Elric, who can use alchemy to create anything they desire in exchange for something of equal value.",
+        "genre": "Shounen, Action, Adventure, Comedy, Drama, Fantasy, Supernatural, Tragedy"
+    },
+    {
+        "id": 20,
+        "title": "Dragon Ball",
+        "author": "Akira Toriyama",
+        "release": "1984",
+        "status": "completed",
+        "description": "Son Goku begins his adventure to search the world for the Dragon Balls which grant a wish to those who collect all of the seven Dragon Balls. The story proceeds with the Goku’s growth though hard training and battles with various characters.",
+        "genre": " Action, Adventure, Comedy, Drama, Fantasy, Sci fi, Shounen"
+    }
+]

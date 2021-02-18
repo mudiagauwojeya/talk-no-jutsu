@@ -1,0 +1,45 @@
+:is(*, *::after, *::before) {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	font-size: 62.5%;
+}
+
+body {
+	background-color: #b6b600;
+	color: #333;
+	font-size: 1.8rem;
+	line-height: 1.5;
+	padding: 10rem 25rem 0;
+}
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+:is(.app, .manga) {
+	border: 0.2rem solid #8a8a23;
+	border-radius: 0.7rem;
+}
+
+.app {
+	background-color: whitesmoke;
+	margin: 3rem auto 0;
+	max-width: 55rem;
+	width: 40rem;
+}
+
+.manga {
+	padding: 2rem 1rem;
+	width: 100%;
+}
+
+.heading {
+	padding: 2rem 0;
+	text-transform: uppercase;
+}
