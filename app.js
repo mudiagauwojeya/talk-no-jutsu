@@ -1,7 +1,7 @@
 const root = document.querySelector(".app");
 
 //fetch API
-
+/*
 fetch("./assets/manga.json")
 	.then((response) => {
 		if (response.status === 200) {
@@ -31,6 +31,7 @@ fetch("./assets/manga.json")
 		root.style.backgroundColor = "#fcafa5";
 		root.innerHTML = error.message;
 	});
+*/
 
 //Promise API using XMLHTTPREQUEST
 /*
@@ -76,3 +77,41 @@ getManga()
 		root.innerHTML = error;
 	});
 */
+
+//Async and Await
+const requestManga = async () => {
+	try {
+		const get = await fetch("./assets/manga.json");
+		if (get.ok === true) {
+			const response = await get.json();
+			return response;
+		} else if (get.ok === false || get.statusText === "Not Found") {
+			throw new Error("Uh-oh! Something went wrong.");
+		}
+	} catch (error) {
+		root.style.backgroundColor = "#fcafa5";
+		root.innerHTML = error;
+	}
+};
+
+requestManga()
+	.then((manga) => {
+		for (const comic of manga) {
+			const tile = `
+    <div class="manga">
+        <h2 class="heading">${comic.title}</h2>
+        <p class="description">${comic.description}</p>
+        <div class="credits">
+            <span>author(s): ${comic.author}</span>
+            <span>year of release: ${comic.release}</span>
+            <span>status: ${comic.status}</span>
+            <span>genre: ${comic.genre}</span>
+        </div>
+    </div>
+    `;
+			root.insertAdjacentHTML("beforeend", tile);
+		}
+	})
+	.catch((error) => {
+		const err = { text: [error.message] };
+	});
