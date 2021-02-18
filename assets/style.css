@@ -69,6 +69,13 @@ span {
 }
 
 /* media queries */
+@media only screen and (max-width: 50rem) {
+	.app {
+		font-size: 1.75rem;
+		width: 95%;
+	}
+}
+
 @media only screen and (max-width: 26.25rem) {
 	body {
 		padding: 7rem 1rem 0;
