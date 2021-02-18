@@ -1,9 +1,15 @@
 const root = document.querySelector(".app");
 
 //fetch API
-/*
+
 fetch("./assets/manga.json")
-	.then((response) => response.json())
+	.then((response) => {
+		if (response.status === 200) {
+			return response.json();
+		} else if (response.ok === false) {
+			throw new Error("Oops! Something went wrong!");
+		}
+	})
 	.then((manga) => {
 		for (const comic of manga) {
 			const tile = `
@@ -20,10 +26,14 @@ fetch("./assets/manga.json")
             `;
 			root.insertAdjacentHTML("beforeend", tile);
 		}
-    });
-*/
+	})
+	.catch((error) => {
+		root.style.backgroundColor = "#fcafa5";
+		root.innerHTML = error.message;
+	});
 
 //Promise API
+/*
 const getManga = () => {
 	return new Promise((resolve, reject) => {
 		const xmlr = new XMLHttpRequest();
@@ -38,13 +48,11 @@ const getManga = () => {
 				reject(error.message);
 			}
 		});
-		xmlr.open("GET", "./assets/mang.json");
+		xmlr.open("GET", "./assets/manga.json");
 		xmlr.send();
 	});
 };
 
-// getManga();
-// console.log(typeof getManga());
 getManga()
 	.then((manga) => {
 		for (const comic of manga) {
@@ -67,3 +75,4 @@ getManga()
 		root.style.backgroundColor = "#fcafa5";
 		root.innerHTML = error;
 	});
+*/
