@@ -59,3 +59,11 @@ h1 {
 	display: flex;
 	flex-flow: row wrap;
 }
+
+span {
+	background-color: #ddd;
+	border: none;
+	border-radius: 0.5rem;
+	color: inherit;
+	padding: 0.75rem;
+}
