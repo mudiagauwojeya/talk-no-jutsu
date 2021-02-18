@@ -67,3 +67,26 @@ span {
 	color: inherit;
 	padding: 0.75rem;
 }
+
+/* media queries */
+@media only screen and (max-width: 26.25rem) {
+	body {
+		padding: 7rem 1rem 0;
+	}
+
+	.app {
+		margin: 0 auto;
+		padding: 2rem 1rem;
+		width: 95%;
+	}
+
+	.manga {
+		padding: 1rem;
+		width: 95%;
+	}
+
+	span {
+		font-size: 1.6rem;
+		margin: 0 0.35rem 0 0;
+	}
+}
