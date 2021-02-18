@@ -32,7 +32,7 @@ fetch("./assets/manga.json")
 		root.innerHTML = error.message;
 	});
 
-//Promise API
+//Promise API using XMLHTTPREQUEST
 /*
 const getManga = () => {
 	return new Promise((resolve, reject) => {
