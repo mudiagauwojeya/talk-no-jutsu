@@ -4,8 +4,6 @@ const root = document.querySelector(".app");
 fetch("./assets/manga.json")
 	.then((response) => response.json())
 	.then((manga) => {
-		console.log(manga);
-
 		for (const comic of manga) {
 			const tile = `
             <div class="manga">
