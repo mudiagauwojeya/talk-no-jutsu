@@ -95,6 +95,7 @@ const requestManga = async () => {
 							<span>status: ${comic.status}</span>
 							<span>genre: ${comic.genre}</span>
 						</div>
+						<button class="btn">Delete</button>
 					</div>
 				`;
 				root.insertAdjacentHTML("beforeend", tile);
