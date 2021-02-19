@@ -45,6 +45,9 @@ h1 {
 	padding: 2rem 1rem;
 	max-width: 50rem;
 	width: 100%;
+
+	display: flex;
+	flex-flow: column nowrap;
 }
 
 :not(.manga:last-of-type) {
@@ -80,9 +83,11 @@ span {
 	color: #ffff91;
 	display: inline-block;
 	font-family: inherit;
-	font-size: inherit;
+	font-size: 2.2rem;
 	padding: 2rem;
 	width: 15rem;
+
+	align-self: flex-end;
 
 	transition: all 200ms ease-in;
 	will-change: transform, background-color;
@@ -94,7 +99,7 @@ span {
 }
 
 .btn:hover {
-	background-color: #ffff91;
+	background-color: #f3f365;
 	color: #333304;
 }
 
