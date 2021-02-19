@@ -93,6 +93,10 @@ span {
 	will-change: transform, background-color;
 }
 
+.btn--1 {
+	font-size: 1.8rem;
+}
+
 .btn:focus {
 	background-color: #9c9c07;
 	outline: none;
