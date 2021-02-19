@@ -29,20 +29,20 @@ h1 {
 }
 
 .app {
-	background-color: whitesmoke;
+	background-color: #ffff91;
 	margin: 3rem auto 0;
-	max-width: 55rem;
-	padding: 2rem 4rem;
-	width: 40rem;
+	padding: 4rem 2rem;
+	width: 100%;
 
 	display: flex;
-	flex-flow: column nowrap;
-	align-items: center;
+	flex-flow: row wrap;
+	align-items: flex-start;
 	justify-content: space-around;
 }
 
 .manga {
 	padding: 2rem 1rem;
+	max-width: 50rem;
 	width: 100%;
 }
 
@@ -61,10 +61,12 @@ h1 {
 }
 
 span {
-	background-color: #ddd;
+	background-color: #c4c43d;
 	border: none;
-	border-radius: 0.5rem;
-	color: inherit;
+	border-radius: 0.75rem;
+	color: white;
+	font-size: 1.6rem;
+	margin-right: 1rem;
 	padding: 0.75rem;
 }
 
