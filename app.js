@@ -99,8 +99,8 @@ const requestManga = async () => {
 				`;
 				root.insertAdjacentHTML("beforeend", tile);
 			}
-		} else if (get.ok === false || get.statusText === "Not Found") {
-			throw new Error("Uh-oh! Something went wrong.");
+		} else if (get.ok === false) {
+			throw new Error(`Uh-oh! ${get.statusText}.`);
 		}
 	} catch (error) {
 		root.style.backgroundColor = "#fcafa5";
