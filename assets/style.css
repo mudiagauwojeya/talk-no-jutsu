@@ -23,6 +23,41 @@ h1 {
 	text-transform: uppercase;
 }
 
+span {
+	background-color: #333304;
+	border: none;
+	border-radius: 0.75rem;
+	color: #dadada;
+	font-size: 1.6rem;
+	margin-right: 1rem;
+	padding: 0.75rem;
+}
+
+form {
+	background-color: #444410;
+	border: none;
+	border-radius: 0.4rem;
+	color: #dadada;
+	display: block;
+	padding: 2rem;
+	width: 100%;
+
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-evenly;
+}
+
+label {
+	display: inline-block;
+	margin-bottom: 0 !important;
+	text-transform: capitalize;
+}
+
+:is(input, textarea) {
+	display: inline-block;
+	width: 40rem;
+}
+
 :is(.app, .manga) {
 	border: 0.2rem solid #8a8a23;
 	border-radius: 0.7rem;
@@ -35,7 +70,7 @@ h1 {
 	width: 100%;
 
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: column wrap;
 	align-items: flex-start;
 	justify-content: space-around;
 }
@@ -64,16 +99,6 @@ h1 {
 	flex-flow: row wrap;
 }
 
-span {
-	background-color: #333304;
-	border: none;
-	border-radius: 0.75rem;
-	color: #dadada;
-	font-size: 1.6rem;
-	margin-right: 1rem;
-	padding: 0.75rem;
-}
-
 .btn {
 	appearance: none;
 	background-color: #a7a707;
@@ -81,6 +106,7 @@ span {
 	border-radius: 0.8rem;
 	box-shadow: 0 0.45rem 0 rgba(3, 3, 3, 0.3);
 	color: #ffff91;
+	cursor: pointer;
 	display: inline-block;
 	font-family: inherit;
 	font-size: 2.2rem;
