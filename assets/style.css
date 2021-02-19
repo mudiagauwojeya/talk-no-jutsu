@@ -49,8 +49,13 @@ form {
 
 label {
 	display: inline-block;
-	margin-bottom: 0 !important;
 	text-transform: capitalize;
+}
+
+hr {
+	border: 2px solid #333304;
+	margin: 4rem;
+	width: 30rem;
 }
 
 :is(input, textarea) {
@@ -61,6 +66,10 @@ label {
 :is(.app, .manga) {
 	border: 0.2rem solid #8a8a23;
 	border-radius: 0.7rem;
+}
+
+:is(lable, hr) {
+	margin-bottom: 0 !important;
 }
 
 .app {
