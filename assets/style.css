@@ -47,19 +47,28 @@ form {
 	justify-content: space-evenly;
 }
 
-label {
+:is(label, .status, .genre) {
 	display: inline-block;
 	text-transform: capitalize;
 }
 
 hr {
-	border: 2px solid #333304;
-	margin: 4rem;
-	width: 30rem;
+	border: none;
+	border-bottom: 1px solid #8a8a23;
+	display: inline-block;
+	margin: 7rem auto 0;
+	width: 80%;
 }
 
 :is(input, textarea) {
+	appearance: none;
+	border: none;
+	border-radius: 0.5rem;
+	background-color: #f3f365;
 	display: inline-block;
+	font-family: inherit;
+	font-size: 1.6rem;
+	padding: 1.5rem 1rem;
 	width: 40rem;
 }
 
@@ -68,7 +77,7 @@ hr {
 	border-radius: 0.7rem;
 }
 
-:is(lable, hr) {
+:is(label, hr) {
 	margin-bottom: 0 !important;
 }
 
@@ -92,6 +101,10 @@ hr {
 
 	display: flex;
 	flex-flow: column nowrap;
+}
+
+.manga:first-of-type {
+	margin-top: 7rem;
 }
 
 :not(.manga:last-of-type) {
