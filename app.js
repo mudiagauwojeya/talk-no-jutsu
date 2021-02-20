@@ -119,6 +119,8 @@ const formHandler = (event) => {
 		description: form.description.value,
 		author: form.author.value,
 		release: form.release.value,
+		status: { choice: form.status.value },
+		genre: { action: form.genre.value },
 	};
 
 	console.log(formData);
