@@ -40,7 +40,7 @@ form {
 	color: #dadada;
 	display: block;
 	padding: 2rem;
-	width: 100%;
+	width: 80rem;
 
 	display: flex;
 	flex-flow: row nowrap;
@@ -166,7 +166,7 @@ hr {
 }
 
 .form-group {
-	width: 35rem;
+	width: 25rem;
 }
 
 /* media queries */
