@@ -43,12 +43,16 @@ form {
 	width: 100%;
 
 	display: flex;
-	flex-flow: column nowrap;
-	justify-content: space-evenly;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+h4 {
+	font-weight: normal;
 }
 
 :is(label, .status, .genre) {
-	display: inline-block;
+	display: block;
 	text-transform: capitalize;
 }
 
@@ -161,8 +165,8 @@ hr {
 	transition: transform 100ms ease-out;
 }
 
-.status > label:last-of-type {
-	padding: 0 1.2rem;
+.form-group {
+	width: 35rem;
 }
 
 /* media queries */
