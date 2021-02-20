@@ -1,4 +1,5 @@
 const root = document.querySelector(".app");
+const form = document.querySelector("form");
 
 //fetch API
 /*
@@ -109,4 +110,21 @@ const requestManga = async () => {
 	}
 };
 
+//form functionality
+const formHandler = (event) => {
+	event.preventDefault();
+
+	const formData = {
+		title: form.title.value,
+		description: form.description.value,
+		author: form.author.value,
+		release: form.release.value,
+	};
+
+	console.log(formData);
+
+	form.reset();
+};
+
 requestManga();
+form.addEventListener("submit", formHandler);
