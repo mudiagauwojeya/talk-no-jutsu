@@ -2,6 +2,7 @@ const root = document.querySelector(".app");
 const form = document.querySelector("form");
 
 let mangaLists = [];
+let id = 0;
 
 //fetch API
 /*
@@ -89,8 +90,10 @@ const requestManga = async () => {
 			const manga = await get.json();
 			mangaLists = [...manga];
 			for (const comic of mangaLists) {
+				id++;
+				comic.id = id;
 				const tile = `
-					<div class="manga">
+					<div class="manga" id=${comic.id}>
 						<h2 class="heading">${comic.title}</h2>
 						<p class="description">${comic.description}</p>
 						<div class="credits">
@@ -116,7 +119,7 @@ const requestManga = async () => {
 //form functionality
 const formHandler = (event) => {
 	event.preventDefault();
-
+	id++;
 	const formData = {
 		title: form.title.value,
 		description: form.description.value,
@@ -124,8 +127,9 @@ const formHandler = (event) => {
 		release: form.release.value,
 		status: { choice: form.status.value },
 		genre: { action: form.genre.value },
+		id,
 	};
-
+	console.log(formData);
 	mangaLists.push(formData);
 	form.reset();
 };
