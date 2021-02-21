@@ -39,8 +39,8 @@ form {
 	border-radius: 0.4rem;
 	color: #dadada;
 	display: block;
+	max-width: 80rem;
 	padding: 2rem;
-	width: 80rem;
 
 	display: flex;
 	flex-flow: row nowrap;
