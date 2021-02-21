@@ -126,8 +126,7 @@ const formHandler = (event) => {
 		genre: { action: form.genre.value },
 	};
 
-	console.log(formData);
-
+	mangaLists.push(formData);
 	form.reset();
 };
 
