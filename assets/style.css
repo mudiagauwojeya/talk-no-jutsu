@@ -68,10 +68,10 @@ hr {
 	appearance: none;
 	border: none;
 	border-radius: 0.5rem;
-	background-color: #f3f365;
+	background-color: #ffff91;
 	display: inline-block;
 	font-family: inherit;
-	font-size: 1.6rem;
+	font-size: inherit;
 	padding: 1.5rem 1rem;
 	width: 40rem;
 }
