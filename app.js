@@ -82,6 +82,48 @@ getManga()
 	});
 */
 
+const renderManga = (userValue = false) => {
+	if (userValue === true) {
+		for (const comic of mangaLists) {
+			const tile = `
+				<div class="manga" id=${comic.id}>
+					<h2 class="heading">${comic.title}</h2>
+					<p class="description">${comic.description}</p>
+					<div class="credits">
+						<span>author(s): ${comic.author}</span>
+						<span>year of release: ${comic.release}</span>
+						<span>status: ${comic.status.choice}</span>
+						<span>genre: ${comic.genre.action}</span>
+					</div>
+					<button class="btn">Delete</button>
+				</div>
+			`;
+			root.insertAdjacentHTML("beforeend", tile);
+		}
+	} else {
+		for (const comic of mangaLists) {
+			id++;
+			comic.id = id;
+			const tile = `
+				<div class="manga" id=${comic.id}>
+					<h2 class="heading">${comic.title}</h2>
+					<p class="description">${comic.description}</p>
+					<div class="credits">
+						<span>author(s): ${comic.author}</span>
+						<span>year of release: ${comic.release}</span>
+						<span>status: ${comic.status}</span>
+						<span>genre: ${comic.genre}</span>
+					</div>
+					<button class="btn">Delete</button>
+				</div>
+			`;
+			root.insertAdjacentHTML("beforeend", tile);
+		}
+	}
+
+	document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+};
+
 //Async and Await
 const requestManga = async () => {
 	try {
@@ -89,24 +131,7 @@ const requestManga = async () => {
 		if (get.ok === true) {
 			const manga = await get.json();
 			mangaLists = [...manga];
-			for (const comic of mangaLists) {
-				id++;
-				comic.id = id;
-				const tile = `
-					<div class="manga" id=${comic.id}>
-						<h2 class="heading">${comic.title}</h2>
-						<p class="description">${comic.description}</p>
-						<div class="credits">
-							<span>author(s): ${comic.author}</span>
-							<span>year of release: ${comic.release}</span>
-							<span>status: ${comic.status}</span>
-							<span>genre: ${comic.genre}</span>
-						</div>
-						<button class="btn">Delete</button>
-					</div>
-				`;
-				root.insertAdjacentHTML("beforeend", tile);
-			}
+			renderManga();
 		} else if (get.ok === false) {
 			throw new Error(`Uh-oh! ${get.statusText}.`);
 		}
@@ -129,8 +154,8 @@ const formHandler = (event) => {
 		genre: { action: form.genre.value },
 		id,
 	};
-	console.log(formData);
 	mangaLists.push(formData);
+	renderManga(true);
 	form.reset();
 };
 
