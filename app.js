@@ -1,6 +1,8 @@
 const root = document.querySelector(".app");
 const form = document.querySelector("form");
 
+let mangaLists = [];
+
 //fetch API
 /*
 fetch("./assets/manga.json")
@@ -85,7 +87,8 @@ const requestManga = async () => {
 		const get = await fetch("./assets/manga.json");
 		if (get.ok === true) {
 			const manga = await get.json();
-			for (const comic of manga) {
+			mangaLists = [...manga];
+			for (const comic of mangaLists) {
 				const tile = `
 					<div class="manga">
 						<h2 class="heading">${comic.title}</h2>
