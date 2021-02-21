@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "title": "Naruto",
         "author": "Masashi Kishimoto",
         "release": "1999",
@@ -9,7 +8,6 @@
         "genre": " Action, Adult, Adventure, Comedy, Doujinshi, Drama, Fantasy, Martial arts, Shounen"
     },
     {
-        "id": 2,
         "title": "One Piece",
         "author": "Eiichiro Oda",
         "release": "1997",
@@ -18,7 +16,6 @@
         "genre": " Action, Adventure, Comedy, Drama, Fantasy, Shounen"
     },
     {
-        "id": 3,
         "title": "One-Punch Man",
         "author": "One, Murata Yuusuke",
         "release": "2009",
@@ -27,7 +24,6 @@
         "genre": " Action, Comedy, Fantasy, Mature, Mystery, Psychological, Sci fi, Seinen, Supernatural"
     },
     {
-        "id": 4,
         "title": "Boku No Hero Academia",
         "author": "Horikoshi Kouhei",
         "release": "2014",
@@ -36,7 +32,6 @@
         "genre": " Action, Comedy, Fantasy, School life, Sci fi, Shounen"
     },
     {
-        "id": 5,
         "title": "World Trigger",
         "author": "Ashihara Daisuke",
         "release": "2013",
@@ -45,7 +40,6 @@
         "genre": "Action, Adult, Comedy, Doujinshi, School life, Sci-fi, Shounen, Supernatural"
     },
     {
-        "id": 6,
         "title": "Hunter X Hunter",
         "author": "Togashi Yoshihiro",
         "release": "1998",
@@ -54,7 +48,6 @@
         "genre": "Action, Adventure, Drama, Fantasy, Psychological, Shounen, Supernatural, Tragedy"
     },
     {
-        "id": 7,
         "title": "History's Strongest Disciple Kenichi",
         "author": "Matsuena Syun",
         "release": "2002",
@@ -63,7 +56,6 @@
         "genre": "Action, Adventure, Comedy, Drama, Ecchi, Harem, Martial arts, Romance, School life, Shounen"
     },
     {
-        "id": 8,
         "title": "Shingeki No Kyojin",
         "author": "Isayama Hajime",
         "release": "2009",
@@ -72,7 +64,6 @@
         "genre": "Shounen, Mature, Action, Drama, Fantasy, Horror, Mystery, Psychological, Tragedy"
     },
     {
-        "id": 9,
         "title": "Detective Conan",
         "author": "Aoyama Gosho",
         "release": "1997",
@@ -81,7 +72,7 @@
         "genre": "Adventure, Comedy, Drama, Mystery, Romance, School life, Shounen"
     },
     {
-        "id": 10,
+        
         "title": "The Breaker",
         "author": "Geuk-Jin Jeon, Jin-Hwan Park",
         "release": "2004",
@@ -90,7 +81,7 @@
         "genre": "Action, Comedy, Drama, Martial arts, Romance, School life, Seinen, Supernatural, Webtoons, Manhwa"
     },
     {
-        "id": 11,
+        
         "title": "The Breaker: New Waves",
         "author": "Geuk-Jin Jeon, Jin-Hwan Park",
         "release": "2016",
@@ -99,7 +90,7 @@
         "genre": "Action, Comedy, Drama, Martial arts, Romance, School life, Seinen, Supernatural, Tragedy, Manhwa"
     },
     {
-        "id": 12,
+        
         "title": "Area D",
         "author": "Nanatsuki Kyouichi",
         "release": "2013",
@@ -108,7 +99,7 @@
         "genre": "Action, Adult, Cooking, Ecchi, Fantasy, Romance, Shounen, Supernatural"
     },
     {
-        "id": 13,
+        
         "title": "Code Geass: Lelouch Of The Rebellion",
         "author": "Goro Taniguchi, Ichiro Okouchi",
         "release": "2006",
@@ -117,7 +108,7 @@
         "genre": "Action, Drama, Mecha, School life, Seinen, Supernatural, Tragedy"
     },
     {
-        "id": 14,
+        
         "title": "Fairy Tail",
         "author": "Mashima Hiro",
         "release": "2011",
@@ -126,7 +117,7 @@
         "genre": "Action, Adventure, Comedy, Drama, Ecchi, Fantasy, Shounen"
     },
     {
-        "id": 15,
+        
         "title": "Boruto: Naruto Next Generations",
         "author": "Kodachi Ukyo, Ikemoto Mikio",
         "release": "2018",
@@ -135,7 +126,7 @@
         "genre": "Action, Adventure, Comedy, Drama, Fantasy, Shounen"
     },
     {
-        "id": 16,
+        
         "title": "Air Gear",
         "author": "Oh! Great",
         "release": "2010",
@@ -144,7 +135,7 @@
         "genre": "Action, Comedy, Drama, Ecchi, Fantasy, Harem, Romance, School life, Sci fi, Shounen, Sports"
     },
     {
-        "id": 17,
+        
         "title": "Bleach",
         "author": "Kubo Tite",
         "release": "2001",
@@ -153,7 +144,7 @@
         "genre": "Action, Adult, Adventure, Comedy, Doujinshi, Drama, Fantasy, Horror, Martial arts, Shounen, Supernatural"
     },
     {
-        "id": 18,
+        
         "title": "Death Note",
         "author": "Ohba Tsugumi",
         "release": "2003",
@@ -162,7 +153,7 @@
         "genre": "Action, Adult, Adventure, Comedy, Doujinshi, Drama, Fantasy, Horror, Mystery, Psychological, Shounen, Supernatural, Tragedy"
     },
     {
-        "id": 19,
+        
         "title": "Full Metal Alchemist",
         "author": "Hiromu Arakawa",
         "release": "2001",
@@ -171,7 +162,7 @@
         "genre": "Shounen, Action, Adventure, Comedy, Drama, Fantasy, Supernatural, Tragedy"
     },
     {
-        "id": 20,
+        
         "title": "Dragon Ball",
         "author": "Akira Toriyama",
         "release": "1984",
