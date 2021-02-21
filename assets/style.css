@@ -41,6 +41,7 @@ form {
 	display: block;
 	max-width: 80rem;
 	padding: 2rem;
+	width: 65rem;
 
 	display: flex;
 	flex-flow: row nowrap;
@@ -166,7 +167,7 @@ hr {
 }
 
 .form-group {
-	width: 25rem;
+	width: 15rem;
 }
 
 /* media queries */
