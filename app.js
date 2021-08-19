@@ -127,7 +127,9 @@ const renderManga = (addUserManga = false) => {
 //Async and Await
 const requestManga = async () => {
 	try {
-		const get = await fetch("./assets/manga.json");
+		const get = await fetch("./assets/manga.json", {
+			// credentials: "same-origin",
+		});
 		if (get.ok) {
 			const manga = await get.json();
 			mangaLists = [...manga];
