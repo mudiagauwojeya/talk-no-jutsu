@@ -82,8 +82,8 @@ getManga()
 	});
 */
 
-const renderManga = (userValue = false) => {
-	if (userValue === true) {
+const renderManga = (addUserManga = false) => {
+	if (addUserManga === true) {
 		for (const comic of mangaLists) {
 			const tile = `
 				<div class="manga" id=${comic.id}>
@@ -128,16 +128,16 @@ const renderManga = (userValue = false) => {
 const requestManga = async () => {
 	try {
 		const get = await fetch("./assets/manga.json");
-		if (get.ok === true) {
+		if (get.ok) {
 			const manga = await get.json();
 			mangaLists = [...manga];
 			renderManga();
-		} else if (get.ok === false) {
-			throw new Error(`Uh-oh! ${get.statusText}.`);
+			return;
 		}
+		throw new Error(`Uh-oh! ${get.statusText}.`);
 	} catch (error) {
 		root.style.backgroundColor = "#fcafa5";
-		root.innerHTML = error;
+		root.innerHTML = error.message;
 	}
 };
 
