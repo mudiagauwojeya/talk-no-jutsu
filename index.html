@@ -4,72 +4,16 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Asynchronous Javascript Demo App</title>
-		<link rel="stylesheet" href="assets/style.css" />
-		<script src="app.js" defer></script>
+		<title>manga no hanashi</title>
+		<link rel="stylesheet" href="src/sass/main.scss" />
+		<script src="src/js/app.js" defer></script>
 	</head>
 	<body>
-		<h1>Popular Manga</h1>
+		<h1>Manga Quotes</h1>
 		<div class="app">
 			<template>
 				<div class="display"></div>
 			</template>
-
-			<form action="#">
-				<div>
-					<label for="title">title :</label>
-					<input
-						type="text"
-						name="title"
-						id="title"
-						placeholder="enter manga title"
-					/>
-					<label for="description">description :</label>
-					<textarea
-						name="description"
-						id="description"
-						cols="30"
-						rows="10"
-						placeholder="brief description of the manga"
-					></textarea>
-					<label for="author">author :</label>
-					<input
-						type="text"
-						name="author"
-						id="author"
-						placeholder="enter author(s) names"
-					/>
-					<label for="release">release :</label>
-					<input
-						type="date"
-						name="release"
-						id="release"
-						placeholder="enter year of release"
-					/>
-				</div>
-				<div class="form-group">
-					<div class="status">
-						<h4>status :</h4>
-						<label for="status">
-							<input type="radio" name="status" value="ongoing" />
-							ongoing</label
-						>
-						<label for="status">
-							<input type="radio" name="status" value="completed" />
-							completed</label
-						>
-					</div>
-					<div class="genre">
-						<h4>genre :</h4>
-						<label for="genre">
-							<input type="checkbox" name="genre" value="action" />
-							action</label
-						>
-					</div>
-					<button type="submit" class="btn btn--1">Submit Manga</button>
-				</div>
-			</form>
-			<hr />
 		</div>
 	</body>
 </html>
