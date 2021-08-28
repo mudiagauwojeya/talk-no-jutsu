@@ -1,2 +1,2 @@
 //Add the configuration files for the project here
-const API = "https://animechan.vercel.app/api/";
+const API_ENDPOINT = "https://animechan.vercel.app/api/";
