@@ -1,3 +1,5 @@
+import { API_ENDPOINT } from './config.js';
+
 export const manga = {
     quotes = {}
 }
