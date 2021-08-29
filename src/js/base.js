@@ -7,7 +7,8 @@ export const manga = {
 
 export const getQuotes = async (query) => {
     try {
-        const quotesData = await fetch();
+        const response = await fetch(`${API_ENDPOINT}${query}`);
+        const quotesData = await response.json();
     } catch (error) {
         
     }
