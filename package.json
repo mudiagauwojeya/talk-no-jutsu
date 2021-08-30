@@ -16,5 +16,8 @@
 	"bugs": {
 		"url": "https://github.com/moody2times/Manga/issues"
 	},
-	"homepage": "https://github.com/moody2times/Manga#readme"
+	"homepage": "https://github.com/moody2times/Manga#readme",
+	"devDependencies": {
+		"parcel": "^2.0.0-rc.0"
+	}
 }
