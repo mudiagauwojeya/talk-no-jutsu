@@ -3,6 +3,10 @@
 	"version": "1.0.0",
 	"description": "an application providing quotes of your favourite manga characters",
 	"main": "index.js",
+	"source": [
+		"./src/js/app.js",
+		"./index.html"
+	],
 	"scripts": {
 		"start": "parcel serve index.html",
 		"build": "parcel build index.html"
