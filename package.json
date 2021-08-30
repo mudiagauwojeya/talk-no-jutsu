@@ -4,7 +4,8 @@
 	"description": "an application providing quotes of your favourite manga characters",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"start": "parcel serve index.html",
+		"build": "parcel build index.html"
 	},
 	"repository": {
 		"type": "git",
