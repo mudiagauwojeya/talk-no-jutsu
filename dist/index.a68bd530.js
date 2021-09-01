@@ -462,10 +462,8 @@ class App {
     // .then((quote) => console.log(quote));
     }
     render() {
-        console.log(`Test: Is this working or not`);
+        console.log(`Test`);
     }
 }
-const app = new App();
-app.render();
 
 //# sourceMappingURL=index.a68bd530.js.map
