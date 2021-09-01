@@ -6,8 +6,9 @@ class App {
 	}
 
 	render() {
-		console.log(`Test`);
+		console.log(`Test: Is this working or not`);
 	}
 }
 
-App.render();
+const app = new App();
+app.render();
