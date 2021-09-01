@@ -4,4 +4,10 @@ class App {
 		// .then((response) => response.json())
 		// .then((quote) => console.log(quote));
 	}
+
+	render() {
+		console.log(`Test`);
+	}
 }
+
+App.render();
