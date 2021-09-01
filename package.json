@@ -2,7 +2,7 @@
 	"name": "manga",
 	"version": "1.0.0",
 	"description": "an application providing quotes of your favourite manga characters",
-	"main": "dist/main/index.js",
+	"main": "index.js",
 	"browserslist": [
 		"> 0.2%",
 		"not dead"
@@ -27,6 +27,7 @@
 	},
 	"homepage": "https://github.com/moody2times/Manga#readme",
 	"devDependencies": {
+		"@parcel/transformer-sass": "2.0.0-rc.0",
 		"parcel": "^2.0.0-rc.0"
 	}
 }
