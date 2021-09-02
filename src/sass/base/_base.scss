@@ -8,7 +8,8 @@
 }
 
 :root {
-	color: $font_color_dark;
+	background-color: $ui_color_dark;
+	color: $font_color_light;
 	// This defines what 1rem is - 1 rem = 10px; 10px/16px = 62.5%
 	font-size: 62.5%;
 }
