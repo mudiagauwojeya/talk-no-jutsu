@@ -27,8 +27,6 @@
 	},
 	"homepage": "https://github.com/moody2times/Manga#readme",
 	"devDependencies": {
-		"@parcel/transformer-babel": "^2.0.0-alpha.3",
-		"@parcel/transformer-postcss": "^2.0.0-alpha.3",
 		"@parcel/transformer-sass": "2.0.0-rc.0",
 		"parcel": "^2.0.0-rc.0"
 	}
