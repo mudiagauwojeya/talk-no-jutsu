@@ -23,10 +23,6 @@
 
 			<main class="app__content">
 				<!-- this will be the container for the main content -->
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-				saepe incidunt atque blanditiis minus molestiae explicabo natus
-				dolore quos quisquam a laboriosam, quaerat sequi? Laboriosam
-				necessitatibus fugiat adipisci esse. Dolorem.
 			</main>
 
 			<footer class="app__footer">
