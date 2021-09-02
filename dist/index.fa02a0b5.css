@@ -7,9 +7,12 @@
 }
 
 :root {
+  font-size: 62.5%;
+}
+
+body {
   background-color: #495057;
   color: #f8f9fa;
-  font-size: 62.5%;
 }
 
 .app {
