@@ -16,6 +16,9 @@ body {
 }
 
 .app {
+  background-color: #adb5bd;
+  border: none;
+  border-radius: 0.7rem;
   margin: 7rem auto;
   width: 70%;
 }
