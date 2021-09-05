@@ -21,10 +21,10 @@ body {
   border: none;
   border-radius: 0.7rem;
   margin: 7rem auto;
-  width: 70vw;
+  width: 80vw;
   display: grid;
-  grid-template-columns: repeat(2, min-content);
-  grid-template-rows: repeat(3, min-content);
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
   grid-template-areas: "sidebar main" "sidebar main" "sidebar footer";
 }
 /*# sourceMappingURL=index.fa02a0b5.css.map */
