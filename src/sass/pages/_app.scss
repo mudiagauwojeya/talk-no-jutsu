@@ -3,7 +3,13 @@
 	border: none;
 	border-radius: 0.7rem;
 	margin: 7rem auto;
-	width: 70%;
+	width: 70vw;
 
 	display: grid;
+	grid-template-columns: repeat(2, min-content);
+	grid-template-rows: repeat(3, min-content);
+	grid-template-areas:
+		"sidebar main"
+		"sidebar main"
+		"sidebar footer";
 }
