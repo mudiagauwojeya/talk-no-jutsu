@@ -24,15 +24,16 @@ body {
   padding: 1.5rem 2rem 0.5rem;
   width: 80vw;
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(3, auto);
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "sidebar content" "sidebar content" "sidebar footer";
+  grid-gap: 1rem;
 }
 .app__sidebar {
   grid-area: sidebar;
 }
 .app__content {
-  grid-area: main;
+  grid-area: content;
 }
 .app__footer {
   grid-area: footer;
