@@ -10,7 +10,19 @@
 	grid-template-columns: repeat(2, auto);
 	grid-template-rows: repeat(3, auto);
 	grid-template-areas:
-		"sidebar main"
-		"sidebar main"
+		"sidebar content"
+		"sidebar content"
 		"sidebar footer";
+
+	&__sidebar {
+		grid-area: sidebar;
+	}
+
+	&__content {
+		grid-area: main;
+	}
+
+	&__footer {
+		grid-area: footer;
+	}
 }

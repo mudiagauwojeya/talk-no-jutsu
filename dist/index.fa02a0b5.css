@@ -26,6 +26,15 @@ body {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(3, auto);
-  grid-template-areas: "sidebar main" "sidebar main" "sidebar footer";
+  grid-template-areas: "sidebar content" "sidebar content" "sidebar footer";
+}
+.app__sidebar {
+  grid-area: sidebar;
+}
+.app__content {
+  grid-area: main;
+}
+.app__footer {
+  grid-area: footer;
 }
 /*# sourceMappingURL=index.fa02a0b5.css.map */
