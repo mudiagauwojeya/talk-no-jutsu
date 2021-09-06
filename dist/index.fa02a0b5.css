@@ -21,7 +21,7 @@ body {
   border: none;
   border-radius: 0.7rem;
   margin: 7rem auto;
-  padding: 1.5rem 2rem 0rem;
+  padding: 1.5rem 2rem 0.5rem;
   width: 80vw;
   display: grid;
   grid-template-columns: 25% auto;
@@ -37,5 +37,7 @@ body {
 }
 .app__footer {
   grid-area: footer;
+  align-self: flex-end;
+  justify-self: center;
 }
 /*# sourceMappingURL=index.fa02a0b5.css.map */

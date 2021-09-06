@@ -3,7 +3,7 @@
 	border: none;
 	border-radius: 0.7rem;
 	margin: 7rem auto;
-	padding: 1.5rem 2rem 0rem;
+	padding: 1.5rem 2rem 0.5rem;
 	width: 80vw;
 
 	display: grid;
@@ -25,5 +25,7 @@
 
 	&__footer {
 		grid-area: footer;
+		align-self: flex-end;
+		justify-self: center;
 	}
 }
