@@ -25,7 +25,7 @@ body {
   width: 80vw;
   display: grid;
   grid-template-columns: 25% auto;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 5rem;
   grid-template-areas: "sidebar content" "sidebar content" "sidebar footer";
   grid-gap: 1rem;
 }
