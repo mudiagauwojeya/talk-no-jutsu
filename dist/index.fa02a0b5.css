@@ -40,4 +40,21 @@ body {
   align-self: flex-end;
   justify-self: center;
 }
+
+.app__sidebar {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.app__sidebar__menu {
+  display: block;
+  list-style-type: none;
+}
+.app__sidebar__menu__item {
+  display: block;
+  padding: 0 2rem 1.5rem;
+}
+.app__sidebar__menu__item:not(:first-of-type) {
+  padding-top: 1.5rem;
+}
 /*# sourceMappingURL=index.fa02a0b5.css.map */

@@ -1,0 +1,19 @@
+.app__sidebar {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+
+	&__menu {
+		display: block;
+		list-style-type: none;
+
+		&__item {
+			display: block;
+			padding: 0 2rem 1.5rem;
+
+			&:not(:first-of-type) {
+				padding-top: 1.5rem;
+			}
+		}
+	}
+}
