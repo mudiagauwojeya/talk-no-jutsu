@@ -14,18 +14,4 @@
 		"sidebar content"
 		"sidebar footer";
 	grid-gap: 1rem;
-
-	&__sidebar {
-		grid-area: sidebar;
-	}
-
-	&__content {
-		grid-area: content;
-	}
-
-	&__footer {
-		grid-area: footer;
-		align-self: flex-end;
-		justify-self: center;
-	}
 }
