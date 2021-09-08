@@ -17,3 +17,8 @@ body {
 	color: $font_color_dark;
 	font-size: 1.75rem;
 }
+
+::selection {
+	background-color: $ui_color_dark;
+	color: $ui_color_grey;
+}

@@ -16,6 +16,11 @@ body {
   font-size: 1.75rem;
 }
 
+::selection {
+  background-color: #495057;
+  color: #ced4da;
+}
+
 .app {
   background-color: #adb5bd;
   border: none;
