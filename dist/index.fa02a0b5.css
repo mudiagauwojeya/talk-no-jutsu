@@ -34,35 +34,35 @@ body {
   grid-template-areas: "sidebar content" "sidebar content" "sidebar footer";
   grid-gap: 1rem;
 }
-.app__sidebar {
-  grid-area: sidebar;
-}
-.app__content {
+
+.content {
   grid-area: content;
 }
-.app__footer {
+
+.footer {
   grid-area: footer;
   align-self: flex-end;
   justify-self: center;
 }
 
-.app__sidebar {
+.sidebar {
+  grid-area: sidebar;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
-.app__sidebar__menu {
+.sidebar__menu {
   display: block;
   list-style-type: none;
 }
-.app__sidebar__menu__item {
+.sidebar__menu__item {
   border-bottom: 0.1rem solid #495057;
   display: block;
 }
-.app__sidebar__menu__item:first-of-type {
+.sidebar__menu__item:first-of-type {
   border-top: 0.1rem solid #495057;
 }
-.app__sidebar__menu__item__link {
+.sidebar__menu__item__link {
   cursor: pointer;
   display: block;
   padding: 2rem 2rem;
