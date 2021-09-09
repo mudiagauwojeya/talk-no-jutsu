@@ -66,6 +66,12 @@ body {
   cursor: pointer;
   display: block;
   padding: 2rem 2rem;
-  text-decoration: overline;
+  text-decoration: none;
+}
+.sidebar__menu__item__link:visited {
+  color: #ff4500;
+}
+.sidebar__menu__item__link:hover {
+  background-color: #495057;
 }
 /*# sourceMappingURL=index.fa02a0b5.css.map */

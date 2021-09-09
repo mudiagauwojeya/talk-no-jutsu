@@ -30,6 +30,10 @@
 				&:visited {
 					color: #ff4500;
 				}
+
+				&:hover {
+					background-color: $ui_color_dark;
+				}
 			}
 		}
 	}
