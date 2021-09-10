@@ -46,6 +46,7 @@ body {
 }
 
 .sidebar {
+  font-weight: bold;
   grid-area: sidebar;
   display: flex;
   flex-flow: column nowrap;
