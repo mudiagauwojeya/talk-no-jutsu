@@ -21,9 +21,10 @@
 				text-decoration: none;
 				transition: transform 200ms ease-in;
 
-				// &:active,
-				// &:link {
-				// }
+				&:active,
+				&:link {
+					color: $font_color_light;
+				}
 
 				&:visited {
 					color: #ff4500;

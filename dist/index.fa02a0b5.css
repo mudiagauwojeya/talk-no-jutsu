@@ -66,7 +66,10 @@ body {
   display: block;
   padding: 2rem 2rem;
   text-decoration: none;
-  transition: transform 150ms ease-in;
+  transition: transform 200ms ease-in;
+}
+.sidebar__menu__item__link:active, .sidebar__menu__item__link:link {
+  color: #f8f9fa;
 }
 .sidebar__menu__item__link:visited {
   color: #ff4500;
