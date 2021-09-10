@@ -19,6 +19,7 @@
 				display: block;
 				padding: 2rem 2rem;
 				text-decoration: none;
+				transition: transform 200ms ease-in;
 
 				// &:active,
 				// &:link {
@@ -31,6 +32,7 @@
 				&:hover {
 					background-color: $ui_color_dark;
 					color: $ui_color_grey;
+					transform: scale(1.1);
 				}
 			}
 		}
