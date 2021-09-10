@@ -61,9 +61,6 @@ body {
   border-bottom: 0.1rem solid #495057;
   display: block;
 }
-.sidebar__menu__item:first-of-type {
-  border-top: 0.1rem solid #495057;
-}
 .sidebar__menu__item__link {
   cursor: pointer;
   display: block;

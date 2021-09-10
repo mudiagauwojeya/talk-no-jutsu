@@ -14,10 +14,6 @@
 			border-bottom: 0.1rem solid $ui_color_dark;
 			display: block;
 
-			&:first-of-type {
-				border-top: 0.1rem solid $ui_color_dark;
-			}
-
 			&__link {
 				cursor: pointer;
 				display: block;
