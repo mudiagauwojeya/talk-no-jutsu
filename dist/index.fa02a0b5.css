@@ -43,6 +43,7 @@ body {
   grid-area: footer;
   align-self: flex-end;
   justify-self: center;
+  font-size: 1.3rem;
 }
 
 .sidebar {
