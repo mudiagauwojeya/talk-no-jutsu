@@ -40,7 +40,6 @@
 
 		&__item.active {
 			background-color: #ff4500;
-			color: $font_color_light;
 			transform: scale(1.15);
 
 			transition: transform 200ms ease-out;
