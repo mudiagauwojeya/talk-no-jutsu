@@ -79,4 +79,8 @@ body {
   color: #ced4da;
   transform: scale(1.1);
 }
+.sidebar__menu__item.active {
+  background-color: #ff4500;
+  color: #f8f9fa;
+}
 /*# sourceMappingURL=index.fa02a0b5.css.map */

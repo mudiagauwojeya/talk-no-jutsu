@@ -37,5 +37,10 @@
 				}
 			}
 		}
+
+		&__item.active {
+			background-color: #ff4500;
+			color: $font_color_light;
+		}
 	}
 }
