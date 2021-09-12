@@ -6,6 +6,9 @@ class App {
 	}
 
 	render() {
-		console.log(`Test`);
+		console.log(`Testing parcel`);
 	}
 }
+
+const app = new App();
+app.render();
