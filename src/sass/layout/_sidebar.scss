@@ -21,15 +21,6 @@
 				text-decoration: none;
 				transition: transform 200ms ease-in;
 
-				&:active,
-				&:link {
-					color: $font_color_light;
-				}
-
-				&:visited {
-					color: #ff4500;
-				}
-
 				&:hover {
 					background-color: $ui_color_dark;
 					color: $ui_color_grey;
@@ -40,7 +31,8 @@
 
 		&__item.active {
 			background-color: #ff4500;
-			transform: scale(1.15);
+			color: $font_color_light;
+			transform: scale(1.1);
 
 			transition: transform 200ms ease-out;
 		}

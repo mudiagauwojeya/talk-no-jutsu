@@ -68,12 +68,6 @@ body {
   text-decoration: none;
   transition: transform 200ms ease-in;
 }
-.sidebar__menu__item__link:active, .sidebar__menu__item__link:link {
-  color: #f8f9fa;
-}
-.sidebar__menu__item__link:visited {
-  color: #ff4500;
-}
 .sidebar__menu__item__link:hover {
   background-color: #495057;
   color: #ced4da;
@@ -81,7 +75,8 @@ body {
 }
 .sidebar__menu__item.active {
   background-color: #ff4500;
-  transform: scale(1.15);
+  color: #f8f9fa;
+  transform: scale(1.1);
   transition: transform 200ms ease-out;
 }
 /*# sourceMappingURL=index.fa02a0b5.css.map */
