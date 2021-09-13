@@ -9,7 +9,8 @@
 	],
 	"source": [
 		"./src/js/app.js",
-		"./index.html"
+		"./index.html",
+		"./src/sass/main.scss"
 	],
 	"scripts": {
 		"start": "parcel serve index.html",
