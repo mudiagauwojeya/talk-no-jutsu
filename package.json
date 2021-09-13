@@ -1,7 +1,7 @@
 {
 	"name": "manga",
 	"version": "1.0.0",
-	"description": "an application providing quotes of your favourite manga characters",
+	"description": "get quotes of your favourite manga characters",
 	"main": "index.js",
 	"browserslist": [
 		"> 0.2%",
