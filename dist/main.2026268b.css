@@ -24,7 +24,7 @@ body {
 
 ::selection {
   background-color: #c62000;
-  color: #fcbc00;
+  color: #f8f9fa;
 }
 
 .app {
@@ -69,7 +69,7 @@ body {
   list-style-type: none;
 }
 .sidebar__menu__item {
-  border-bottom: 0.1rem solid #c62000;
+  border-bottom: 0.1rem solid #f19c00;
   display: block;
 }
 .sidebar__menu__item__link {
@@ -79,13 +79,8 @@ body {
   text-decoration: none;
   transition: transform 200ms ease-in;
 }
-.sidebar__menu__item__link:hover {
+.sidebar__menu__item__link.active, .sidebar__menu__item__link:hover {
   background-color: #c62000;
-  color: #fcbc00;
-  transform: scale(1.1);
-}
-.sidebar__menu__item__link.active {
-  background-color: #ff4500;
   color: #f8f9fa;
   transform: scale(1.1);
 }
