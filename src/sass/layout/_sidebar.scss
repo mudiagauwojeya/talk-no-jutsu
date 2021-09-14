@@ -33,6 +33,16 @@
 					transform: scale(1.1);
 				}
 			}
+
+			&:first-of-type &__link {
+				border-top-right-radius: 0.7rem;
+				border-top-left-radius: 0.7rem;
+			}
+
+			&:last-of-type &__link {
+				border-bottom-right-radius: 0.7rem;
+				border-bottom-left-radius: 0.7rem;
+			}
 		}
 	}
 }

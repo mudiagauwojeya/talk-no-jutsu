@@ -89,5 +89,13 @@ body {
   color: #f8f9fa;
   transform: scale(1.1);
 }
+.sidebar__menu__item:first-of-type .sidebar__menu__item__link {
+  border-top-right-radius: 0.7rem;
+  border-top-left-radius: 0.7rem;
+}
+.sidebar__menu__item:last-of-type .sidebar__menu__item__link {
+  border-bottom-right-radius: 0.7rem;
+  border-bottom-left-radius: 0.7rem;
+}
 
 /*# sourceMappingURL=/main.2026268b.css.map */
