@@ -1,3 +1,11 @@
 .content {
 	grid-area: content;
+
+	&__section {
+		display: none;
+	}
+
+	&__section.active {
+		display: block;
+	}
 }

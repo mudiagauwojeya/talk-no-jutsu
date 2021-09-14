@@ -49,6 +49,12 @@ body {
 .content {
   grid-area: content;
 }
+.content__section {
+  display: none;
+}
+.content__section.active {
+  display: block;
+}
 
 .footer {
   grid-area: footer;
