@@ -49,6 +49,12 @@ body {
 .content {
   grid-area: content;
 }
+.content__display {
+  width: 100%;
+}
+.content__display--image {
+  width: 100%;
+}
 .content__section {
   display: none;
 }
