@@ -1,11 +1,16 @@
 .content {
 	grid-area: content;
 
+	position: relative;
+
 	&__display {
 		width: 100%;
 
 		&--image {
+			border-radius: 0.7rem;
 			width: 100%;
+
+			position: absolute;
 		}
 	}
 
@@ -15,5 +20,7 @@
 
 	&__section.active {
 		display: block;
+		position: absolute;
+		z-index: 10;
 	}
 }
