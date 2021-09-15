@@ -50,9 +50,6 @@ body {
   grid-area: content;
   position: relative;
 }
-.content__display {
-  background-image: url("/manga.ef06286f.png");
-}
 .content__display--image {
   border-radius: 0.7rem;
   opacity: 0.8;
