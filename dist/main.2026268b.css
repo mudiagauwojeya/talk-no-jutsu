@@ -99,7 +99,6 @@ body {
 .sidebar__menu__item__link.active, .sidebar__menu__item__link:hover {
   background-color: #c62000;
   color: #f8f9fa;
-  transform: scale(1.1);
 }
 .sidebar__menu__item:first-of-type .sidebar__menu__item__link {
   border-top-right-radius: 0.7rem;
