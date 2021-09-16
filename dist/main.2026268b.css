@@ -61,7 +61,6 @@ body {
 }
 .content__section.active {
   display: block;
-  padding: 1.8rem;
   position: absolute;
   z-index: 10;
 }
