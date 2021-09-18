@@ -29,13 +29,13 @@ body {
 }
 
 .form {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-top-left-radius: 0.7rem;
-  border-top-right-radius: 0.7rem;
+  border-top: 0.1rem solid #c21500;
   padding-top: 2rem;
   width: 100%;
 }
 .form__controls {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
   width: 100%;
 }
 .form__controls:not(:last-of-type) {

@@ -1,11 +1,11 @@
 .form {
-	background-color: rgba($font_color_dark, 0.5);
-	border-top-left-radius: 0.7rem;
-	border-top-right-radius: 0.7rem;
+	border-top: 0.1rem solid $ui_color_red;
 	padding-top: 2rem;
 	width: 100%;
 
 	&__controls {
+		background-color: rgba($font_color_dark, 0.5);
+		border-radius: 0.5rem;
 		width: 100%;
 
 		&:not(:last-of-type) {
