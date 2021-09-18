@@ -52,7 +52,7 @@ body {
   font-weight: bold;
   position: relative;
 }
-.content__display {
+.content__background {
   background-image: linear-gradient(to right, #c21500, #ffc500), url("/manga_shop.a8f0f4eb.jpg");
   background-position: center;
   background-size: cover;
