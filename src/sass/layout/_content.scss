@@ -9,12 +9,17 @@
 		background-position: center;
 		background-size: cover;
 		background-blend-mode: overlay;
+		border-radius: 0.7rem;
 		height: 100%;
 		width: 100%;
+
+		position: absolute;
 	}
 
 	&__section {
 		display: none;
+		padding: 1.7rem 2rem 0;
+		position: absolute;
 	}
 
 	&__section.active {
