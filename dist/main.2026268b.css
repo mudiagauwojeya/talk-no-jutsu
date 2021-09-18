@@ -42,18 +42,32 @@ body {
   background-color: rgba(248, 249, 250, 0.5);
   border-radius: 0.5rem;
   border: 0.1rem solid #c21500;
+  box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
   font-family: inherit;
   font-size: inherit;
   padding: 1.3rem 0.5rem;
   width: 90%;
 }
 .form__input:focus {
-  background-color: rgba(255, 197, 0, 0.5);
+  background-color: rgba(255, 197, 0, 0.3);
   outline: none;
 }
 .form__input:invalid {
   background-color: rgba(194, 21, 0, 0.3);
 }
+.form__btn {
+  background-color: transparent;
+  border-radius: 0.7rem;
+  border: 0.2rem solid #c21500;
+  box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  padding: 1rem 2rem;
+  width: 20rem;
+}
+
 .app {
   background: #c9d6ff;
   /* fallback for old browsers */
