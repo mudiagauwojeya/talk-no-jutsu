@@ -4,14 +4,13 @@
 	position: relative;
 
 	&__display {
-		background-image: url("../../assets/manga_shop.jpg");
-		&--image {
-			border-radius: 0.7rem;
-			opacity: 0.8;
-			width: 100%;
-
-			position: absolute;
-		}
+		background-image: linear-gradient(to right, #ffc500, #c21500),
+			url("../../assets/manga_shop.jpg");
+		background-position: center;
+		background-size: cover;
+		background-blend-mode: overlay;
+		height: 100%;
+		width: 100%;
 	}
 
 	&__section {
@@ -20,8 +19,5 @@
 
 	&__section.active {
 		display: block;
-
-		position: absolute;
-		z-index: 10;
 	}
 }
