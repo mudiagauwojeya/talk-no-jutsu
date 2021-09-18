@@ -36,8 +36,6 @@ body {
 }
 .form__controls {
   width: 100%;
-}
-.form__controls:not(:last-of-type) {
   margin-bottom: 1.4rem;
 }
 .form__input {
@@ -52,6 +50,9 @@ body {
 .form__input:focus {
   background-color: rgba(255, 197, 0, 0.5);
   outline: none;
+}
+.form__input:invalid {
+  background-color: rgba(194, 21, 0, 0.3);
 }
 .app {
   background: #c9d6ff;

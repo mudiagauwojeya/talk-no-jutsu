@@ -6,10 +6,7 @@
 
 	&__controls {
 		width: 100%;
-
-		&:not(:last-of-type) {
-			margin-bottom: 1.4rem;
-		}
+		margin-bottom: 1.4rem;
 	}
 
 	&__input {
@@ -25,6 +22,10 @@
 	&__input:focus {
 		background-color: rgba($ui_color_yellow, 0.5);
 		outline: none;
+	}
+
+	&__input:invalid {
+		background-color: rgba($ui_color_red, 0.3);
 	}
 
 	&__btn {
