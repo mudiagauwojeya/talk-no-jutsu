@@ -29,11 +29,18 @@ body {
 }
 
 .form {
-  border-top: 0.1rem solid #c21500;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
   padding-top: 2rem;
   width: 100%;
 }
-
+.form__controls {
+  width: 100%;
+}
+.form__controls:not(:last-of-type) {
+  margin-bottom: 1.4rem;
+}
 .app {
   background: #c9d6ff;
   /* fallback for old browsers */
