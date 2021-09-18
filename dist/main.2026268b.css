@@ -64,8 +64,7 @@ body {
 }
 .content__section {
   background-color: rgba(248, 249, 250, 0.7);
-  border-top-left-radius: 0.7rem;
-  border-top-right-radius: 0.7rem;
+  border-radius: 0.7rem;
   display: none;
   padding: 1.7rem 2rem;
   width: 80%;
