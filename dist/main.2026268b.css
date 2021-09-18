@@ -53,7 +53,7 @@ body {
   position: relative;
 }
 .content__display {
-  background-image: linear-gradient(to right, #ffc500, #c21500), url("/manga_shop.a8f0f4eb.jpg");
+  background-image: linear-gradient(to right, #c21500, #ffc500), url("/manga_shop.a8f0f4eb.jpg");
   background-position: center;
   background-size: cover;
   background-blend-mode: overlay;
