@@ -28,6 +28,12 @@ body {
   color: #f8f9fa;
 }
 
+.form {
+  border-top: 0.1rem solid #c21500;
+  padding-top: 2rem;
+  width: 100%;
+}
+
 .app {
   background: #c9d6ff;
   /* fallback for old browsers */
