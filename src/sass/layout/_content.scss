@@ -1,6 +1,7 @@
 .content {
 	grid-area: content;
 
+	font-weight: bold;
 	position: relative;
 
 	&__display {
@@ -17,8 +18,11 @@
 	}
 
 	&__section {
+		background-color: rgba($font_color_light, 0.7);
+		border-top-left-radius: 0.7rem;
+		border-top-right-radius: 0.7rem;
 		display: none;
-		padding: 1.7rem 2rem 0;
+		padding: 1.7rem 2rem;
 		position: absolute;
 	}
 
