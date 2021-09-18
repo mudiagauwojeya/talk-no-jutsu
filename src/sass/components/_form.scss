@@ -21,16 +21,17 @@
 	}
 
 	&__input:focus {
-		background-color: rgba($ui_color_yellow, 0.3);
+		background-color: rgba($font_color_light, 0.9);
 		outline: none;
 	}
 
-	&__input:invalid {
-		background-color: rgba($ui_color_red, 0.3);
+	&__input:valid {
+		background-color: rgba($success, 0.3);
+		border: 0.1rem solid rgba($success, 0.7);
 	}
 
-	&__input:valid {
-		border: 0.1rem solid rgba($success, 0.7);
+	&__input:invalid {
+		background-color: rgba($error, 0.3);
 	}
 
 	&__btn {
