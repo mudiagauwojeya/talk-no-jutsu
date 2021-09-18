@@ -29,6 +29,10 @@
 		background-color: rgba($ui_color_red, 0.3);
 	}
 
+	&__input:valid {
+		border: 0.1rem solid rgba($success, 0.7);
+	}
+
 	&__btn {
 		background-color: transparent;
 		border-radius: 0.7rem;

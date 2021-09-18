@@ -55,6 +55,9 @@ body {
 .form__input:invalid {
   background-color: rgba(194, 21, 0, 0.3);
 }
+.form__input:valid {
+  border: 0.1rem solid rgba(77, 253, 77, 0.7);
+}
 .form__btn {
   background-color: transparent;
   border-radius: 0.7rem;
