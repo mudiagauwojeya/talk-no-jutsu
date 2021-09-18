@@ -24,7 +24,7 @@ body {
 }
 
 ::selection {
-  background-color: #c62000;
+  background-color: #c21500;
   color: #f8f9fa;
 }
 
@@ -97,7 +97,7 @@ body {
   list-style-type: none;
 }
 .sidebar__menu__item {
-  border-bottom: 0.1rem solid #c62000;
+  border-bottom: 0.1rem solid #c21500;
   display: block;
 }
 .sidebar__menu__item__link {
@@ -108,7 +108,7 @@ body {
   transition: transform 200ms ease-in;
 }
 .sidebar__menu__item__link.active, .sidebar__menu__item__link:hover {
-  background-color: #c62000;
+  background-color: #c21500;
   color: #f8f9fa;
 }
 .sidebar__menu__item:first-of-type .sidebar__menu__item__link {
