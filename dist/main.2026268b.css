@@ -76,6 +76,9 @@ body {
 .content__section.active {
   display: block;
 }
+.content__section--display {
+  margin-bottom: 2rem;
+}
 
 .footer {
   grid-area: footer;
