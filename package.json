@@ -13,7 +13,7 @@
 		"./src/sass/main.scss"
 	],
 	"scripts": {
-		"start": "parcel serve index.html",
+		"start": "parcel serve index.html --public-url='.'",
 		"build": "parcel build index.html"
 	},
 	"repository": {
