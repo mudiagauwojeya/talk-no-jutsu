@@ -131,8 +131,11 @@ body {
 }
 .content__section--display {
   margin-bottom: 2rem;
+  padding: 2rem 0;
 }
-
+.content__section--quotes p:nth-child(2) {
+  margin: 1.5rem 0;
+}
 .footer {
   grid-area: footer;
   align-self: flex-end;
