@@ -12,9 +12,13 @@
 	padding: 1rem 2rem;
 	cursor: pointer;
 	width: 25rem;
+	will-change: transform;
+
+	transition: transform 200ms ease-out;
 
 	&:hover {
 		background-color: rgba($ui_color_red, 0.3);
+		transform: translateY(-0.3rem);
 	}
 
 	&:active {

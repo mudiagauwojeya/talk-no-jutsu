@@ -41,9 +41,12 @@ body {
   padding: 1rem 2rem;
   cursor: pointer;
   width: 25rem;
+  will-change: transform;
+  transition: transform 200ms ease-out;
 }
 .btn:hover {
   background-color: rgba(194, 21, 0, 0.3);
+  transform: translateY(-0.3rem);
 }
 .btn:active {
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
