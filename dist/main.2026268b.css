@@ -28,6 +28,28 @@ body {
   color: #f8f9fa;
 }
 
+.btn {
+  background-color: transparent;
+  border-radius: 0.7rem;
+  border: 0.2rem solid #c21500;
+  box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  width: 25rem;
+}
+.btn:hover {
+  background-color: rgba(194, 21, 0, 0.3);
+}
+.btn:active {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+  transform: translateY(0.3rem);
+}
+
 .form {
   border-top: 0.1rem solid #c21500;
   padding-top: 2rem;
