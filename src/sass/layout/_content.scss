@@ -42,8 +42,13 @@
 	}
 
 	&__section--quotes {
-		& p:nth-child(2) {
-			margin: 1.5rem 0;
+		& > p {
+			padding: 1.5rem 0;
+		}
+
+		& > p span {
+			border-bottom: 0.1rem solid rgba($font_color_dark, 0.5);
+			width: 100%;
 		}
 	}
 
