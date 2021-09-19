@@ -39,7 +39,7 @@ body {
   margin-bottom: 1.4rem;
 }
 .form__input {
-  background-color: rgba(248, 249, 250, 0.5);
+  background-color: transparent;
   border-radius: 0.5rem;
   border: 0.1rem solid #c21500;
   box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
@@ -56,7 +56,7 @@ body {
   background-color: rgba(77, 253, 77, 0.3);
   border: 0.1rem solid rgba(77, 253, 77, 0.7);
 }
-.form__input:invalid {
+.form__input:focus:invalid {
   background-color: rgba(194, 21, 0, 0.3);
 }
 .form__btn {
