@@ -134,12 +134,11 @@ body {
   flex-flow: column wrap;
   margin-bottom: 2rem;
 }
-.content__section--quotes > p {
-  padding: 1.5rem 0;
-}
-.content__section--quotes > p span {
+.content__section--quotes > div p {
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.5);
-  width: 100%;
+  display: inline;
+  padding: 1rem 0;
+  width: 10rem;
 }
 .content__section--favorites {
   align-self: flex-end;
