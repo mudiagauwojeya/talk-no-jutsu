@@ -34,6 +34,11 @@
 		display: block;
 	}
 
+	&__section--heading {
+		color: rgba($ui_color_red, 0.8);
+		text-align: center;
+	}
+
 	&__section--display {
 		display: flex;
 		flex-flow: column wrap;
