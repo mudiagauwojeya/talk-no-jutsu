@@ -33,28 +33,4 @@
 	&__input:focus:invalid {
 		background-color: rgba($error, 0.3);
 	}
-
-	&__btn {
-		background-color: transparent;
-		border-radius: 0.7rem;
-		border: 0.2rem solid $ui_color_red;
-		box-shadow: 0 0.3rem 0.6rem rgba($font_color_dark, 0.5);
-		display: inline-block;
-		font-family: inherit;
-		font-size: inherit;
-		font-weight: inherit;
-		letter-spacing: inherit;
-		padding: 1rem 2rem;
-		cursor: pointer;
-		width: 25rem;
-	}
-
-	&__btn:hover {
-		background-color: rgba($ui_color_red, 0.3);
-	}
-
-	&__btn:active {
-		box-shadow: 0 0 0 rgba($font_color_dark, 0.5);
-		transform: translateY(0.3rem);
-	}
 }
