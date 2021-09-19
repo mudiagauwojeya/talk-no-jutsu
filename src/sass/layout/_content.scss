@@ -44,9 +44,9 @@
 	&__section--quotes {
 		& > div p {
 			border-bottom: 0.1rem solid rgba($font_color_dark, 0.5);
-			display: inline;
-			padding: 1rem 0;
-			width: 10rem;
+			display: inline-block;
+			padding: 0.4rem 0;
+			width: 80%;
 		}
 	}
 
