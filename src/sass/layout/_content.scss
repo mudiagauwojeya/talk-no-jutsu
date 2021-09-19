@@ -59,4 +59,11 @@
 	&__section--icon {
 		padding-right: 1rem;
 	}
+
+	&__section--random-btn {
+		background-color: rgba($font_color_light, 0.9);
+		position: absolute;
+		bottom: 1.3rem;
+		left: 18rem;
+	}
 }

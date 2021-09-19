@@ -153,6 +153,12 @@ body {
 .content__section--icon {
   padding-right: 1rem;
 }
+.content__section--random-btn {
+  background-color: rgba(248, 249, 250, 0.9);
+  position: absolute;
+  bottom: 1.3rem;
+  left: 18rem;
+}
 
 .footer {
   grid-area: footer;
