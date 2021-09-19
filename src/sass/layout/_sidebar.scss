@@ -29,13 +29,14 @@
 			}
 
 			&:first-of-type &__link {
-				border-top-right-radius: 0.7rem;
-				border-top-left-radius: 0.7rem;
+				border-top-right-radius: 0.5rem;
+				border-top-left-radius: 0.5rem;
 			}
 
+			&:last-of-type,
 			&:last-of-type &__link {
-				border-bottom-right-radius: 0.7rem;
-				border-bottom-left-radius: 0.7rem;
+				border-bottom-right-radius: 0.5rem;
+				border-bottom-left-radius: 0.5rem;
 			}
 		}
 	}
