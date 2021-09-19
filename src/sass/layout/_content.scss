@@ -60,13 +60,17 @@
 	}
 
 	&__section--random {
-		padding: 2rem 0 7rem;
+		padding: 2.5rem 2rem 5rem;
+	}
+
+	&__section--random--display {
+		padding-bottom: 7rem;
 	}
 
 	&__section--random-btn {
 		background-color: rgba($font_color_light, 0.9);
 		position: absolute;
-		bottom: 1.3rem;
-		left: 18rem;
+		bottom: 5rem;
+		left: 18.4rem;
 	}
 }

@@ -153,13 +153,16 @@ body {
   padding-right: 1rem;
 }
 .content__section--random {
-  padding: 2rem 0 7rem;
+  padding: 2.5rem 2rem 5rem;
+}
+.content__section--random--display {
+  padding-bottom: 7rem;
 }
 .content__section--random-btn {
   background-color: rgba(248, 249, 250, 0.9);
   position: absolute;
-  bottom: 1.3rem;
-  left: 18rem;
+  bottom: 5rem;
+  left: 18.4rem;
 }
 
 .footer {
