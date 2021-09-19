@@ -130,12 +130,17 @@ body {
   display: block;
 }
 .content__section--display {
+  display: flex;
+  flex-flow: column wrap;
   margin-bottom: 2rem;
-  padding: 2rem 0;
 }
 .content__section--quotes p:nth-child(2) {
   margin: 1.5rem 0;
 }
+.content__section--favorites {
+  align-self: flex-end;
+}
+
 .footer {
   grid-area: footer;
   align-self: flex-end;

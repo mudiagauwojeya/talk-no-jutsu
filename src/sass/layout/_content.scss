@@ -35,8 +35,10 @@
 	}
 
 	&__section--display {
+		display: flex;
+		flex-flow: column wrap;
+
 		margin-bottom: 2rem;
-		padding: 2rem 0;
 	}
 
 	&__section--quotes {
@@ -45,6 +47,7 @@
 		}
 	}
 
-	&__section--favorities {
+	&__section--favorites {
+		align-self: flex-end;
 	}
 }
