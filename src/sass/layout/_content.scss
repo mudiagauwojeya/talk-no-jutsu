@@ -43,7 +43,6 @@
 		border-bottom: 0.1rem solid rgba($ui_color_red, 0.8);
 		display: flex;
 		flex-flow: column wrap;
-		padding: 2rem 0 4rem;
 
 		margin-bottom: 2rem;
 	}
@@ -58,6 +57,10 @@
 
 	&__section--icon {
 		padding-right: 1rem;
+	}
+
+	&__section--random {
+		padding: 2rem 0 7rem;
 	}
 
 	&__section--random-btn {
