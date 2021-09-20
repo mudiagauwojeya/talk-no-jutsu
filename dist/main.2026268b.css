@@ -205,7 +205,7 @@ body {
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
 }
-.sidebar__menu__item:last-of-type, .sidebar__menu__item:last-of-type .sidebar__menu__item__link {
+.sidebar__menu__item:last-of-type:hover, .sidebar__menu__item:last-of-type .sidebar__menu__item__link:hover {
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
 }
