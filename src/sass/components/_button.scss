@@ -2,7 +2,7 @@
 .btn {
 	background-color: transparent;
 	border-radius: 0.7rem;
-	border: 0.2rem solid $ui_color_red;
+	border: 0.2rem solid rgba($ui_color_red, 0.8);
 	box-shadow: 0 0.3rem 0.6rem rgba($font_color_dark, 0.5);
 	display: inline-block;
 	font-family: inherit;

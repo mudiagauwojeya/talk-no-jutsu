@@ -31,7 +31,7 @@ body {
 .btn {
   background-color: transparent;
   border-radius: 0.7rem;
-  border: 0.2rem solid #c21500;
+  border: 0.2rem solid rgba(194, 21, 0, 0.8);
   box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
   display: inline-block;
   font-family: inherit;
