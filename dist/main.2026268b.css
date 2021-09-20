@@ -166,6 +166,9 @@ body {
   bottom: 5rem;
   left: 18.4rem;
 }
+.content__section--random-btn:hover {
+  border: 0.2rem solid #f8f9fa;
+}
 
 .footer {
   grid-area: footer;
