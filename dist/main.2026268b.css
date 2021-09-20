@@ -178,6 +178,10 @@ body {
   opacity: 0.5;
 }
 
+.header {
+  grid-area: header;
+}
+
 .sidebar {
   font-weight: bold;
   grid-area: sidebar;
