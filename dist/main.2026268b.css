@@ -161,6 +161,7 @@ body {
 }
 .content__section--random-btn {
   background-color: rgba(248, 249, 250, 0.9);
+  color: rgba(194, 21, 0, 0.9);
   position: absolute;
   bottom: 5rem;
   left: 18.4rem;
