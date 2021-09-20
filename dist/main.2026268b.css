@@ -45,7 +45,8 @@ body {
   transition: transform 200ms ease-out;
 }
 .btn:hover {
-  background-color: rgba(194, 21, 0, 0.9);
+  background-color: #c21500;
+  color: #f8f9fa;
   transform: translateY(-0.3rem);
 }
 .btn:active {
