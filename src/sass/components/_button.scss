@@ -17,7 +17,7 @@
 	transition: transform 200ms ease-out;
 
 	&:hover {
-		background-color: rgba($ui_color_red, 0.3);
+		background-color: rgba($ui_color_red, 0.9);
 		transform: translateY(-0.3rem);
 	}
 
