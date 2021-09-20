@@ -19,8 +19,9 @@
 
 	display: grid;
 	grid-template-columns: 25% auto;
-	grid-template-rows: 1fr 43rem 5rem;
+	grid-template-rows: 1fr 1fr 43rem 5rem;
 	grid-template-areas:
+		"header header"
 		"sidebar content"
 		"sidebar content"
 		"sidebar footer";
