@@ -181,10 +181,11 @@ body {
   grid-area: header;
   border-bottom: 0.1rem solid #c21500;
   margin-bottom: 2rem;
-  padding: 2rem 3rem 0;
+  padding: 2rem 3rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  align-items: baseline;
 }
 .header__box {
   display: flex;
@@ -192,7 +193,9 @@ body {
   justify-content: space-around;
 }
 .header__heading {
-  font-size: 2rem;
+  color: rgba(194, 21, 0, 0.8);
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .sidebar {
