@@ -107,6 +107,7 @@ body {
 .content {
   grid-area: content;
   font-weight: bold;
+  margin-right: 3rem;
   position: relative;
 }
 .content__background {
