@@ -96,7 +96,6 @@ body {
   border: none;
   border-radius: 0.7rem;
   margin: 7rem auto;
-  padding: 4rem 2rem 0.5rem;
   width: 80vw;
   display: grid;
   grid-template-columns: 25% auto;
