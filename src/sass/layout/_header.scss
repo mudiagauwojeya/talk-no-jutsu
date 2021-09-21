@@ -10,7 +10,9 @@
 	justify-content: space-between;
 
 	&__box {
-		// padding-left: 2rem;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-around;
 	}
 
 	&__heading {

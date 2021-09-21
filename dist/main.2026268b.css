@@ -186,6 +186,11 @@ body {
   flex-flow: row nowrap;
   justify-content: space-between;
 }
+.header__box {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
 .header__heading {
   font-size: 2rem;
 }
