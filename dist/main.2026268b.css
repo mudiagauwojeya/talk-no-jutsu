@@ -179,15 +179,12 @@ body {
 
 .header {
   grid-area: header;
-  background-image: linear-gradient(to right, #c21500, #ffc500);
-  border-radius: 0.7rem;
+  border-bottom: 0.1rem solid #c21500;
   margin-bottom: 2rem;
+  padding: 2rem 3rem 0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-}
-.header__box {
-  padding-left: 2rem;
 }
 .header__heading {
   font-size: 2rem;
