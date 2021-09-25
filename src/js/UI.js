@@ -1,1 +1,12 @@
 //all what is rendered goes here
+class UI {
+	constructor() {
+		this.menu = document.querySelector(".sidebar__menu");
+	}
+
+	switchTab() {
+		console.log(this.menu);
+	}
+}
+
+export default UI;
