@@ -1,4 +1,6 @@
 //all what is rendered goes here
+import { removeActiveClass } from "./helper";
+
 class UI {
 	constructor() {
 		this.menu = document.querySelector(".sidebar__menu");
@@ -6,19 +8,13 @@ class UI {
 
 	switchTab(event) {
 		const activeTab = event.target;
-		const allTabs = document.querySelectorAll(".sidebar__menu__item__link");
-		allTabs.forEach((tab) => {
-			tab.classList.remove("active");
-		});
+		const activeSection = document.getElementById(
+			activeTab.dataset.target.slice(1)
+		);
+		removeActiveClass(".sidebar__menu__item__link");
+		removeActiveClass(".content__section");
 		activeTab.classList.add("active");
-
-		const allSections = document.querySelectorAll(".content__section");
-		allSections.forEach((section) => {
-			section.classList.remove("active");
-		});
-		document
-			.getElementById(activeTab.dataset.target.slice(1))
-			.classList.add("active");
+		activeSection.classList.add("active");
 	}
 
 	navigate() {

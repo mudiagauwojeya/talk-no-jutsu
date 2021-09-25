@@ -117,7 +117,25 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"src/js/UI.js":[function(require,module,exports) {
+})({"src/js/helper.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.removeActiveClass = void 0;
+
+//Add helper functions for the project here
+//helper function to remove active class from selected element
+var removeActiveClass = function removeActiveClass(selector) {
+  var elements = document.querySelectorAll(selector);
+  elements.forEach(function (element) {
+    element.classList.remove("active");
+  });
+};
+
+exports.removeActiveClass = removeActiveClass;
+},{}],"src/js/UI.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -125,13 +143,14 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
+var _helper = require("./helper");
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-//all what is rendered goes here
 var UI = /*#__PURE__*/function () {
   function UI() {
     _classCallCheck(this, UI);
@@ -143,16 +162,11 @@ var UI = /*#__PURE__*/function () {
     key: "switchTab",
     value: function switchTab(event) {
       var activeTab = event.target;
-      var allTabs = document.querySelectorAll(".sidebar__menu__item__link");
-      allTabs.forEach(function (tab) {
-        tab.classList.remove("active");
-      });
+      var activeSection = document.getElementById(activeTab.dataset.target.slice(1));
+      (0, _helper.removeActiveClass)(".sidebar__menu__item__link");
+      (0, _helper.removeActiveClass)(".content__section");
       activeTab.classList.add("active");
-      var allSections = document.querySelectorAll(".content__section");
-      allSections.forEach(function (section) {
-        section.classList.remove("active");
-      });
-      document.getElementById(activeTab.dataset.target.slice(1)).classList.add("active");
+      activeSection.classList.add("active");
     }
   }, {
     key: "navigate",
@@ -166,7 +180,7 @@ var UI = /*#__PURE__*/function () {
 
 var _default = UI;
 exports.default = _default;
-},{}],"src/js/app.js":[function(require,module,exports) {
+},{"./helper":"src/js/helper.js"}],"src/js/app.js":[function(require,module,exports) {
 "use strict";
 
 var _UI = _interopRequireDefault(require("./UI"));
