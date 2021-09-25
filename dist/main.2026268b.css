@@ -151,7 +151,9 @@ body {
   align-self: flex-end;
 }
 .content__section--icon {
-  padding-right: 1rem;
+  height: 2.3rem;
+  vertical-align: bottom;
+  width: 3rem;
 }
 .content__section--random {
   padding: 2.5rem 2rem 5rem;
