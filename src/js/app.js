@@ -1,14 +1,5 @@
-class App {
-	constructor() {
-		// fetch("https://animechan.vercel.app/api/random")
-		// .then((response) => response.json())
-		// .then((quote) => console.log(quote));
-	}
+import UI from "./UI";
 
-	render() {
-		console.log(`Testing parcel`);
-	}
-}
+const ui = new UI();
 
-const app = new App();
-app.render();
+ui.switchTab();

@@ -117,34 +117,50 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"src/js/app.js":[function(require,module,exports) {
+})({"src/js/UI.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-var App = /*#__PURE__*/function () {
-  function App() {// fetch("https://animechan.vercel.app/api/random")
-    // .then((response) => response.json())
-    // .then((quote) => console.log(quote));
+//all what is rendered goes here
+var UI = /*#__PURE__*/function () {
+  function UI() {
+    _classCallCheck(this, UI);
 
-    _classCallCheck(this, App);
+    this.menu = document.querySelector(".sidebar__menu");
   }
 
-  _createClass(App, [{
-    key: "render",
-    value: function render() {
-      console.log("Testing parcel");
+  _createClass(UI, [{
+    key: "switchTab",
+    value: function switchTab() {
+      console.log(this.menu);
     }
   }]);
 
-  return App;
+  return UI;
 }();
 
-var app = new App();
-app.render();
-},{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+var _default = UI;
+exports.default = _default;
+},{}],"src/js/app.js":[function(require,module,exports) {
+"use strict";
+
+var _UI = _interopRequireDefault(require("./UI"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ui = new _UI.default();
+ui.switchTab();
+},{"./UI":"src/js/UI.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
