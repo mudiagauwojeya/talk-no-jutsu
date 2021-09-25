@@ -4,8 +4,12 @@ class UI {
 		this.menu = document.querySelector(".sidebar__menu");
 	}
 
-	switchTab() {
-		console.log(this.menu);
+	switchTab(event) {
+		console.log(event);
+	}
+
+	navigate() {
+		this.menu.addEventListener("click", this.switchTab);
 	}
 }
 

@@ -141,8 +141,13 @@ var UI = /*#__PURE__*/function () {
 
   _createClass(UI, [{
     key: "switchTab",
-    value: function switchTab() {
-      console.log(this.menu);
+    value: function switchTab(event) {
+      console.log(event);
+    }
+  }, {
+    key: "navigate",
+    value: function navigate() {
+      this.menu.addEventListener("click", this.switchTab);
     }
   }]);
 
