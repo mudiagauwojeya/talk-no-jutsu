@@ -142,7 +142,17 @@ var UI = /*#__PURE__*/function () {
   _createClass(UI, [{
     key: "switchTab",
     value: function switchTab(event) {
-      console.log(event);
+      var activeTab = event.target;
+      var allTabs = document.querySelectorAll(".sidebar__menu__item__link");
+      allTabs.forEach(function (tab) {
+        tab.classList.remove("active");
+      });
+      activeTab.classList.add("active");
+      var allSections = document.querySelectorAll(".content__section");
+      allSections.forEach(function (section) {
+        section.classList.remove("active");
+      });
+      document.getElementById(activeTab.dataset.target.slice(1)).classList.add("active");
     }
   }, {
     key: "navigate",
