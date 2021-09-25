@@ -41,7 +41,6 @@
 	}
 
 	&__section--display {
-		border-bottom: 0.1rem solid rgba($ui_color_red, 0.8);
 		display: flex;
 		flex-flow: column wrap;
 
@@ -67,6 +66,7 @@
 	}
 
 	&__section--random--display {
+		border-bottom: 0.1rem solid rgba($ui_color_red, 0.8);
 		padding-bottom: 7rem;
 	}
 
