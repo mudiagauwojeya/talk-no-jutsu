@@ -25,4 +25,11 @@
 	&__description {
 		font-size: 1.5rem;
 	}
+
+	&__icon-svg {
+		fill: rgba($ui_color_red, 0.8);
+		height: 3rem;
+		margin-left: 1.5rem;
+		width: 3rem;
+	}
 }

@@ -202,6 +202,12 @@ body {
 .header__description {
   font-size: 1.5rem;
 }
+.header__icon-svg {
+  fill: rgba(194, 21, 0, 0.8);
+  height: 3rem;
+  margin-left: 1.5rem;
+  width: 3rem;
+}
 
 .sidebar {
   font-weight: bold;
