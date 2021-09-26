@@ -123,7 +123,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.removeActiveClass = void 0;
+exports.fetchQuote = exports.removeActiveClass = void 0;
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 //Add helper functions for the project here
 //helper function to remove active class from selected element
@@ -135,6 +139,60 @@ var removeActiveClass = function removeActiveClass(selector) {
 };
 
 exports.removeActiveClass = removeActiveClass;
+
+var fetchQuote = /*#__PURE__*/function () {
+  var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(url) {
+    var requestQuote, quote;
+    return regeneratorRuntime.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            _context.prev = 0;
+            _context.next = 3;
+            return fetch(url);
+
+          case 3:
+            requestQuote = _context.sent;
+
+            if (requestQuote.ok) {
+              _context.next = 6;
+              break;
+            }
+
+            throw new Error(requestQuote.statusText);
+
+          case 6:
+            _context.next = 8;
+            return requestQuote.json;
+
+          case 8:
+            quote = _context.sent;
+            _context.next = 14;
+            break;
+
+          case 11:
+            _context.prev = 11;
+            _context.t0 = _context["catch"](0);
+            console.log(_context.t0);
+
+          case 14:
+            _context.prev = 14;
+            return _context.finish(14);
+
+          case 16:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee, null, [[0, 11, 14, 16]]);
+  }));
+
+  return function fetchQuote(_x) {
+    return _ref.apply(this, arguments);
+  };
+}();
+
+exports.fetchQuote = fetchQuote;
 },{}],"src/js/UI/UI.js":[function(require,module,exports) {
 "use strict";
 
