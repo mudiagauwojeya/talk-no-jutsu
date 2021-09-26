@@ -4,6 +4,7 @@ import { removeActiveClass } from "../helper";
 class UI {
 	constructor() {
 		this.menu = document.querySelector(".sidebar__menu");
+		this.randomBtn = document.getElementById("random__btn");
 	}
 
 	switchTab(event) {
@@ -19,6 +20,13 @@ class UI {
 
 	navigate() {
 		this.menu.addEventListener("click", this.switchTab);
+	}
+
+	getRandomQuote(query_string) {
+		this.randomBtn.addEventListener("click", function (event) {
+			event.preventDefault();
+			console.log(query_string);
+		});
 	}
 }
 

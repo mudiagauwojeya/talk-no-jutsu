@@ -156,6 +156,7 @@ var UI = /*#__PURE__*/function () {
     _classCallCheck(this, UI);
 
     this.menu = document.querySelector(".sidebar__menu");
+    this.randomBtn = document.getElementById("random__btn");
   }
 
   _createClass(UI, [{
@@ -172,6 +173,14 @@ var UI = /*#__PURE__*/function () {
     key: "navigate",
     value: function navigate() {
       this.menu.addEventListener("click", this.switchTab);
+    }
+  }, {
+    key: "getRandomQuote",
+    value: function getRandomQuote(query_string) {
+      this.randomBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+        console.log(query_string);
+      });
     }
   }]);
 
