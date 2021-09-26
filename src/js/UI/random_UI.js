@@ -3,9 +3,10 @@ class Random {
 		this.randomBtn = document.getElementById("random__btn");
 	}
 
-	getRandomQuote() {
-		this.randomBtn.addEventListener("click", function () {
-			console.log("pressed");
+	getRandomQuote(query_string) {
+		this.randomBtn.addEventListener("click", function (event) {
+			event.preventDefault();
+			console.log(query_string);
 		});
 	}
 }
