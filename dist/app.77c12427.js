@@ -135,7 +135,7 @@ var removeActiveClass = function removeActiveClass(selector) {
 };
 
 exports.removeActiveClass = removeActiveClass;
-},{}],"src/js/UI.js":[function(require,module,exports) {
+},{}],"src/js/UI/UI.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -143,7 +143,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _helper = require("./helper");
+var _helper = require("../helper");
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -180,16 +180,16 @@ var UI = /*#__PURE__*/function () {
 
 var _default = UI;
 exports.default = _default;
-},{"./helper":"src/js/helper.js"}],"src/js/app.js":[function(require,module,exports) {
+},{"../helper":"src/js/helper.js"}],"src/js/app.js":[function(require,module,exports) {
 "use strict";
 
-var _UI = _interopRequireDefault(require("./UI"));
+var _UI = _interopRequireDefault(require("./UI/UI"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var ui = new _UI.default();
 ui.navigate();
-},{"./UI":"src/js/UI.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./UI/UI":"src/js/UI/UI.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

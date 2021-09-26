@@ -1,5 +1,5 @@
 //all what is rendered goes here
-import { removeActiveClass } from "./helper";
+import { removeActiveClass } from "../helper";
 
 class UI {
 	constructor() {
