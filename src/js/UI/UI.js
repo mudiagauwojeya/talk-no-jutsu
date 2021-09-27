@@ -1,5 +1,7 @@
-//all what is rendered goes here
+import { API_ENDPOINT } from "./config";
 import { removeActiveClass } from "../helper";
+
+//all what is rendered goes here
 
 class UI {
 	constructor() {
