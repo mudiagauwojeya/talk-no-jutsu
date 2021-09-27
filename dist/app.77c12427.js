@@ -167,24 +167,25 @@ var fetchQuote = /*#__PURE__*/function () {
 
           case 8:
             quote = _context.sent;
-            _context.next = 14;
+            console.log(quote);
+            _context.next = 15;
             break;
 
-          case 11:
-            _context.prev = 11;
+          case 12:
+            _context.prev = 12;
             _context.t0 = _context["catch"](0);
-            console.log(_context.t0);
+            console.error(_context.t0);
 
-          case 14:
-            _context.prev = 14;
-            return _context.finish(14);
+          case 15:
+            _context.prev = 15;
+            return _context.finish(15);
 
-          case 16:
+          case 17:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, null, [[0, 11, 14, 16]]);
+    }, _callee, null, [[0, 12, 15, 17]]);
   }));
 
   return function fetchQuote(_x) {
@@ -209,6 +210,7 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
+//all what is rendered goes here
 var UI = /*#__PURE__*/function () {
   function UI() {
     _classCallCheck(this, UI);
@@ -234,11 +236,8 @@ var UI = /*#__PURE__*/function () {
     }
   }, {
     key: "getRandomQuote",
-    value: function getRandomQuote(query_string) {
-      this.randomBtn.addEventListener("click", function (event) {
-        event.preventDefault();
-        console.log(query_string);
-      });
+    value: function getRandomQuote(url) {
+      this.randomBtn.addEventListener("click", (0, _helper.fetchQuote)(url));
     }
   }]);
 
@@ -247,17 +246,29 @@ var UI = /*#__PURE__*/function () {
 
 var _default = UI;
 exports.default = _default;
-},{"../helper":"src/js/helper.js"}],"src/js/app.js":[function(require,module,exports) {
+},{"../helper":"src/js/helper.js"}],"src/js/config.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.API_ENDPOINT = void 0;
+//Add the configuration files for the project here
+var API_ENDPOINT = "https://animechan.vercel.app/api/";
+exports.API_ENDPOINT = API_ENDPOINT;
+},{}],"src/js/app.js":[function(require,module,exports) {
 "use strict";
 
 var _UI = _interopRequireDefault(require("./UI/UI"));
+
+var _config = require("./config");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var ui = new _UI.default();
 ui.navigate();
-ui.getRandomQuote("random");
-},{"./UI/UI":"src/js/UI/UI.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+ui.getRandomQuote(_config.API_ENDPOINT);
+},{"./UI/UI":"src/js/UI/UI.js","./config":"src/js/config.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

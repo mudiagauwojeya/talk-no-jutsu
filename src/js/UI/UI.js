@@ -1,5 +1,4 @@
-import { removeActiveClass } from "../helper";
-import { fetchQuote } from "./helper";
+import { removeActiveClass, fetchQuote } from "../helper";
 
 //all what is rendered goes here
 
