@@ -1,5 +1,4 @@
 import { removeActiveClass } from "../helper";
-import { API_ENDPOINT } from "./config";
 import { fetchQuote } from "./helper";
 
 //all what is rendered goes here
@@ -25,8 +24,8 @@ class UI {
 		this.menu.addEventListener("click", this.switchTab);
 	}
 
-	getRandomQuote() {
-		this.randomBtn.addEventListener("click", fetchQuote(API_ENDPOINT));
+	getRandomQuote(url) {
+		this.randomBtn.addEventListener("click", fetchQuote(url));
 	}
 }
 
