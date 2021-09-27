@@ -1,5 +1,6 @@
-import { API_ENDPOINT } from "./config";
 import { removeActiveClass } from "../helper";
+import { API_ENDPOINT } from "./config";
+import { fetchQuote } from "./helper";
 
 //all what is rendered goes here
 
