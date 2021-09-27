@@ -25,11 +25,8 @@ class UI {
 		this.menu.addEventListener("click", this.switchTab);
 	}
 
-	getRandomQuote(query_string) {
-		this.randomBtn.addEventListener("click", function (event) {
-			event.preventDefault();
-			console.log(query_string);
-		});
+	getRandomQuote() {
+		this.randomBtn.addEventListener("click", fetchQuote(API_ENDPOINT));
 	}
 }
 
