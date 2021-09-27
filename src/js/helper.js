@@ -13,8 +13,9 @@ export const fetchQuote = async (url) => {
 		const requestQuote = await fetch(url);
 		if (!requestQuote.ok) throw new Error(requestQuote.statusText);
 		const quote = await requestQuote.json;
+		console.log(quote);
 	} catch (error) {
-		console.log(error);
+		console.error(error);
 	} finally {
 		//hide spinner
 	}
