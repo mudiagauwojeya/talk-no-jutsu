@@ -117,146 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"src/js/helper.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.fetchQuote = exports.removeActiveClass = void 0;
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
-//Add helper functions for the project here
-//helper function to remove active class from selected element
-var removeActiveClass = function removeActiveClass(selector) {
-  var elements = document.querySelectorAll(selector);
-  elements.forEach(function (element) {
-    element.classList.remove("active");
-  });
-};
-
-exports.removeActiveClass = removeActiveClass;
-
-var fetchQuote = /*#__PURE__*/function () {
-  var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(url) {
-    var requestQuote, quote;
-    return regeneratorRuntime.wrap(function _callee$(_context) {
-      while (1) {
-        switch (_context.prev = _context.next) {
-          case 0:
-            _context.prev = 0;
-            _context.next = 3;
-            return fetch(url);
-
-          case 3:
-            requestQuote = _context.sent;
-
-            if (requestQuote.ok) {
-              _context.next = 6;
-              break;
-            }
-
-            throw new Error(requestQuote.statusText);
-
-          case 6:
-            _context.next = 8;
-            return requestQuote.json;
-
-          case 8:
-            quote = _context.sent;
-            console.log(quote);
-            _context.next = 15;
-            break;
-
-          case 12:
-            _context.prev = 12;
-            _context.t0 = _context["catch"](0);
-            console.error(_context.t0);
-
-          case 15:
-            _context.prev = 15;
-            return _context.finish(15);
-
-          case 17:
-          case "end":
-            return _context.stop();
-        }
-      }
-    }, _callee, null, [[0, 12, 15, 17]]);
-  }));
-
-  return function fetchQuote(_x) {
-    return _ref.apply(this, arguments);
-  };
-}();
-
-exports.fetchQuote = fetchQuote;
-},{}],"src/js/UI/UI.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _helper = require("../helper");
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-//all what is rendered goes here
-var UI = /*#__PURE__*/function () {
-  function UI() {
-    _classCallCheck(this, UI);
-
-    this.menu = document.querySelector(".sidebar__menu");
-    this.randomBtn = document.getElementById("random__btn");
-  }
-
-  _createClass(UI, [{
-    key: "switchTab",
-    value: function switchTab(event) {
-      var activeTab = event.target;
-      var activeSection = document.getElementById(activeTab.dataset.target.slice(1));
-      (0, _helper.removeActiveClass)(".sidebar__menu__item__link");
-      (0, _helper.removeActiveClass)(".content__section");
-      activeTab.classList.add("active");
-      activeSection.classList.add("active");
-    }
-  }, {
-    key: "navigate",
-    value: function navigate() {
-      this.menu.addEventListener("click", this.switchTab);
-    }
-  }, {
-    key: "getRandomQuote",
-    value: function getRandomQuote(url) {
-      this.randomBtn.addEventListener("click", (0, _helper.fetchQuote)(url));
-    }
-  }]);
-
-  return UI;
-}();
-
-var _default = UI;
-exports.default = _default;
-},{"../helper":"src/js/helper.js"}],"src/js/config.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.API_ENDPOINT = void 0;
-//Add the configuration files for the project here
-var API_ENDPOINT = "https://animechan.vercel.app/api/";
-exports.API_ENDPOINT = API_ENDPOINT;
-},{}],"node_modules/regenerator-runtime/runtime.js":[function(require,module,exports) {
+})({"node_modules/regenerator-runtime/runtime.js":[function(require,module,exports) {
 var define;
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
@@ -1013,6 +874,146 @@ try {
   }
 }
 
+},{}],"src/js/helper.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.fetchQuote = exports.removeActiveClass = void 0;
+
+require("regenerator-runtime/runtime");
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+//helper function to remove active class from selected element
+var removeActiveClass = function removeActiveClass(selector) {
+  var elements = document.querySelectorAll(selector);
+  elements.forEach(function (element) {
+    element.classList.remove("active");
+  });
+};
+
+exports.removeActiveClass = removeActiveClass;
+
+var fetchQuote = /*#__PURE__*/function () {
+  var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(url) {
+    var requestQuote, quote;
+    return regeneratorRuntime.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            _context.prev = 0;
+            _context.next = 3;
+            return fetch(url);
+
+          case 3:
+            requestQuote = _context.sent;
+
+            if (requestQuote.ok) {
+              _context.next = 6;
+              break;
+            }
+
+            throw new Error(requestQuote.statusText);
+
+          case 6:
+            _context.next = 8;
+            return requestQuote.json;
+
+          case 8:
+            quote = _context.sent;
+            console.log(quote);
+            _context.next = 15;
+            break;
+
+          case 12:
+            _context.prev = 12;
+            _context.t0 = _context["catch"](0);
+            console.error(_context.t0);
+
+          case 15:
+            _context.prev = 15;
+            return _context.finish(15);
+
+          case 17:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee, null, [[0, 12, 15, 17]]);
+  }));
+
+  return function fetchQuote(_x) {
+    return _ref.apply(this, arguments);
+  };
+}();
+
+exports.fetchQuote = fetchQuote;
+},{"regenerator-runtime/runtime":"node_modules/regenerator-runtime/runtime.js"}],"src/js/UI/UI.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _helper = require("../helper");
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+//all what is rendered goes here
+var UI = /*#__PURE__*/function () {
+  function UI() {
+    _classCallCheck(this, UI);
+
+    this.menu = document.querySelector(".sidebar__menu");
+    this.randomBtn = document.getElementById("random__btn");
+  }
+
+  _createClass(UI, [{
+    key: "switchTab",
+    value: function switchTab(event) {
+      var activeTab = event.target;
+      var activeSection = document.getElementById(activeTab.dataset.target.slice(1));
+      (0, _helper.removeActiveClass)(".sidebar__menu__item__link");
+      (0, _helper.removeActiveClass)(".content__section");
+      activeTab.classList.add("active");
+      activeSection.classList.add("active");
+    }
+  }, {
+    key: "navigate",
+    value: function navigate() {
+      this.menu.addEventListener("click", this.switchTab);
+    }
+  }, {
+    key: "getRandomQuote",
+    value: function getRandomQuote(url) {
+      this.randomBtn.addEventListener("click", (0, _helper.fetchQuote)(url));
+    }
+  }]);
+
+  return UI;
+}();
+
+var _default = UI;
+exports.default = _default;
+},{"../helper":"src/js/helper.js"}],"src/js/config.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.API_ENDPOINT = void 0;
+//Add the configuration files for the project here
+var API_ENDPOINT = "https://animechan.vercel.app/api/";
+exports.API_ENDPOINT = API_ENDPOINT;
 },{}],"src/js/app.js":[function(require,module,exports) {
 "use strict";
 
@@ -1020,14 +1021,12 @@ var _UI = _interopRequireDefault(require("./UI/UI"));
 
 var _config = require("./config");
 
-require("regenerator-runtime/runtime");
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var ui = new _UI.default();
 ui.navigate();
 ui.getRandomQuote(_config.API_ENDPOINT);
-},{"./UI/UI":"src/js/UI/UI.js","./config":"src/js/config.js","regenerator-runtime/runtime":"node_modules/regenerator-runtime/runtime.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./UI/UI":"src/js/UI/UI.js","./config":"src/js/config.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
