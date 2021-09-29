@@ -975,6 +975,7 @@ var UI = /*#__PURE__*/function () {
 
     this.menu = document.querySelector(".sidebar__menu");
     this.randomBtn = document.getElementById("random__btn");
+    this.form = document.querySelectorAll(".form");
   }
 
   _createClass(UI, [{
@@ -996,6 +997,15 @@ var UI = /*#__PURE__*/function () {
     key: "getRandomQuote",
     value: function getRandomQuote(url) {
       this.randomBtn.addEventListener("click", (0, _helper.fetchQuote)(url));
+    }
+  }, {
+    key: "getQuote",
+    value: function getQuote() {
+      var _this = this;
+
+      this.form.forEach(function (form) {
+        return form.addEventListener("submit", _this.handleSubmit.bind(_this));
+      });
     }
   }]);
 

@@ -6,6 +6,7 @@ class UI {
 	constructor() {
 		this.menu = document.querySelector(".sidebar__menu");
 		this.randomBtn = document.getElementById("random__btn");
+		this.form = document.querySelectorAll(".form");
 	}
 
 	switchTab(event) {
@@ -25,6 +26,12 @@ class UI {
 
 	getRandomQuote(url) {
 		this.randomBtn.addEventListener("click", fetchQuote(url));
+	}
+
+	getQuote() {
+		this.form.forEach((form) =>
+			form.addEventListener("submit", this.handleSubmit.bind(this))
+		);
 	}
 }
 
