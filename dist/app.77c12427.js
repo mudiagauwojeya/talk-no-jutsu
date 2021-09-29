@@ -1013,8 +1013,9 @@ Object.defineProperty(exports, "__esModule", {
 exports.API_ENDPOINT = void 0;
 
 //Add the configuration files for the project here
-var API_ENDPOINT = function API_ENDPOINT(type) {
-  var params = type === "random" ? "random" : type === "character" ? "character" : "title";
+var API_ENDPOINT = function API_ENDPOINT() {
+  var type = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "random";
+  var params = type === "character" ? "character" : type === "title" ? "title" : type;
   return "https://animechan.vercel.app/api/".concat(params);
 };
 
