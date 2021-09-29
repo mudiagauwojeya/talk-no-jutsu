@@ -1011,8 +1011,13 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.API_ENDPOINT = void 0;
+
 //Add the configuration files for the project here
-var API_ENDPOINT = "https://animechan.vercel.app/api/";
+var API_ENDPOINT = function API_ENDPOINT(type) {
+  var params = type === "random" ? "random" : type === "character" ? "character" : "title";
+  return "https://animechan.vercel.app/api/".concat(params);
+};
+
 exports.API_ENDPOINT = API_ENDPOINT;
 },{}],"src/js/app.js":[function(require,module,exports) {
 "use strict";
