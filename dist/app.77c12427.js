@@ -921,7 +921,7 @@ var fetchQuote = /*#__PURE__*/function () {
 
           case 6:
             _context.next = 8;
-            return requestQuote.json;
+            return requestQuote.json();
 
           case 8:
             quote = _context.sent;

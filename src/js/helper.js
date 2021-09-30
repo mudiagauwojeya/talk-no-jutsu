@@ -13,7 +13,7 @@ export const fetchQuote = async (url) => {
 	try {
 		const requestQuote = await fetch(url);
 		if (!requestQuote.ok) throw new Error(requestQuote.statusText);
-		const quote = await requestQuote.json;
+		const quote = await requestQuote.json();
 		console.log(quote);
 	} catch (error) {
 		console.error(error);
