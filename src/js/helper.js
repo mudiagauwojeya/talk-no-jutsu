@@ -9,13 +9,14 @@ export const removeActiveClass = (selector) => {
 	});
 };
 
-export const fetchQuote = async (url) => {
+export const fetchQuote = async (url, store) => {
 	try {
 		const requestQuote = await fetch(url);
 		if (!requestQuote.ok) throw new Error(requestQuote.statusText);
 		const quote = await requestQuote.json();
-		console.log(quote);
+		store.quotes.push(quote);
 	} catch (error) {
+		//handle error
 		console.error(error);
 	} finally {
 		//hide spinner
