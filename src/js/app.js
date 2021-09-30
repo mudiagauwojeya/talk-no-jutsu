@@ -3,5 +3,8 @@ import { API_ENDPOINT } from "./config";
 
 const ui = new UI();
 
+//navigate sidebar tabs
 ui.navigate();
+
+//fetch random quotes
 ui.getRandomQuote(API_ENDPOINT());

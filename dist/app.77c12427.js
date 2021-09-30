@@ -1039,8 +1039,10 @@ var _config = require("./config");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var ui = new _UI.default();
-ui.navigate();
+var ui = new _UI.default(); //navigate sidebar tabs
+
+ui.navigate(); //fetch random quotes
+
 ui.getRandomQuote((0, _config.API_ENDPOINT)());
 },{"./UI/UI":"src/js/UI/UI.js","./config":"src/js/config.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
