@@ -146,7 +146,7 @@ body {
 .content__section--quotes {
   padding: 1.5rem 0;
 }
-.content__section--quotes-name {
+.content__section--quotes-character {
   background-color: rgba(194, 21, 0, 0.8);
   border: none;
   border-radius: 0.4rem;
@@ -156,7 +156,7 @@ body {
   margin: 2.5rem 0 1.5rem;
   padding: 0.6rem;
 }
-.content__section--quotes-title {
+.content__section--quotes-anime {
   background-color: rgba(248, 249, 250, 0.9);
   border: none;
   border-radius: 0.4rem;
