@@ -1018,7 +1018,7 @@ var UI = /*#__PURE__*/function () {
     value: function render(data) {
       this.viewElement = this.activeSection.querySelector(".content__section--quotes");
       this.viewElement.textContent = "";
-      this.viewElement.textContent = "\n\t\t\t<h4>".concat(data.name, ": <span>").concat(data.title, "</span></h4>\n\t\t\t<p>").concat(data.quote, "</p>\n\t\t");
+      this.viewElement.textContent = "\n\t\t\t<h3 class=\"content__section--quotes-name\">".concat(data.name, ": <span class=\"content__section--quotes-title\">").concat(data.title, "</span></h3>\n\t\t\t<p class=\"content__section--quotes-quote\">").concat(data.quote, "</p>\n\t\t");
     }
   }]);
 

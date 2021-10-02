@@ -43,8 +43,8 @@ class UI {
 		);
 		this.viewElement.textContent = "";
 		this.viewElement.textContent = `
-			<h4>${data.name}: <span>${data.title}</span></h4>
-			<p>${data.quote}</p>
+			<h3 class="content__section--quotes-name">${data.name}: <span class="content__section--quotes-title">${data.title}</span></h3>
+			<p class="content__section--quotes-quote">${data.quote}</p>
 		`;
 	}
 }
