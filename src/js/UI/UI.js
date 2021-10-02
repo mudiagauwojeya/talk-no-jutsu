@@ -3,6 +3,9 @@ import { removeActiveClass } from "../helper";
 //all what is rendered goes here
 
 class UI {
+	activeSection = "";
+	viewElement = "";
+
 	constructor() {
 		this.menu = document.querySelector(".sidebar__menu");
 		this.randomBtn = document.getElementById("random__btn");
@@ -11,13 +14,13 @@ class UI {
 
 	switchTab(event) {
 		const activeTab = event.target;
-		const activeSection = document.getElementById(
+		this.activeSection = document.getElementById(
 			activeTab.dataset.target.slice(1)
 		);
 		removeActiveClass(".sidebar__menu__item__link");
 		removeActiveClass(".content__section");
 		activeTab.classList.add("active");
-		activeSection.classList.add("active");
+		this.activeSection.classList.add("active");
 	}
 
 	navigate() {
