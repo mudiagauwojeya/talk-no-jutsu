@@ -1015,7 +1015,11 @@ var UI = /*#__PURE__*/function () {
     }
   }, {
     key: "render",
-    value: function render(data) {}
+    value: function render(data) {
+      this.viewElement = this.activeSection.querySelector(".content__section--quotes");
+      this.viewElement.textContent = "";
+      this.viewElement.textContent = "\n\t\t\t<h4>".concat(data.name, ": <span>").concat(data.title, "</span></h4>\n\t\t\t<p>").concat(data.quote, "</p>\n\t\t");
+    }
   }]);
 
   return UI;

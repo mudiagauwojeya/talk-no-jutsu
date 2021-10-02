@@ -37,7 +37,16 @@ class UI {
 		);
 	}
 
-	render(data) {}
+	render(data) {
+		this.viewElement = this.activeSection.querySelector(
+			".content__section--quotes"
+		);
+		this.viewElement.textContent = "";
+		this.viewElement.textContent = `
+			<h4>${data.name}: <span>${data.title}</span></h4>
+			<p>${data.quote}</p>
+		`;
+	}
 }
 
 export default UI;
