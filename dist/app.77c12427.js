@@ -1037,14 +1037,22 @@ var _UI = _interopRequireDefault(require("./UI/UI"));
 
 var _config = require("./config");
 
+var _helper = require("./helper");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var ui = new _UI.default(); //navigate sidebar tabs
 
 ui.navigate(); //fetch random quotes
 
-ui.getRandomQuote((0, _config.API_ENDPOINT)());
-},{"./UI/UI":"src/js/UI/UI.js","./config":"src/js/config.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+var fetchRandomQuote = function fetchRandomQuote() {
+  (0, _helper.fetchQuote)((0, _config.API_ENDPOINT)()).then(function (data) {
+    var quote = data;
+  });
+};
+
+ui.getRandomQuote(fetchRandomQuote);
+},{"./UI/UI":"src/js/UI/UI.js","./config":"src/js/config.js","./helper":"src/js/helper.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
