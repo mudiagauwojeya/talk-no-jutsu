@@ -894,7 +894,8 @@ var removeActiveClass = function removeActiveClass(selector) {
   elements.forEach(function (element) {
     element.classList.remove("active");
   });
-};
+}; //helper function to fetch data from server
+
 
 exports.removeActiveClass = removeActiveClass;
 

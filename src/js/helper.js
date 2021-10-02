@@ -9,6 +9,7 @@ export const removeActiveClass = (selector) => {
 	});
 };
 
+//helper function to fetch data from server
 export const fetchQuote = async (url) => {
 	try {
 		const requestQuote = await fetch(url);
