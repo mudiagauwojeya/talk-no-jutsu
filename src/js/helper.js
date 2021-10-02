@@ -9,12 +9,12 @@ export const removeActiveClass = (selector) => {
 	});
 };
 
-export const fetchQuote = async (url, store) => {
+export const fetchQuote = async (url) => {
 	try {
 		const requestQuote = await fetch(url);
 		if (!requestQuote.ok) throw new Error(requestQuote.statusText);
 		const quote = await requestQuote.json();
-		store.quotes.push(quote);
+		return quote;
 	} catch (error) {
 		//handle error
 		console.error(error);

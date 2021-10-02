@@ -899,7 +899,7 @@ var removeActiveClass = function removeActiveClass(selector) {
 exports.removeActiveClass = removeActiveClass;
 
 var fetchQuote = /*#__PURE__*/function () {
-  var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(url, store) {
+  var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(url) {
     var requestQuote, quote;
     return regeneratorRuntime.wrap(function _callee$(_context) {
       while (1) {
@@ -925,9 +925,7 @@ var fetchQuote = /*#__PURE__*/function () {
 
           case 8:
             quote = _context.sent;
-            store.quotes.push(quote);
-            _context.next = 15;
-            break;
+            return _context.abrupt("return", quote);
 
           case 12:
             _context.prev = 12;
@@ -947,7 +945,7 @@ var fetchQuote = /*#__PURE__*/function () {
     }, _callee, null, [[0, 12, 15, 17]]);
   }));
 
-  return function fetchQuote(_x, _x2) {
+  return function fetchQuote(_x) {
     return _ref.apply(this, arguments);
   };
 }();
