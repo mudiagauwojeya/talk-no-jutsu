@@ -1,6 +1,7 @@
 import UI from "./UI/UI";
 import { API_ENDPOINT } from "./config";
 import { fetchQuote } from "./helper";
+import { manga } from "./state";
 
 const ui = new UI();
 
@@ -11,6 +12,7 @@ ui.navigate();
 const fetchRandomQuote = () => {
 	fetchQuote(API_ENDPOINT()).then((data) => {
 		const quote = data;
+		const randomQuote = manga.quotes.concat(quote);
 	});
 };
 ui.getRandomQuote(fetchRandomQuote);

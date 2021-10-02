@@ -1030,6 +1030,18 @@ var API_ENDPOINT = function API_ENDPOINT() {
 };
 
 exports.API_ENDPOINT = API_ENDPOINT;
+},{}],"src/js/state.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.manga = void 0;
+var manga = {
+  quotes: [],
+  favorites: []
+};
+exports.manga = manga;
 },{}],"src/js/app.js":[function(require,module,exports) {
 "use strict";
 
@@ -1038,6 +1050,8 @@ var _UI = _interopRequireDefault(require("./UI/UI"));
 var _config = require("./config");
 
 var _helper = require("./helper");
+
+var _state = require("./state");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1048,11 +1062,13 @@ ui.navigate(); //fetch random quotes
 var fetchRandomQuote = function fetchRandomQuote() {
   (0, _helper.fetchQuote)((0, _config.API_ENDPOINT)()).then(function (data) {
     var quote = data;
+
+    var randomQuote = _state.manga.quotes.concat(quote);
   });
 };
 
 ui.getRandomQuote(fetchRandomQuote);
-},{"./UI/UI":"src/js/UI/UI.js","./config":"src/js/config.js","./helper":"src/js/helper.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./UI/UI":"src/js/UI/UI.js","./config":"src/js/config.js","./helper":"src/js/helper.js","./state":"src/js/state.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
