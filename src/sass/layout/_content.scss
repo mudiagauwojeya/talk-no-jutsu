@@ -57,7 +57,7 @@
 			box-shadow: 0 0.3rem 0.6rem rgba($font_color_dark, 0.5);
 			color: $font_color_light;
 			display: inline-block;
-			margin-bottom: 0.7rem;
+			margin: 3rem 0 1.5rem;
 			padding: 0.6rem;
 		}
 
@@ -65,13 +65,13 @@
 			background-color: rgba($font_color_light, 0.9);
 			border: none;
 			border-radius: 0.4rem;
-			// box-shadow: 0 0.2rem 0.4rem rgba($font_color_dark, 0.3);
 			color: $ui_color_red;
 			font-size: 1.4rem;
 			padding: 0.4rem;
 		}
 
 		&-quote {
+			text-align: justify;
 		}
 	}
 
