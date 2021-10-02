@@ -1,4 +1,4 @@
-import { removeActiveClass, fetchQuote } from "../helper";
+import { removeActiveClass } from "../helper";
 
 //all what is rendered goes here
 
@@ -24,8 +24,8 @@ class UI {
 		this.menu.addEventListener("click", this.switchTab);
 	}
 
-	getRandomQuote(url) {
-		this.randomBtn.addEventListener("click", fetchQuote(url));
+	getRandomQuote(fetchQuoteHandler) {
+		this.randomBtn.addEventListener("click", fetchQuoteHandler);
 	}
 
 	getQuote() {
