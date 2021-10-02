@@ -12,7 +12,8 @@ ui.navigate();
 const fetchRandomQuote = () => {
 	fetchQuote(API_ENDPOINT()).then((data) => {
 		const quote = data;
-		const randomQuote = manga.quotes.concat(quote);
+		const [randomQuote] = manga.quotes.concat(quote);
+		ui.render(randomQuote);
 	});
 };
 ui.getRandomQuote(fetchRandomQuote);
