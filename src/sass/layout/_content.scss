@@ -49,6 +49,23 @@
 
 	&__section--quotes {
 		padding: 1.5rem 0;
+
+		&-name {
+			background-color: rgba($ui_color_red, 0.8);
+			border: none;
+			border-radius: 0.4rem;
+			box-shadow: 0 0.3rem 0.6rem rgba($font_color_dark, 0.5);
+			color: $font_color_light;
+			display: inline-block;
+			margin-bottom: 0.7rem;
+			padding: 0.4rem;
+		}
+
+		&-title {
+		}
+
+		&-quote {
+		}
 	}
 
 	&__section--favorites {
