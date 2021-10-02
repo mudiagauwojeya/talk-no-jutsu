@@ -968,16 +968,10 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 //all what is rendered goes here
 var UI = /*#__PURE__*/function () {
   function UI() {
     _classCallCheck(this, UI);
-
-    _defineProperty(this, "activeSection", "");
-
-    _defineProperty(this, "viewElement", "");
 
     this.menu = document.querySelector(".sidebar__menu");
     this.randomBtn = document.getElementById("random__btn");

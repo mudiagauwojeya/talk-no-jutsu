@@ -3,9 +3,6 @@ import { removeActiveClass } from "../helper";
 //all what is rendered goes here
 
 class UI {
-	activeSection = "";
-	viewElement = "";
-
 	constructor() {
 		this.menu = document.querySelector(".sidebar__menu");
 		this.randomBtn = document.getElementById("random__btn");
