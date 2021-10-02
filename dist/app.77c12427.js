@@ -1007,6 +1007,9 @@ var UI = /*#__PURE__*/function () {
         return form.addEventListener("submit", _this.handleSubmit.bind(_this));
       });
     }
+  }, {
+    key: "render",
+    value: function render(data) {}
   }]);
 
   return UI;

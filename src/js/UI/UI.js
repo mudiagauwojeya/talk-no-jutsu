@@ -33,6 +33,8 @@ class UI {
 			form.addEventListener("submit", this.handleSubmit.bind(this))
 		);
 	}
+
+	render(data) {}
 }
 
 export default UI;
