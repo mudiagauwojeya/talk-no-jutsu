@@ -154,6 +154,14 @@ body {
   color: #f8f9fa;
   display: inline-block;
   margin-bottom: 0.7rem;
+  padding: 0.6rem;
+}
+.content__section--quotes-title {
+  background-color: rgba(248, 249, 250, 0.9);
+  border: none;
+  border-radius: 0.4rem;
+  color: #c21500;
+  font-size: 1.4rem;
   padding: 0.4rem;
 }
 .content__section--favorites {
