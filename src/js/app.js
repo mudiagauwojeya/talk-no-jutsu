@@ -16,4 +16,6 @@ const fetchRandomQuote = () => {
 		ui.render(randomQuote);
 	});
 };
+
+//fetch random quote
 ui.getRandomQuote(fetchRandomQuote);

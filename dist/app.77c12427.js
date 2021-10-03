@@ -1088,7 +1088,8 @@ var fetchRandomQuote = function fetchRandomQuote() {
 
     ui.render(randomQuote);
   });
-};
+}; //fetch random quote
+
 
 ui.getRandomQuote(fetchRandomQuote);
 },{"./UI/UI":"src/js/UI/UI.js","./config":"src/js/config.js","./helper":"src/js/helper.js","./state":"src/js/state.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
