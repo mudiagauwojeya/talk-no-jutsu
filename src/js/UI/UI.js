@@ -37,7 +37,7 @@ class UI {
 	render(data) {
 		this.viewElement = document.querySelector(".content .active");
 		this.viewElement.textContent = "";
-		this.viewElement.textContent = `
+		this.viewElement.innerHTML = `
 			<h3 class="content__section--quotes-character">${data.character}: <span class="content__section--quotes-anime">${data.anime}</span></h3>
 			<p class="content__section--quotes-quote">${data.quote}</p>
 		`;
