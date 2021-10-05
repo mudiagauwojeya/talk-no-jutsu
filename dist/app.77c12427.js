@@ -1010,7 +1010,8 @@ var UI = /*#__PURE__*/function () {
   }, {
     key: "render",
     value: function render(data) {
-      this.viewElement = document.querySelector(".content .active");
+      this.viewElement = document.querySelector(".content .active .content__section--quotes");
+      console.log(this.viewElement);
       this.viewElement.textContent = "";
       this.viewElement.innerHTML = "\n\t\t\t<h3 class=\"content__section--quotes-character\">".concat(data.character, ": <span class=\"content__section--quotes-anime\">").concat(data.anime, "</span></h3>\n\t\t\t<p class=\"content__section--quotes-quote\">").concat(data.quote, "</p>\n\t\t");
     }
