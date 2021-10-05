@@ -165,6 +165,8 @@ body {
   padding: 0.4rem;
 }
 .content__section--quotes-quote {
+  height: 13rem;
+  overflow: auto;
   text-align: justify;
 }
 .content__section--favorites {
