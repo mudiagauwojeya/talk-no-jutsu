@@ -38,7 +38,6 @@ class UI {
 		this.viewElement = document.querySelector(
 			".content .active .content__section--quotes"
 		);
-		console.log(this.viewElement);
 		this.viewElement.textContent = "";
 		this.viewElement.innerHTML = `
 			<h3 class="content__section--quotes-character">${data.character}: <span class="content__section--quotes-anime">${data.anime}</span></h3>
