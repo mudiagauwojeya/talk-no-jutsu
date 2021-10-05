@@ -1087,6 +1087,8 @@ var fetchRandomQuote = function fetchRandomQuote() {
         randomQuote = _manga$quotes$concat2[0];
 
     ui.render(randomQuote);
+  }).catch(function (error) {
+    console.error(error.message);
   });
 }; //fetch random quote
 
@@ -1120,7 +1122,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49431" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50551" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

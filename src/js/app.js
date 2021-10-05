@@ -10,11 +10,15 @@ ui.navigate();
 
 //fetch random quotes
 const fetchRandomQuote = () => {
-	fetchQuote(API_ENDPOINT()).then((data) => {
-		const quote = data;
-		const [randomQuote] = manga.quotes.concat(quote);
-		ui.render(randomQuote);
-	});
+	fetchQuote(API_ENDPOINT())
+		.then((data) => {
+			const quote = data;
+			const [randomQuote] = manga.quotes.concat(quote);
+			ui.render(randomQuote);
+		})
+		.catch((error) => {
+			console.error(error.message);
+		});
 };
 
 //fetch random quote
