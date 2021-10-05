@@ -996,7 +996,7 @@ var UI = /*#__PURE__*/function () {
   }, {
     key: "getRandomQuote",
     value: function getRandomQuote(fetchQuoteHandler) {
-      this.randomBtn.addEventListener("click", fetchQuoteHandler);
+      this.randomBtn.addEventListener("click", fetchQuoteHandler.bind(this));
     }
   }, {
     key: "getQuote",
@@ -1010,7 +1010,7 @@ var UI = /*#__PURE__*/function () {
   }, {
     key: "render",
     value: function render(data) {
-      this.viewElement = this.activeSection.querySelector(".content__section--quotes");
+      this.viewElement = document.querySelector(".content .active");
       this.viewElement.textContent = "";
       this.viewElement.textContent = "\n\t\t\t<h3 class=\"content__section--quotes-character\">".concat(data.character, ": <span class=\"content__section--quotes-anime\">").concat(data.anime, "</span></h3>\n\t\t\t<p class=\"content__section--quotes-quote\">").concat(data.quote, "</p>\n\t\t");
     }

@@ -25,7 +25,7 @@ class UI {
 	}
 
 	getRandomQuote(fetchQuoteHandler) {
-		this.randomBtn.addEventListener("click", fetchQuoteHandler);
+		this.randomBtn.addEventListener("click", fetchQuoteHandler.bind(this));
 	}
 
 	getQuote() {
@@ -35,9 +35,7 @@ class UI {
 	}
 
 	render(data) {
-		this.viewElement = this.activeSection.querySelector(
-			".content__section--quotes"
-		);
+		this.viewElement = document.querySelector(".content .active");
 		this.viewElement.textContent = "";
 		this.viewElement.textContent = `
 			<h3 class="content__section--quotes-character">${data.character}: <span class="content__section--quotes-anime">${data.anime}</span></h3>
