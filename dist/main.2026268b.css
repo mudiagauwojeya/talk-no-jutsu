@@ -172,6 +172,7 @@ body {
 }
 .content__section--favorites {
   align-self: flex-end;
+  margin-top: 1.5rem;
 }
 .content__section--icon {
   height: 2.3rem;
