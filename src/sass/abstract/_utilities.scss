@@ -1,3 +1,3 @@
-@mixin rgba($color) {
+@mixin rgba_scheme($color) {
 	$color_rgba: rgba($color, 0.8);
 }
