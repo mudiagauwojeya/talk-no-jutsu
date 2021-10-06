@@ -1,1 +1,3 @@
-$color_rgba_1: rgba($ui_color_red, 0.8);
+@mixin rgba($color) {
+	$color_rgba: rgba($color, 0.8);
+}
