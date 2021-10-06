@@ -1,3 +1,4 @@
 @mixin bgColor($color) {
+	//TODO: find out how to write a reusable mixin
 	background-color: rgba($color, 0.8);
 }
