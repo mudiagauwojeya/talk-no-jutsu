@@ -20,7 +20,6 @@
 
 	&__section {
 		@include bgColor($font_color_light);
-		border-radius: 0.7rem;
 		display: none;
 		padding: 1.7rem 2rem;
 		width: 80%;
