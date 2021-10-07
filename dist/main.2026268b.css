@@ -158,9 +158,9 @@ body {
   padding: 0.6rem;
 }
 .content__section--quotes-anime {
-  background-color: rgba(248, 249, 250, 0.9);
-  border: none;
+  background-color: rgba(248, 249, 250, 0.8);
   border-radius: 0.4rem;
+  border: none;
   color: #c21500;
   font-size: 1.4rem;
   padding: 0.4rem;

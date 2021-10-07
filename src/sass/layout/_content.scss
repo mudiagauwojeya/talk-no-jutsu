@@ -61,9 +61,8 @@
 		}
 
 		&-anime {
-			background-color: rgba($font_color_light, 0.9);
+			@include bgColor($font_color_light, 0.8, 0.4rem);
 			border: none;
-			border-radius: 0.4rem;
 			color: $ui_color_red;
 			font-size: 1.4rem;
 			padding: 0.4rem;
