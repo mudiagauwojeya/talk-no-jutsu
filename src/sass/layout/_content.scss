@@ -19,7 +19,7 @@
 	}
 
 	&__section {
-		@include bgColor($font_color_light);
+		@include bgColor($font_color_light, 0.8, 0.7rem);
 		display: none;
 		padding: 1.7rem 2rem;
 		width: 80%;

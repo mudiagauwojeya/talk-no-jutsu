@@ -122,6 +122,7 @@ body {
 }
 .content__section {
   background-color: rgba(248, 249, 250, 0.8);
+  border-radius: 0.7rem;
   display: none;
   padding: 1.7rem 2rem;
   width: 80%;
