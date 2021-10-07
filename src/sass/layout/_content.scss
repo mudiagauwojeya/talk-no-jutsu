@@ -53,7 +53,7 @@
 		&-character {
 			@include bgColor($ui_color_red, 0.8, 0.4rem);
 			border: none;
-			box-shadow: 0 0.3rem 0.6rem rgba($font_color_dark, 0.5);
+			box-shadow: $box_shadow;
 			color: $font_color_light;
 			display: inline-block;
 			margin: 2rem 0 1.5rem;
@@ -61,9 +61,9 @@
 		}
 
 		&-anime {
-			@include bgColor($font_color_light, 0.8, 0.4rem);
+			@include bgColor($font_color_light, 0.9, 0.4rem);
 			border: none;
-			color: $ui_color_red;
+			color: $rgba_color;
 			font-size: 1.4rem;
 			padding: 0.4rem;
 		}
@@ -92,13 +92,13 @@
 	}
 
 	&__section--random--display {
-		border-bottom: 0.1rem solid rgba($ui_color_red, 0.8);
+		border-bottom: 0.1rem solid $rgba_color;
 		padding-bottom: 7rem;
 	}
 
 	&__section--random-btn {
 		@include bgColor($font_color_light, 0.9);
-		color: rgba($ui_color_red, 0.9);
+		color: $rgba_color;
 		position: absolute;
 		bottom: 5rem;
 		left: 18.4rem;

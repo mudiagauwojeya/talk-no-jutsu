@@ -158,10 +158,10 @@ body {
   padding: 0.6rem;
 }
 .content__section--quotes-anime {
-  background-color: rgba(248, 249, 250, 0.8);
+  background-color: rgba(248, 249, 250, 0.9);
   border-radius: 0.4rem;
   border: none;
-  color: #c21500;
+  color: rgba(194, 21, 0, 0.9);
   font-size: 1.4rem;
   padding: 0.4rem;
 }
@@ -183,7 +183,7 @@ body {
   padding: 2.5rem 2rem 5rem;
 }
 .content__section--random--display {
-  border-bottom: 0.1rem solid rgba(194, 21, 0, 0.8);
+  border-bottom: 0.1rem solid rgba(194, 21, 0, 0.9);
   padding-bottom: 7rem;
 }
 .content__section--random-btn {
