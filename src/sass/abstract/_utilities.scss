@@ -1,4 +1,7 @@
-@mixin bgColor($color, $opacity, $radius) {
+@mixin bgColor($color, $opacity, $radius: 0) {
 	background-color: rgba($color, $opacity);
-	border-radius: $radius;
+
+	@if $radius != 0 {
+		border-radius: $radius;
+	}
 }
