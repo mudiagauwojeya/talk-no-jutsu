@@ -16,6 +16,7 @@
 		justify-content: space-around;
 	}
 
+	//REVIEW: refactor the code to be DRY
 	&__heading {
 		color: rgba($ui_color_red, 0.8);
 		font-size: 2.5rem;
