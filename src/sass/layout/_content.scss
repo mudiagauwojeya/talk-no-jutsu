@@ -51,9 +51,8 @@
 		padding: 1.5rem 0;
 
 		&-character {
-			background-color: rgba($ui_color_red, 0.8);
+			@include bgColor($ui_color_red, 0.8, 0.4rem);
 			border: none;
-			border-radius: 0.4rem;
 			box-shadow: 0 0.3rem 0.6rem rgba($font_color_dark, 0.5);
 			color: $font_color_light;
 			display: inline-block;
