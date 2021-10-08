@@ -16,9 +16,8 @@
 		justify-content: space-around;
 	}
 
-	//REVIEW: refactor the code to be DRY
 	&__heading {
-		color: rgba($ui_color_red, 0.8);
+		color: $rgba_color;
 		font-size: 2.5rem;
 		font-weight: bold;
 	}
@@ -28,7 +27,7 @@
 	}
 
 	&__icon-svg {
-		fill: rgba($ui_color_red, 0.8);
+		fill: $rgba_color;
 		height: 3rem;
 		margin-left: 1.5rem;
 		width: 3rem;
