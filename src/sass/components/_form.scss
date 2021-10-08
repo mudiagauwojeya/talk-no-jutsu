@@ -13,7 +13,7 @@
 		background-color: transparent;
 		border-radius: 0.5rem;
 		border: 0.1rem solid $ui_color_red;
-		box-shadow: 0 0.3rem 0.6rem rgba($font_color_dark, 0.5);
+		box-shadow: $box_shadow;
 		font-family: inherit;
 		font-size: inherit;
 		padding: 1.3rem 0.5rem;
