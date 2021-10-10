@@ -1079,6 +1079,14 @@ var Spinner = /*#__PURE__*/function () {
       this.modal.classList.remove("active");
       this.spinner.classList.remove("active");
     }
+  }, {
+    key: "show",
+    value: function show() {
+      this.modal = this.templateContent.querySelector(".modal");
+      this.spinner = this.templateContent.querySelector(".spinner");
+      this.modal.classList.add("active");
+      this.spinner.classList.add("active");
+    }
   }]);
 
   return Spinner;
