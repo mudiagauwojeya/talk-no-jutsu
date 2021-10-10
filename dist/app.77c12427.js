@@ -1074,7 +1074,10 @@ var Spinner = /*#__PURE__*/function () {
   _createClass(Spinner, [{
     key: "hide",
     value: function hide() {
-      console.log(this.templateContent);
+      this.modal = this.templateContent.querySelector(".modal");
+      this.spinner = this.templateContent.querySelector(".spinner");
+      this.modal.classList.remove("active");
+      this.spinner.classList.remove("active");
     }
   }]);
 
