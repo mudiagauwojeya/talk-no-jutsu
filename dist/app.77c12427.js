@@ -1049,6 +1049,40 @@ var manga = {
   favorites: []
 };
 exports.manga = manga;
+},{}],"src/js/components/spinner.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var Spinner = /*#__PURE__*/function () {
+  function Spinner() {
+    _classCallCheck(this, Spinner);
+
+    this.template = document.getElementById("template");
+    this.templateContent = document.importNode(this.template.content, true);
+  }
+
+  _createClass(Spinner, [{
+    key: "hide",
+    value: function hide() {
+      console.log(this.templateContent);
+    }
+  }]);
+
+  return Spinner;
+}();
+
+var _default = Spinner;
+exports.default = _default;
 },{}],"src/js/app.js":[function(require,module,exports) {
 "use strict";
 
@@ -1059,6 +1093,8 @@ var _config = require("./config");
 var _helper = require("./helper");
 
 var _state = require("./state");
+
+var _spinner = _interopRequireDefault(require("./components/spinner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1074,7 +1110,8 @@ function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Sy
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
-var ui = new _UI.default(); //navigate sidebar tabs
+var ui = new _UI.default();
+var spinner = new _spinner.default(); //navigate sidebar tabs
 
 ui.navigate(); //fetch random quotes
 
@@ -1094,7 +1131,8 @@ var fetchRandomQuote = function fetchRandomQuote() {
 
 
 ui.getRandomQuote(fetchRandomQuote);
-},{"./UI/UI":"src/js/UI/UI.js","./config":"src/js/config.js","./helper":"src/js/helper.js","./state":"src/js/state.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+spinner.hide();
+},{"./UI/UI":"src/js/UI/UI.js","./config":"src/js/config.js","./helper":"src/js/helper.js","./state":"src/js/state.js","./components/spinner":"src/js/components/spinner.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

@@ -2,8 +2,10 @@ import UI from "./UI/UI";
 import { API_ENDPOINT } from "./config";
 import { fetchQuote } from "./helper";
 import { manga } from "./state";
+import Spinner from "./components/spinner";
 
 const ui = new UI();
+const spinner = new Spinner();
 
 //navigate sidebar tabs
 ui.navigate();
@@ -23,3 +25,5 @@ const fetchRandomQuote = () => {
 
 //fetch random quote
 ui.getRandomQuote(fetchRandomQuote);
+
+spinner.hide();
