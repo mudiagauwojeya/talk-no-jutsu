@@ -23,3 +23,17 @@ export const fetchQuote = async (url) => {
 		//hide spinner
 	}
 };
+
+//helper function to add or remove active class from modal and spinner
+export const toggleModalAndSpinner = (
+	modal,
+	spinner,
+	parentEl,
+	selectModal,
+	selectSpinner
+) => {
+	modal = this.parentEl.querySelector(`.${selectModal}`);
+	spinner = this.parentEl.querySelector(`.${selectSpinner}`);
+	this.modal.classList.remove("active");
+	this.spinner.classList.remove("active");
+};
