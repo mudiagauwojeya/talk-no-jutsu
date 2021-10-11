@@ -1104,6 +1104,8 @@ var Spinner = /*#__PURE__*/function () {
     key: "toggleModalAndSpinner",
     value: function toggleModalAndSpinner() {
       var toggle = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
+      this.template = document.getElementById("template");
+      this.templateContent = document.importNode(this.template.content, true);
 
       if (!toggle) {
         this.modal = this.templateContent.querySelector(".modal");

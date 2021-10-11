@@ -5,6 +5,9 @@ class Spinner {
 	templateContent = null;
 
 	static toggleModalAndSpinner(toggle = true) {
+		this.template = document.getElementById("template");
+		this.templateContent = document.importNode(this.template.content, true);
+
 		if (!toggle) {
 			this.modal = this.templateContent.querySelector(".modal");
 			this.spinner = this.templateContent.querySelector(".spinner");
