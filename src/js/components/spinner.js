@@ -1,5 +1,3 @@
-import { toggleModalAndSpinner } from "../helper";
-
 class Spinner {
 	template = null;
 	templateContent = null;

@@ -1057,8 +1057,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _helper = require("../helper");
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -1113,7 +1111,7 @@ var Spinner = /*#__PURE__*/function () {
 
 var _default = Spinner;
 exports.default = _default;
-},{"../helper":"src/js/helper.js"}],"src/js/app.js":[function(require,module,exports) {
+},{}],"src/js/app.js":[function(require,module,exports) {
 "use strict";
 
 var _UI = _interopRequireDefault(require("./UI/UI"));
