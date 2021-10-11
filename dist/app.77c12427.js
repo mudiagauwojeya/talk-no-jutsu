@@ -1090,12 +1090,12 @@ var Spinner = /*#__PURE__*/function () {
   _createClass(Spinner, [{
     key: "hide",
     value: function hide() {
-      (0, _helper.toggleModalAndSpinner)(false);
+      Spinner.toggleModalAndSpinner(false);
     }
   }, {
     key: "show",
     value: function show() {
-      (0, _helper.toggleModalAndSpinner)();
+      Spinner.toggleModalAndSpinner();
     }
   }], [{
     key: "toggleModalAndSpinner",

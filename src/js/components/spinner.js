@@ -21,11 +21,11 @@ class Spinner {
 	}
 
 	hide() {
-		toggleModalAndSpinner(false);
+		Spinner.toggleModalAndSpinner(false);
 	}
 
 	show() {
-		toggleModalAndSpinner();
+		Spinner.toggleModalAndSpinner();
 	}
 }
 
