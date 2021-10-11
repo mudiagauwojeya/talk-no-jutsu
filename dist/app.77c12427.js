@@ -1079,12 +1079,15 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 var Spinner = /*#__PURE__*/function () {
   function Spinner() {
     _classCallCheck(this, Spinner);
 
-    this.template = document.getElementById("template");
-    this.templateContent = document.importNode(this.template.content, true);
+    _defineProperty(this, "template", null);
+
+    _defineProperty(this, "templateContent", null);
   }
 
   _createClass(Spinner, [{

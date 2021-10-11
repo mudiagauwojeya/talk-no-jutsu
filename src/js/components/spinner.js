@@ -1,10 +1,8 @@
 import { toggleModalAndSpinner } from "../helper";
 
 class Spinner {
-	constructor() {
-		this.template = document.getElementById("template");
-		this.templateContent = document.importNode(this.template.content, true);
-	}
+	template = null;
+	templateContent = null;
 
 	static toggleModalAndSpinner(toggle = true) {
 		if (!toggle) {
