@@ -1071,6 +1071,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
+var _helper = require("../helper");
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -1088,14 +1090,26 @@ var Spinner = /*#__PURE__*/function () {
   _createClass(Spinner, [{
     key: "hide",
     value: function hide() {
-      this.modal = this.templateContent.querySelector(".modal");
-      this.spinner = this.templateContent.querySelector(".spinner");
-      this.modal.classList.remove("active");
-      this.spinner.classList.remove("active");
+      (0, _helper.toggleModalAndSpinner)(false);
     }
   }, {
     key: "show",
     value: function show() {
+      (0, _helper.toggleModalAndSpinner)();
+    }
+  }], [{
+    key: "toggleModalAndSpinner",
+    value: function toggleModalAndSpinner() {
+      var toggle = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
+
+      if (!toggle) {
+        this.modal = this.templateContent.querySelector(".modal");
+        this.spinner = this.templateContent.querySelector(".spinner");
+        this.modal.classList.remove("active");
+        this.spinner.classList.remove("active");
+        return;
+      }
+
       this.modal = this.templateContent.querySelector(".modal");
       this.spinner = this.templateContent.querySelector(".spinner");
       this.modal.classList.add("active");
@@ -1108,7 +1122,7 @@ var Spinner = /*#__PURE__*/function () {
 
 var _default = Spinner;
 exports.default = _default;
-},{}],"src/js/app.js":[function(require,module,exports) {
+},{"../helper":"src/js/helper.js"}],"src/js/app.js":[function(require,module,exports) {
 "use strict";
 
 var _UI = _interopRequireDefault(require("./UI/UI"));
