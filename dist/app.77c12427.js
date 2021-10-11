@@ -880,11 +880,9 @@ try {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.toggleModalAndSpinner = exports.fetchQuote = exports.removeActiveClass = void 0;
+exports.fetchQuote = exports.removeActiveClass = void 0;
 
 require("regenerator-runtime/runtime");
-
-var _this = void 0;
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
@@ -951,21 +949,9 @@ var fetchQuote = /*#__PURE__*/function () {
   return function fetchQuote(_x) {
     return _ref.apply(this, arguments);
   };
-}(); //helper function to add or remove active class from modal and spinner
-
+}();
 
 exports.fetchQuote = fetchQuote;
-
-var toggleModalAndSpinner = function toggleModalAndSpinner(modal, spinner, parentEl, selectModal, selectSpinner) {
-  modal = _this.parentEl.querySelector(".".concat(selectModal));
-  spinner = _this.parentEl.querySelector(".".concat(selectSpinner));
-
-  _this.modal.classList.remove("active");
-
-  _this.spinner.classList.remove("active");
-};
-
-exports.toggleModalAndSpinner = toggleModalAndSpinner;
 },{"regenerator-runtime/runtime":"node_modules/regenerator-runtime/runtime.js"}],"src/js/UI/UI.js":[function(require,module,exports) {
 "use strict";
 
