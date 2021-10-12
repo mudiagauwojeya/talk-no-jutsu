@@ -86,6 +86,13 @@ body {
   background-color: rgba(194, 21, 0, 0.3);
 }
 
+.modal {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+}
+
 .app {
   background: #c9d6ff;
   /* fallback for old browsers */
