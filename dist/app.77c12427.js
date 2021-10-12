@@ -1139,7 +1139,8 @@ function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Sy
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 var ui = new _UI.default();
-var spinner = new _spinner.default(); //navigate sidebar tabs
+var spinner = new _spinner.default(); //TODO: add a DOMContentLoaded event to fetch a random quote initially
+//navigate sidebar tabs
 
 ui.navigate(); //fetch random quotes
 

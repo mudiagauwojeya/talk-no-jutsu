@@ -7,6 +7,8 @@ import Spinner from "./components/spinner";
 const ui = new UI();
 const spinner = new Spinner();
 
+//TODO: add a DOMContentLoaded event to fetch a random quote initially
+
 //navigate sidebar tabs
 ui.navigate();
 
