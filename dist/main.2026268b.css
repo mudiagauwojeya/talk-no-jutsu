@@ -88,9 +88,13 @@ body {
 
 .modal {
   background-color: rgba(0, 0, 0, 0.4);
+  display: none;
   height: 100vh;
   position: fixed;
   width: 100%;
+}
+.modal.active {
+  display: block;
 }
 
 .app {
