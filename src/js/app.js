@@ -28,4 +28,4 @@ const fetchRandomQuote = () => {
 //fetch random quote
 ui.getRandomQuote(fetchRandomQuote);
 
-spinner.hide();
+spinner.show();
