@@ -17,6 +17,7 @@ class Spinner {
 		this.spinner = this.templateContent.querySelector(".spinner");
 		this.modal.classList.add("active");
 		this.spinner.classList.add("active");
+		document.body.insertAdjacentElement("afterbegin", this.modal);
 	}
 
 	hide() {
