@@ -1,1 +1,7 @@
 //This file will contain the style for the popup component
+.spinner {
+	@include bgColor($font-color_light, 0.8, 0.7rem);
+	@include centered;
+
+	z-index: 20;
+}

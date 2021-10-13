@@ -99,6 +99,16 @@ body {
   display: block;
 }
 
+.spinner {
+  background-color: rgba(248, 249, 250, 0.8);
+  border-radius: 0.7rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
 .app {
   background: #c9d6ff;
   /* fallback for old browsers */
