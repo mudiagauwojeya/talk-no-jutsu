@@ -1104,6 +1104,9 @@ var Spinner = /*#__PURE__*/function () {
       this.modal.classList.add("active");
       this.spinner.classList.add("active");
       document.body.insertAdjacentElement("afterbegin", this.spinner);
+      this.spinner.scrollIntoView({
+        behavior: "smooth"
+      });
       document.body.insertAdjacentElement("afterbegin", this.modal);
     }
   }]);
