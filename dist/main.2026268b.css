@@ -142,6 +142,11 @@ body {
   animation: loader 800ms linear infinite;
 }
 .spinner__content--1, .spinner__content--2 {
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  left: 42.5%;
+  top: 38%;
   z-index: 25;
 }
 
