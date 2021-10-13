@@ -126,7 +126,7 @@ body {
   z-index: 25;
 }
 .spinner__content--2 {
-  border-bottom: 0.9rem solid #ffc500;
+  border-top: 0.9rem solid #ffc500;
   z-index: 25;
 }
 
