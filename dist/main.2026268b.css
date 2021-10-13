@@ -132,10 +132,12 @@ body {
 .spinner__content--1 {
   border-top: 0.9rem solid #c21500;
   z-index: 25;
+  animation: loader infinite;
 }
 .spinner__content--2 {
   border-top: 0.9rem solid #ffc500;
   z-index: 25;
+  animation: loader 2s linear infinite;
 }
 
 .app {

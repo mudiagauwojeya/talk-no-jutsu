@@ -17,11 +17,15 @@
 		&--1 {
 			border-top: 0.9rem solid $ui_color_red;
 			z-index: 25;
+
+			animation: loader infinite;
 		}
 
 		&--2 {
 			border-top: 0.9rem solid $ui_color_yellow;
 			z-index: 25;
+
+			animation: loader 2s linear infinite;
 		}
 	}
 }
