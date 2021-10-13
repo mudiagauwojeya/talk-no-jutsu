@@ -1162,6 +1162,7 @@ var fetchRandomQuote = function fetchRandomQuote() {
 
 
 ui.getRandomQuote(fetchRandomQuote);
+spinner.show();
 },{"./UI/UI":"src/js/UI/UI.js","./config":"src/js/config.js","./helper":"src/js/helper.js","./state":"src/js/state.js","./components/spinner":"src/js/components/spinner.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
