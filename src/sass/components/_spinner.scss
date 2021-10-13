@@ -13,19 +13,21 @@
 		border-radius: 50%;
 		height: 10rem;
 		width: 10rem;
+		will-change: transform;
 
 		&--1 {
 			border-top: 0.9rem solid $ui_color_red;
-			z-index: 25;
-
-			animation: loader infinite;
+			animation: loader 800ms 2s linear infinite;
 		}
 
 		&--2 {
 			border-top: 0.9rem solid $ui_color_yellow;
-			z-index: 25;
+			animation: loader 800ms linear infinite;
+		}
 
-			animation: loader 2s linear infinite;
+		&--1,
+		&--2 {
+			z-index: 25;
 		}
 	}
 }

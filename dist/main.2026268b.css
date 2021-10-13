@@ -131,16 +131,18 @@ body {
   border-radius: 50%;
   height: 10rem;
   width: 10rem;
+  will-change: transform;
 }
 .spinner__content--1 {
   border-top: 0.9rem solid #c21500;
-  z-index: 25;
-  animation: loader infinite;
+  animation: loader 800ms 2s linear infinite;
 }
 .spinner__content--2 {
   border-top: 0.9rem solid #ffc500;
+  animation: loader 800ms linear infinite;
+}
+.spinner__content--1, .spinner__content--2 {
   z-index: 25;
-  animation: loader 2s linear infinite;
 }
 
 .app {
