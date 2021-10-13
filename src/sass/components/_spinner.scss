@@ -16,13 +16,13 @@
 		will-change: transform;
 
 		&--1 {
-			border-top: 0.9rem solid $ui_color_red;
-			animation: loader 800ms 2s linear infinite;
+			border-top: 0.7rem solid $ui_color_red;
+			animation: loader 700ms 2s linear infinite;
 		}
 
 		&--2 {
-			border-top: 0.9rem solid $ui_color_yellow;
-			animation: loader 800ms linear infinite;
+			border-top: 0.7rem solid $ui_color_yellow;
+			animation: loader 1s linear infinite;
 		}
 
 		&--1,
