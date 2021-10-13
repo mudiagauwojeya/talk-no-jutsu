@@ -110,6 +110,16 @@ body {
   height: 60%;
   z-index: 20;
 }
+.spinner__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(194, 21, 0, 0.9);
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+}
 
 .app {
   background: #c9d6ff;

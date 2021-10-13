@@ -6,4 +6,12 @@
 	width: 50%;
 	height: 60%;
 	z-index: 20;
+
+	&__content {
+		@include centered;
+		background-color: $rgba_color;
+		border-radius: 50%;
+		height: 2rem;
+		width: 2rem;
+	}
 }
