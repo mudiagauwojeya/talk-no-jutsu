@@ -29,6 +29,14 @@ body {
   color: #f8f9fa;
 }
 
+@keyframes loader {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .btn {
   background-color: transparent;
   border-radius: 0.7rem;
