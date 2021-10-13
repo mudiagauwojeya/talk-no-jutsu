@@ -9,17 +9,19 @@
 
 	&__content {
 		@include centered;
-		background-color: $rgba_color;
+		border: 0.7rem solid rgba($font_color_dark, 0.8);
 		border-radius: 50%;
-		height: 2rem;
-		width: 2rem;
+		height: 10rem;
+		width: 10rem;
 
 		&--1 {
-			left: 55%;
+			border-top: 1rem solid rgba($ui_color_red, 0.8);
+			z-index: 25;
 		}
 
 		&--2 {
-			left: 45%;
+			border-top: 1rem solid rgba($font-color_light, 0.8);
+			z-index: 25;
 		}
 	}
 }
