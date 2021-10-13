@@ -1103,7 +1103,8 @@ var Spinner = /*#__PURE__*/function () {
       this.spinner = this.templateContent.querySelector(".spinner");
       this.modal.classList.add("active");
       this.spinner.classList.add("active");
-      document.body.insertAdjacentElement("afterbegin", this.spinner);
+      document.body.insertAdjacentElement("afterbegin", this.spinner); //REVIEW: add the top property to control the scroll
+
       this.spinner.scrollIntoView({
         behavior: "smooth"
       });
