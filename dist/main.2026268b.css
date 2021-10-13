@@ -100,14 +100,14 @@ body {
 }
 
 .spinner {
-  background-color: rgba(248, 249, 250, 0.8);
+  background-color: rgba(248, 249, 250, 0.9);
   border-radius: 0.7rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50%;
-  height: 40%;
+  height: 60%;
   z-index: 20;
 }
 
