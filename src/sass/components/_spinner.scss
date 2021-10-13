@@ -13,5 +13,13 @@
 		border-radius: 50%;
 		height: 2rem;
 		width: 2rem;
+
+		&--1 {
+			left: 55%;
+		}
+
+		&--2 {
+			left: 45%;
+		}
 	}
 }

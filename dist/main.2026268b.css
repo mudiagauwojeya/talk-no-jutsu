@@ -121,6 +121,12 @@ body {
   height: 2rem;
   width: 2rem;
 }
+.spinner__content--1 {
+  left: 55%;
+}
+.spinner__content--2 {
+  left: 45%;
+}
 
 .app {
   background: #c9d6ff;
