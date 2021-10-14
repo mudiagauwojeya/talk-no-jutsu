@@ -135,7 +135,7 @@ body {
   width: 10rem;
   will-change: transform;
 }
-.spinner__content--1, .spinner__content--2 {
+.spinner__content--1 {
   animation: loader 800ms linear infinite;
   border: 0.7rem solid transparent;
   border-top: 0.7rem solid #c21500;
