@@ -42,6 +42,7 @@ body {
     transform: rotate(360deg);
   }
   100% {
+    opacity: 0;
     transform: rotate(360deg);
   }
 }
