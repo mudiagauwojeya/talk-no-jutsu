@@ -135,6 +135,9 @@ body {
 }
 .spinner__content--1 {
   border-top: 0.7rem dotted #c21500;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
   animation: loader 700ms linear infinite;
   z-index: 25;
 }
