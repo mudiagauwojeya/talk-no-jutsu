@@ -17,15 +17,20 @@
 
 		&--1,
 		&--2 {
+			border: 0.3rem dotted transparent;
 			border-top: 0.7rem dotted $ui_color_red;
-			border-right-color: transparent;
-			border-bottom-color: transparent;
-			border-left-color: transparent;
-			animation: loader 700ms linear infinite;
 			z-index: 25;
 
 			top: 38%;
 			left: 42.5%;
+		}
+
+		&--1 {
+			animation: loader 1s linear infinite;
+		}
+
+		&--2 {
+			// animation: loader 200ms linear infinite;
 		}
 	}
 }
