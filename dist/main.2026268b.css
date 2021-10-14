@@ -136,15 +136,14 @@ body {
   will-change: transform;
 }
 .spinner__content--1, .spinner__content--2 {
-  border: 0.3rem dotted transparent;
-  border-top: 0.7rem dotted #c21500;
+  animation: loader 800ms linear infinite;
+  border: 0.7rem solid transparent;
+  border-top: 0.7rem solid #c21500;
   z-index: 25;
   top: 38%;
   left: 42.5%;
 }
-.spinner__content--1 {
-  animation: loader 1s linear infinite;
-}
+
 .app {
   background: #c9d6ff;
   /* fallback for old browsers */
