@@ -15,13 +15,17 @@
 		width: 10rem;
 		will-change: transform;
 
-		&--1 {
+		&--1,
+		&--2 {
 			border-top: 0.7rem dotted $ui_color_red;
 			border-right-color: transparent;
 			border-bottom-color: transparent;
 			border-left-color: transparent;
 			animation: loader 700ms linear infinite;
 			z-index: 25;
+
+			top: 38%;
+			left: 42.5%;
 		}
 	}
 }
