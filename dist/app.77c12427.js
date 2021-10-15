@@ -1140,7 +1140,10 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 var ui = new _UI.default();
 var spinner = new _spinner.default(); //TODO: add a DOMContentLoaded event to fetch a random quote initially
-//navigate sidebar tabs
+
+window.addEventListener("DOMContentLoaded", function () {
+  console.log("loaded");
+}); //navigate sidebar tabs
 
 ui.navigate(); //fetch random quotes
 

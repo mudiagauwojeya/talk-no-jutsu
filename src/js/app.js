@@ -8,6 +8,9 @@ const ui = new UI();
 const spinner = new Spinner();
 
 //TODO: add a DOMContentLoaded event to fetch a random quote initially
+window.addEventListener("DOMContentLoaded", () => {
+	console.log("loaded");
+});
 
 //navigate sidebar tabs
 ui.navigate();
