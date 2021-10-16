@@ -20,6 +20,6 @@ export const fetchQuote = (url) => {
 		})
 		.then((data) => data)
 		.catch((error) => {
-			throw error;
+			throw new Error(error.message);
 		});
 };
