@@ -1169,7 +1169,7 @@ ui.navigate(); //fetch random quotes
 
 var fetchRandomQuote = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-    var quote, data, _manga$quotes$concat, _manga$quotes$concat2, randomQuote;
+    var quote, _manga$quotes$concat, _manga$quotes$concat2, randomQuote;
 
     return regeneratorRuntime.wrap(function _callee$(_context) {
       while (1) {
@@ -1183,43 +1183,29 @@ var fetchRandomQuote = /*#__PURE__*/function () {
 
           case 5:
             quote = _context.sent;
-
-            if (quote.ok) {
-              _context.next = 8;
-              break;
-            }
-
-            throw new Error(quote.statusText);
-
-          case 8:
-            _context.next = 10;
-            return quote.json();
-
-          case 10:
-            data = _context.sent;
-            _manga$quotes$concat = _state.manga.quotes.concat(data), _manga$quotes$concat2 = _slicedToArray(_manga$quotes$concat, 1), randomQuote = _manga$quotes$concat2[0];
+            _manga$quotes$concat = _state.manga.quotes.concat(quote), _manga$quotes$concat2 = _slicedToArray(_manga$quotes$concat, 1), randomQuote = _manga$quotes$concat2[0];
             ui.render(randomQuote);
-            _context.next = 18;
+            _context.next = 13;
             break;
 
-          case 15:
-            _context.prev = 15;
+          case 10:
+            _context.prev = 10;
             _context.t0 = _context["catch"](0);
             //handle error
             console.error(_context.t0.message);
 
-          case 18:
-            _context.prev = 18;
+          case 13:
+            _context.prev = 13;
             modal.hide();
             spinner.hide();
-            return _context.finish(18);
+            return _context.finish(13);
 
-          case 22:
+          case 17:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, null, [[0, 15, 18, 22]]);
+    }, _callee, null, [[0, 10, 13, 17]]);
   }));
 
   return function fetchRandomQuote() {
