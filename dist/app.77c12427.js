@@ -884,10 +884,7 @@ exports.fetchQuote = exports.removeActiveClass = void 0;
 
 require("regenerator-runtime/runtime");
 
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-
+//Add helper functions for the project here
 //helper function to remove active class from selected element
 var removeActiveClass = function removeActiveClass(selector) {
   var elements = document.querySelectorAll(selector);
@@ -899,32 +896,15 @@ var removeActiveClass = function removeActiveClass(selector) {
 
 exports.removeActiveClass = removeActiveClass;
 
-var fetchQuote = /*#__PURE__*/function () {
-  var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(url) {
-    return regeneratorRuntime.wrap(function _callee$(_context) {
-      while (1) {
-        switch (_context.prev = _context.next) {
-          case 0:
-            fetch(url).then(function (response) {
-              return response.json();
-            }).then(function (data) {
-              return data;
-            }).catch(function (error) {
-              throw new Error(error.message);
-            });
-
-          case 1:
-          case "end":
-            return _context.stop();
-        }
-      }
-    }, _callee);
-  }));
-
-  return function fetchQuote(_x) {
-    return _ref.apply(this, arguments);
-  };
-}();
+var fetchQuote = function fetchQuote(url) {
+  fetch(url).then(function (response) {
+    return response.json();
+  }).then(function (data) {
+    return data;
+  }).catch(function (error) {
+    throw new Error(error.message);
+  });
+};
 
 exports.fetchQuote = fetchQuote;
 },{"regenerator-runtime/runtime":"node_modules/regenerator-runtime/runtime.js"}],"src/js/UI/UI.js":[function(require,module,exports) {

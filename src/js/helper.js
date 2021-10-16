@@ -10,7 +10,7 @@ export const removeActiveClass = (selector) => {
 };
 
 //helper function to fetch data from server
-export const fetchQuote = async (url) => {
+export const fetchQuote = (url) => {
 	fetch(url)
 		.then((response) => response.json())
 		.then((data) => data)
