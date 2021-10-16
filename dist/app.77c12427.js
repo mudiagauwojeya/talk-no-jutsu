@@ -1086,6 +1086,64 @@ var Spinner = /*#__PURE__*/function () {
 
 var _default = Spinner;
 exports.default = _default;
+},{}],"src/js/components/modal.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var Modal = /*#__PURE__*/function () {
+  function Modal() {
+    _classCallCheck(this, Modal);
+
+    _defineProperty(this, "template", null);
+
+    _defineProperty(this, "templateContent", null);
+  }
+
+  _createClass(Modal, [{
+    key: "hide",
+    value: function hide() {
+      Modal.toggleModalAndSpinner(false);
+    }
+  }, {
+    key: "show",
+    value: function show() {
+      Modal.toggleModalAndSpinner();
+    }
+  }], [{
+    key: "toggleModalAndSpinner",
+    value: function toggleModalAndSpinner() {
+      var toggle = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
+      this.template = document.getElementById("template");
+      this.templateContent = document.importNode(this.template.content, true);
+      this.modal = this.templateContent.querySelector(".modal");
+
+      if (!toggle) {
+        this.modal.classList.remove("active");
+        return;
+      }
+
+      this.modal.classList.add("active");
+      document.body.insertAdjacentElement("afterbegin", this.modal);
+    }
+  }]);
+
+  return Modal;
+}();
+
+var _default = Modal;
+exports.default = _default;
 },{}],"src/js/app.js":[function(require,module,exports) {
 "use strict";
 
@@ -1098,6 +1156,8 @@ var _helper = require("./helper");
 var _state = require("./state");
 
 var _spinner = _interopRequireDefault(require("./components/spinner"));
+
+var _modal = _interopRequireDefault(require("./components/modal"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1113,8 +1173,13 @@ function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Sy
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
 var ui = new _UI.default();
-var spinner = new _spinner.default(); //TODO: add a DOMContentLoaded event to fetch a random quote initially
+var spinner = new _spinner.default();
+var modal = new _modal.default(); //TODO: add a DOMContentLoaded event to fetch a random quote initially
 
 window.addEventListener("DOMContentLoaded", function () {
   console.log("loaded");
@@ -1122,24 +1187,66 @@ window.addEventListener("DOMContentLoaded", function () {
 
 ui.navigate(); //fetch random quotes
 
-var fetchRandomQuote = function fetchRandomQuote() {
-  (0, _helper.fetchQuote)((0, _config.API_ENDPOINT)()).then(function (data) {
-    var quote = data;
+var fetchRandomQuote = /*#__PURE__*/function () {
+  var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+    var quote, data, _manga$quotes$concat, _manga$quotes$concat2, randomQuote;
 
-    var _manga$quotes$concat = _state.manga.quotes.concat(quote),
-        _manga$quotes$concat2 = _slicedToArray(_manga$quotes$concat, 1),
-        randomQuote = _manga$quotes$concat2[0];
+    return regeneratorRuntime.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            _context.prev = 0;
+            _context.next = 3;
+            return (0, _helper.fetchQuote)((0, _config.API_ENDPOINT)());
 
-    ui.render(randomQuote);
-  }).catch(function (error) {
-    console.error(error.message);
-  });
-}; //fetch random quote
+          case 3:
+            quote = _context.sent;
+
+            if (quote.ok) {
+              _context.next = 6;
+              break;
+            }
+
+            throw new Error(quote.statusText);
+
+          case 6:
+            _context.next = 8;
+            return quote.json();
+
+          case 8:
+            data = _context.sent;
+            _manga$quotes$concat = _state.manga.quotes.concat(data), _manga$quotes$concat2 = _slicedToArray(_manga$quotes$concat, 1), randomQuote = _manga$quotes$concat2[0];
+            ui.render(randomQuote);
+            _context.next = 16;
+            break;
+
+          case 13:
+            _context.prev = 13;
+            _context.t0 = _context["catch"](0);
+            //handle error
+            console.error(_context.t0);
+
+          case 16:
+            _context.prev = 16;
+            return _context.finish(16);
+
+          case 18:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee, null, [[0, 13, 16, 18]]);
+  }));
+
+  return function fetchRandomQuote() {
+    return _ref.apply(this, arguments);
+  };
+}(); //fetch random quote
 
 
 ui.getRandomQuote(fetchRandomQuote);
 spinner.show();
-},{"./UI/UI":"src/js/UI/UI.js","./config":"src/js/config.js","./helper":"src/js/helper.js","./state":"src/js/state.js","./components/spinner":"src/js/components/spinner.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./UI/UI":"src/js/UI/UI.js","./config":"src/js/config.js","./helper":"src/js/helper.js","./state":"src/js/state.js","./components/spinner":"src/js/components/spinner.js","./components/modal":"src/js/components/modal.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
