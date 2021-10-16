@@ -114,6 +114,7 @@ body {
 }
 
 .spinner {
+  display: none;
   background-color: rgba(248, 249, 250, 0.9);
   border-radius: 0.7rem;
   position: absolute;
@@ -142,6 +143,9 @@ body {
   z-index: 25;
   top: 36%;
   left: 40.5%;
+}
+.spinner.active {
+  display: block;
 }
 
 .app {
