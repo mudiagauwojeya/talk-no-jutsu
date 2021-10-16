@@ -29,7 +29,7 @@ const fetchRandomQuote = async () => {
 		ui.render(randomQuote);
 	} catch (error) {
 		//handle error
-		console.error(error);
+		console.error(error.message);
 	} finally {
 		modal.hide();
 		spinner.hide();

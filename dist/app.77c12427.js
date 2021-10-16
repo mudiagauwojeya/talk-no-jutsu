@@ -1226,7 +1226,7 @@ var fetchRandomQuote = /*#__PURE__*/function () {
             _context.prev = 15;
             _context.t0 = _context["catch"](0);
             //handle error
-            console.error(_context.t0);
+            console.error(_context.t0.message);
 
           case 18:
             _context.prev = 18;
