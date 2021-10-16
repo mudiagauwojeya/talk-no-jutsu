@@ -20,6 +20,7 @@ ui.navigate();
 //fetch random quotes
 const fetchRandomQuote = async () => {
 	try {
+		spinner.show();
 		const quote = await fetchQuote(API_ENDPOINT());
 		if (!quote.ok) throw new Error(quote.statusText);
 		const data = await quote.json();
@@ -29,11 +30,9 @@ const fetchRandomQuote = async () => {
 		//handle error
 		console.error(error);
 	} finally {
-		//hide spinner
+		spinner.hide();
 	}
 };
 
 //fetch random quote
 ui.getRandomQuote(fetchRandomQuote);
-
-spinner.show();

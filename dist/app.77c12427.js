@@ -1196,46 +1196,48 @@ var fetchRandomQuote = /*#__PURE__*/function () {
         switch (_context.prev = _context.next) {
           case 0:
             _context.prev = 0;
-            _context.next = 3;
+            spinner.show();
+            _context.next = 4;
             return (0, _helper.fetchQuote)((0, _config.API_ENDPOINT)());
 
-          case 3:
+          case 4:
             quote = _context.sent;
 
             if (quote.ok) {
-              _context.next = 6;
+              _context.next = 7;
               break;
             }
 
             throw new Error(quote.statusText);
 
-          case 6:
-            _context.next = 8;
+          case 7:
+            _context.next = 9;
             return quote.json();
 
-          case 8:
+          case 9:
             data = _context.sent;
             _manga$quotes$concat = _state.manga.quotes.concat(data), _manga$quotes$concat2 = _slicedToArray(_manga$quotes$concat, 1), randomQuote = _manga$quotes$concat2[0];
             ui.render(randomQuote);
-            _context.next = 16;
+            _context.next = 17;
             break;
 
-          case 13:
-            _context.prev = 13;
+          case 14:
+            _context.prev = 14;
             _context.t0 = _context["catch"](0);
             //handle error
             console.error(_context.t0);
 
-          case 16:
-            _context.prev = 16;
-            return _context.finish(16);
+          case 17:
+            _context.prev = 17;
+            spinner.hide();
+            return _context.finish(17);
 
-          case 18:
+          case 20:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, null, [[0, 13, 16, 18]]);
+    }, _callee, null, [[0, 14, 17, 20]]);
   }));
 
   return function fetchRandomQuote() {
@@ -1245,7 +1247,6 @@ var fetchRandomQuote = /*#__PURE__*/function () {
 
 
 ui.getRandomQuote(fetchRandomQuote);
-spinner.show();
 },{"./UI/UI":"src/js/UI/UI.js","./config":"src/js/config.js","./helper":"src/js/helper.js","./state":"src/js/state.js","./components/spinner":"src/js/components/spinner.js","./components/modal":"src/js/components/modal.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
