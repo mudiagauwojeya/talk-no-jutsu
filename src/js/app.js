@@ -20,6 +20,7 @@ ui.navigate();
 //fetch random quotes
 const fetchRandomQuote = async () => {
 	try {
+		modal.show();
 		spinner.show();
 		const quote = await fetchQuote(API_ENDPOINT());
 		if (!quote.ok) throw new Error(quote.statusText);
@@ -30,6 +31,7 @@ const fetchRandomQuote = async () => {
 		//handle error
 		console.error(error);
 	} finally {
+		modal.hide();
 		spinner.hide();
 	}
 };

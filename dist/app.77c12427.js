@@ -1196,48 +1196,50 @@ var fetchRandomQuote = /*#__PURE__*/function () {
         switch (_context.prev = _context.next) {
           case 0:
             _context.prev = 0;
+            modal.show();
             spinner.show();
-            _context.next = 4;
+            _context.next = 5;
             return (0, _helper.fetchQuote)((0, _config.API_ENDPOINT)());
 
-          case 4:
+          case 5:
             quote = _context.sent;
 
             if (quote.ok) {
-              _context.next = 7;
+              _context.next = 8;
               break;
             }
 
             throw new Error(quote.statusText);
 
-          case 7:
-            _context.next = 9;
+          case 8:
+            _context.next = 10;
             return quote.json();
 
-          case 9:
+          case 10:
             data = _context.sent;
             _manga$quotes$concat = _state.manga.quotes.concat(data), _manga$quotes$concat2 = _slicedToArray(_manga$quotes$concat, 1), randomQuote = _manga$quotes$concat2[0];
             ui.render(randomQuote);
-            _context.next = 17;
+            _context.next = 18;
             break;
 
-          case 14:
-            _context.prev = 14;
+          case 15:
+            _context.prev = 15;
             _context.t0 = _context["catch"](0);
             //handle error
             console.error(_context.t0);
 
-          case 17:
-            _context.prev = 17;
+          case 18:
+            _context.prev = 18;
+            modal.hide();
             spinner.hide();
-            return _context.finish(17);
+            return _context.finish(18);
 
-          case 20:
+          case 22:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, null, [[0, 14, 17, 20]]);
+    }, _callee, null, [[0, 15, 18, 22]]);
   }));
 
   return function fetchRandomQuote() {
