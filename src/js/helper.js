@@ -11,15 +11,10 @@ export const removeActiveClass = (selector) => {
 
 //helper function to fetch data from server
 export const fetchQuote = async (url) => {
-	try {
-		const requestQuote = await fetch(url);
-		if (!requestQuote.ok) throw new Error(requestQuote.statusText);
-		const quote = await requestQuote.json();
-		return quote;
-	} catch (error) {
-		//handle error
-		console.error(error);
-	} finally {
-		//hide spinner
-	}
+	fetch(url)
+		.then((response) => response.json())
+		.then((data) => data)
+		.catch((error) => {
+			throw new Error(error.message);
+		});
 };
