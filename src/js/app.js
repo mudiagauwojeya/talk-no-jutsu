@@ -26,7 +26,6 @@ const fetchRandomQuote = async () => {
 		const [randomQuote] = manga.quotes.concat(quote);
 		ui.render(randomQuote);
 	} catch (error) {
-		//TODO: There is an error that is uncaught, find it and handle it
 		//handle error
 		console.error(error.message);
 	} finally {

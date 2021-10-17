@@ -1193,7 +1193,6 @@ var fetchRandomQuote = /*#__PURE__*/function () {
           case 10:
             _context.prev = 10;
             _context.t0 = _context["catch"](0);
-            //TODO: There is an error that is uncaught, find it and handle it
             //handle error
             console.error(_context.t0.message);
 
