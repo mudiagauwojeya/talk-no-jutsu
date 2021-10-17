@@ -1187,7 +1187,6 @@ var fetchRandomQuote = /*#__PURE__*/function () {
 
           case 5:
             quote = _context.sent;
-            // if (!quote) throw new Error("Something went wrong!");
             _manga$quotes$concat = _state.manga.quotes.concat(quote), _manga$quotes$concat2 = _slicedToArray(_manga$quotes$concat, 1), randomQuote = _manga$quotes$concat2[0];
             ui.render(randomQuote);
             _context.next = 13;
