@@ -38,3 +38,6 @@ const fetchRandomQuote = async () => {
 
 //fetch random quote
 ui.getRandomQuote(fetchRandomQuote);
+
+//experiment toast functionality
+toast.show();
