@@ -904,7 +904,7 @@ var fetchQuote = function fetchQuote(url) {
 
     return response.json();
   }).catch(function (error) {
-    throw error;
+    console.warn(error.message);
   });
 };
 
