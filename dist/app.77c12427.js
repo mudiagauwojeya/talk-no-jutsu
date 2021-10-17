@@ -1187,39 +1187,31 @@ var fetchRandomQuote = /*#__PURE__*/function () {
 
           case 5:
             quote = _context.sent;
-
-            if (quote) {
-              _context.next = 8;
-              break;
-            }
-
-            throw new Error("Something went wrong!");
-
-          case 8:
+            // if (!quote) throw new Error("Something went wrong!");
             _manga$quotes$concat = _state.manga.quotes.concat(quote), _manga$quotes$concat2 = _slicedToArray(_manga$quotes$concat, 1), randomQuote = _manga$quotes$concat2[0];
             ui.render(randomQuote);
-            _context.next = 15;
+            _context.next = 13;
             break;
 
-          case 12:
-            _context.prev = 12;
+          case 10:
+            _context.prev = 10;
             _context.t0 = _context["catch"](0);
             //TODO: There is an error that is uncaught, find it and handle it
             //handle error
             console.error(_context.t0.message);
 
-          case 15:
-            _context.prev = 15;
+          case 13:
+            _context.prev = 13;
             modal.hide();
             spinner.hide();
-            return _context.finish(15);
+            return _context.finish(13);
 
-          case 19:
+          case 17:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, null, [[0, 12, 15, 19]]);
+    }, _callee, null, [[0, 10, 13, 17]]);
   }));
 
   return function fetchRandomQuote() {
