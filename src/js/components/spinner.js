@@ -5,13 +5,14 @@ class Spinner {
 	static toggleModalAndSpinner(toggle = true) {
 		this.template = document.getElementById("template");
 		this.templateContent = document.importNode(this.template.content, true);
-		this.spinner = this.templateContent.querySelector(".spinner");
 
 		if (!toggle) {
 			this.spinner.classList.remove("active");
+			document.body.removeChild(this.spinner);
 			return;
 		}
 
+		this.spinner = this.templateContent.querySelector(".spinner");
 		this.spinner.classList.add("active");
 		document.body.insertAdjacentElement("afterbegin", this.spinner);
 		//REVIEW: add the top property to control the scroll
