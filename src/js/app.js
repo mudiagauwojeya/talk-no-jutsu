@@ -4,10 +4,12 @@ import { fetchQuote } from "./helper";
 import { manga } from "./state";
 import Spinner from "./components/spinner";
 import Modal from "./components/modal";
+import Toast from "./components/toast";
 
 const ui = new UI();
 const spinner = new Spinner();
 const modal = new Modal();
+const toast = new Toast();
 
 //TODO: add a DOMContentLoaded event to fetch a random quote initially
 window.addEventListener("DOMContentLoaded", () => {
