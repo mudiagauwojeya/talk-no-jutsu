@@ -906,7 +906,7 @@ var fetchQuote = function fetchQuote(url) {
   }).then(function (data) {
     return data;
   }).catch(function (error) {
-    throw new Error(error.message);
+    throw error;
   });
 };
 
