@@ -884,7 +884,10 @@ exports.fetchQuote = exports.removeActiveClass = void 0;
 
 require("regenerator-runtime/runtime");
 
-//Add helper functions for the project here
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
 //helper function to remove active class from selected element
 var removeActiveClass = function removeActiveClass(selector) {
   var elements = document.querySelectorAll(selector);
@@ -896,17 +899,52 @@ var removeActiveClass = function removeActiveClass(selector) {
 
 exports.removeActiveClass = removeActiveClass;
 
-var fetchQuote = function fetchQuote(url) {
-  fetch(url).then(function (response) {
-    if (!response.ok) {
-      throw new Error(response.statusText);
-    }
+var fetchQuote = /*#__PURE__*/function () {
+  var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(url) {
+    var response, data;
+    return regeneratorRuntime.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            _context.prev = 0;
+            _context.next = 3;
+            return fetch(url);
 
-    return response.json();
-  }).catch(function (error) {
-    console.warn(error.message);
-  });
-};
+          case 3:
+            response = _context.sent;
+
+            if (response.ok) {
+              _context.next = 6;
+              break;
+            }
+
+            throw new Error(response.statusText);
+
+          case 6:
+            _context.next = 8;
+            return response.json();
+
+          case 8:
+            data = _context.sent;
+            return _context.abrupt("return", data);
+
+          case 12:
+            _context.prev = 12;
+            _context.t0 = _context["catch"](0);
+            throw _context.t0;
+
+          case 15:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee, null, [[0, 12]]);
+  }));
+
+  return function fetchQuote(_x) {
+    return _ref.apply(this, arguments);
+  };
+}();
 
 exports.fetchQuote = fetchQuote;
 },{"regenerator-runtime/runtime":"node_modules/regenerator-runtime/runtime.js"}],"src/js/UI/UI.js":[function(require,module,exports) {
