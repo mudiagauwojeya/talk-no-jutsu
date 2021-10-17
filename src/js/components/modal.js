@@ -5,13 +5,14 @@ class Modal {
 	static toggleModalAndSpinner(toggle = true) {
 		this.template = document.getElementById("template");
 		this.templateContent = document.importNode(this.template.content, true);
-		this.modal = this.templateContent.querySelector(".modal");
 
 		if (!toggle) {
 			this.modal.classList.remove("active");
+			document.body.removeChild(this.modal);
 			return;
 		}
 
+		this.modal = this.templateContent.querySelector(".modal");
 		this.modal.classList.add("active");
 		document.body.insertAdjacentElement("afterbegin", this.modal);
 	}
