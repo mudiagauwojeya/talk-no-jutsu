@@ -903,8 +903,6 @@ var fetchQuote = function fetchQuote(url) {
     }
 
     return response.json();
-  }).then(function (data) {
-    return data;
   }).catch(function (error) {
     throw error;
   });

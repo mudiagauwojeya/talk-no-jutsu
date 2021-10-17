@@ -18,7 +18,6 @@ export const fetchQuote = (url) => {
 			}
 			return response.json();
 		})
-		.then((data) => data)
 		.catch((error) => {
 			throw error;
 		});
