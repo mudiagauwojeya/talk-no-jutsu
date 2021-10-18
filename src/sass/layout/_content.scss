@@ -82,6 +82,10 @@
 		height: 2.3rem;
 		vertical-align: bottom;
 		width: 3rem;
+
+		&.favorited {
+			fill: $ui_color_red;
+		}
 	}
 
 	&__section--random {

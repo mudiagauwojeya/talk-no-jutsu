@@ -241,6 +241,9 @@ body {
   vertical-align: bottom;
   width: 3rem;
 }
+.content__section--icon.favorited {
+  fill: #c21500;
+}
 .content__section--random {
   padding: 2.5rem 2rem 5rem;
 }
