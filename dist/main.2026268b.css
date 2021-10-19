@@ -148,6 +148,18 @@ body {
   display: block;
 }
 
+.toast {
+  display: none;
+  background-color: rgba(248, 249, 250, 0.9);
+  border-radius: 0.7rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 50%;
+}
+
 .app {
   background: #c9d6ff;
   /* fallback for old browsers */
