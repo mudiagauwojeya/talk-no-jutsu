@@ -7,9 +7,13 @@
 	height: 50%;
 	position: absolute;
 	transform: translate(80%, -150%);
+	transition: transform 300ms ease-in;
+	will-change: transform;
 	z-index: 20;
 
 	&.active {
 		display: block;
+		transform: translate(80%, 50%);
+		transition: transform 500ms ease-out;
 	}
 }
