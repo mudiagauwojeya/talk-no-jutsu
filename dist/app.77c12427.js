@@ -1194,12 +1194,12 @@ var Toast = /*#__PURE__*/function () {
   _createClass(Toast, [{
     key: "hide",
     value: function hide() {
-      toast.toggleModalAndSpinner(false);
+      Toast.toggleModalAndSpinner(false);
     }
   }, {
     key: "show",
     value: function show() {
-      toast.toggleModalAndSpinner();
+      Toast.toggleModalAndSpinner();
     }
   }], [{
     key: "toggleModalAndSpinner",

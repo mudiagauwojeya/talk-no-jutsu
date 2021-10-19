@@ -18,11 +18,11 @@ class Toast {
 	}
 
 	hide() {
-		toast.toggleModalAndSpinner(false);
+		Toast.toggleModalAndSpinner(false);
 	}
 
 	show() {
-		toast.toggleModalAndSpinner();
+		Toast.toggleModalAndSpinner();
 	}
 }
 
