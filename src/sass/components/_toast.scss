@@ -2,8 +2,14 @@
 	display: none;
 
 	@include bgColor($font-color_light, 0.9, 0.7rem);
-	@include centered;
 
 	width: 40%;
 	height: 50%;
+	position: absolute;
+	transform: translate(80%, -150%);
+	z-index: 20;
+
+	&.active {
+		display: block;
+	}
 }
