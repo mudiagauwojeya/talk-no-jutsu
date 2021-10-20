@@ -1006,7 +1006,7 @@ var UI = /*#__PURE__*/function () {
     key: "handleSubmit",
     value: function handleSubmit(e) {
       e.preventDefault();
-      console.log("clicked");
+      console.log(e.currentTarget.title || e.currentTarget.character);
     }
   }, {
     key: "render",

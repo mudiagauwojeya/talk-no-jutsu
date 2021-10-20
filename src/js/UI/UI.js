@@ -36,7 +36,7 @@ class UI {
 
 	handleSubmit(e) {
 		e.preventDefault();
-		console.log("clicked");
+		console.log(e.currentTarget.title || e.currentTarget.character);
 	}
 
 	render(data) {
