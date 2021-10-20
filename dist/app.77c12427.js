@@ -999,7 +999,7 @@ var UI = /*#__PURE__*/function () {
       var _this = this;
 
       this.form.forEach(function (form) {
-        return form.addEventListener("submit", _this.handleSubmit.bind(_this, e));
+        return form.addEventListener("submit", _this.handleSubmit.bind(_this));
       });
     }
   }, {
