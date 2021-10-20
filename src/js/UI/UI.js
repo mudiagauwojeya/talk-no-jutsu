@@ -30,8 +30,13 @@ class UI {
 
 	getQuote() {
 		this.form.forEach((form) =>
-			form.addEventListener("submit", this.handleSubmit.bind(this))
+			form.addEventListener("submit", this.handleSubmit.bind(this, e))
 		);
+	}
+
+	handleSubmit(e) {
+		e.preventDefault();
+		console.log("clicked");
 	}
 
 	render(data) {

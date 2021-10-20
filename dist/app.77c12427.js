@@ -999,8 +999,14 @@ var UI = /*#__PURE__*/function () {
       var _this = this;
 
       this.form.forEach(function (form) {
-        return form.addEventListener("submit", _this.handleSubmit.bind(_this));
+        return form.addEventListener("submit", _this.handleSubmit.bind(_this, e));
       });
+    }
+  }, {
+    key: "handleSubmit",
+    value: function handleSubmit(e) {
+      e.preventDefault();
+      console.log("clicked");
     }
   }, {
     key: "render",
