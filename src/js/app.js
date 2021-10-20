@@ -38,3 +38,6 @@ const fetchRandomQuote = async () => {
 
 //fetch random quote
 ui.getRandomQuote(fetchRandomQuote);
+
+//fetch specific quotes
+ui.getQuote();
