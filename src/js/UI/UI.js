@@ -36,7 +36,10 @@ class UI {
 
 	handleSubmit(e) {
 		e.preventDefault();
-		console.log(e.currentTarget.title || e.currentTarget.character);
+		const endPoint =
+			e.currentTarget.title.value || e.currentTarget.character.value;
+		e.currentTarget.reset();
+		console.log(endPoint.toLowerCase());
 	}
 
 	render(data) {

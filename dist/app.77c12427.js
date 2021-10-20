@@ -1006,7 +1006,9 @@ var UI = /*#__PURE__*/function () {
     key: "handleSubmit",
     value: function handleSubmit(e) {
       e.preventDefault();
-      console.log(e.currentTarget.title || e.currentTarget.character);
+      var endPoint = e.currentTarget.title.value || e.currentTarget.character.value;
+      e.currentTarget.reset();
+      console.log(endPoint.toLowerCase());
     }
   }, {
     key: "render",
