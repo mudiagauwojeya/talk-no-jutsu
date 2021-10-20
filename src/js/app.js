@@ -40,4 +40,4 @@ const fetchRandomQuote = async () => {
 ui.getRandomQuote(fetchRandomQuote);
 
 //fetch specific quotes
-ui.getQuote();
+ui.getQuote(fetchRandomQuote);
