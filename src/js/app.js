@@ -20,11 +20,11 @@ window.addEventListener("DOMContentLoaded", () => {
 ui.navigate();
 
 //fetch random quotes
-const fetchRandomQuote = async () => {
+const fetchRandomQuote = async (type) => {
 	try {
 		modal.show();
 		spinner.show();
-		const quote = await fetchQuote(API_ENDPOINT());
+		const quote = await fetchQuote(API_ENDPOINT(type));
 		const [randomQuote] = manga.quotes.concat(quote);
 		ui.render(randomQuote);
 	} catch (error) {

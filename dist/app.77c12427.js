@@ -1279,7 +1279,7 @@ window.addEventListener("DOMContentLoaded", function () {
 ui.navigate(); //fetch random quotes
 
 var fetchRandomQuote = /*#__PURE__*/function () {
-  var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+  var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(type) {
     var quote, _manga$quotes$concat, _manga$quotes$concat2, randomQuote;
 
     return regeneratorRuntime.wrap(function _callee$(_context) {
@@ -1290,7 +1290,7 @@ var fetchRandomQuote = /*#__PURE__*/function () {
             modal.show();
             spinner.show();
             _context.next = 5;
-            return (0, _helper.fetchQuote)((0, _config.API_ENDPOINT)());
+            return (0, _helper.fetchQuote)((0, _config.API_ENDPOINT)(type));
 
           case 5:
             quote = _context.sent;
@@ -1319,7 +1319,7 @@ var fetchRandomQuote = /*#__PURE__*/function () {
     }, _callee, null, [[0, 10, 13, 17]]);
   }));
 
-  return function fetchRandomQuote() {
+  return function fetchRandomQuote(_x) {
     return _ref.apply(this, arguments);
   };
 }(); //fetch random quote
