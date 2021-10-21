@@ -42,7 +42,6 @@ class UI {
 		const endPoint = value.trim().toLowerCase();
 		//TODO: configure fetchquote handler to receive argument to pass to api_endpoint
 		// fetchQuoteHandler()
-		console.log(value.toLowerCase());
 	}
 
 	render(data) {
