@@ -991,7 +991,7 @@ var UI = /*#__PURE__*/function () {
   }, {
     key: "getRandomQuote",
     value: function getRandomQuote(fetchQuoteHandler) {
-      this.randomBtn.addEventListener("click", fetchQuoteHandler.bind(this));
+      this.randomBtn.addEventListener("click", fetchQuoteHandler);
     }
   }, {
     key: "getQuote",

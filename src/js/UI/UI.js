@@ -25,7 +25,7 @@ class UI {
 	}
 
 	getRandomQuote(fetchQuoteHandler) {
-		this.randomBtn.addEventListener("click", fetchQuoteHandler.bind(this));
+		this.randomBtn.addEventListener("click", fetchQuoteHandler);
 	}
 
 	getQuote() {
