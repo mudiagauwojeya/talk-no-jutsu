@@ -995,11 +995,11 @@ var UI = /*#__PURE__*/function () {
     }
   }, {
     key: "getQuote",
-    value: function getQuote() {
+    value: function getQuote(fetchQuoteHandler) {
       var _this = this;
 
       this.form.forEach(function (form) {
-        return form.addEventListener("submit", _this.handleSubmit.bind(_this));
+        return form.addEventListener("submit", _this.handleSubmit.bind(_this, fetchQuoteHandler));
       });
     }
   }, {

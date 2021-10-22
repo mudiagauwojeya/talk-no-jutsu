@@ -28,9 +28,12 @@ class UI {
 		this.randomBtn.addEventListener("click", fetchQuoteHandler);
 	}
 
-	getQuote() {
+	getQuote(fetchQuoteHandler) {
 		this.form.forEach((form) =>
-			form.addEventListener("submit", this.handleSubmit.bind(this))
+			form.addEventListener(
+				"submit",
+				this.handleSubmit.bind(this, fetchQuoteHandler)
+			)
 		);
 	}
 
