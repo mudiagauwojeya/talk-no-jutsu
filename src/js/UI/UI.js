@@ -37,7 +37,7 @@ class UI {
 		);
 	}
 
-	handleSubmit(e, fetchQuoteHandler) {
+	handleSubmit(fetchQuoteHandler, e) {
 		e.preventDefault();
 		const value =
 			e.currentTarget.title.value || e.currentTarget.character.value;

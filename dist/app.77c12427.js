@@ -1004,7 +1004,7 @@ var UI = /*#__PURE__*/function () {
     }
   }, {
     key: "handleSubmit",
-    value: function handleSubmit(e, fetchQuoteHandler) {
+    value: function handleSubmit(fetchQuoteHandler, e) {
       e.preventDefault();
       var value = e.currentTarget.title.value || e.currentTarget.character.value;
       e.currentTarget.reset();
