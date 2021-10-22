@@ -10,7 +10,7 @@ export const removeActiveClass = (selector) => {
 };
 
 //helper function to fetch data from server
-export const fetchQuote = async (url) => {
+export const fetchQuote = async (url = "random") => {
 	try {
 		const response = await fetch(url);
 		if (!response.ok) throw new Error(response.statusText);

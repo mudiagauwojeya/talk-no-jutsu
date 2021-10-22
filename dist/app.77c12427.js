@@ -900,48 +900,52 @@ var removeActiveClass = function removeActiveClass(selector) {
 exports.removeActiveClass = removeActiveClass;
 
 var fetchQuote = /*#__PURE__*/function () {
-  var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(url) {
-    var response, data;
+  var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+    var url,
+        response,
+        data,
+        _args = arguments;
     return regeneratorRuntime.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            _context.prev = 0;
-            _context.next = 3;
+            url = _args.length > 0 && _args[0] !== undefined ? _args[0] : "random";
+            _context.prev = 1;
+            _context.next = 4;
             return fetch(url);
 
-          case 3:
+          case 4:
             response = _context.sent;
 
             if (response.ok) {
-              _context.next = 6;
+              _context.next = 7;
               break;
             }
 
             throw new Error(response.statusText);
 
-          case 6:
-            _context.next = 8;
+          case 7:
+            _context.next = 9;
             return response.json();
 
-          case 8:
+          case 9:
             data = _context.sent;
             return _context.abrupt("return", data);
 
-          case 12:
-            _context.prev = 12;
-            _context.t0 = _context["catch"](0);
+          case 13:
+            _context.prev = 13;
+            _context.t0 = _context["catch"](1);
             throw _context.t0;
 
-          case 15:
+          case 16:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, null, [[0, 12]]);
+    }, _callee, null, [[1, 13]]);
   }));
 
-  return function fetchQuote(_x) {
+  return function fetchQuote() {
     return _ref.apply(this, arguments);
   };
 }();
