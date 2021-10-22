@@ -43,7 +43,7 @@ class UI {
 			e.currentTarget.title.value || e.currentTarget.character.value;
 		e.currentTarget.reset();
 		if (!value || !value.trim() || value.length <= 1) {
-			throw new Error("Invalid user input");
+			//REVIEW: show the user some feedback using toast
 		}
 		const endPoint = value.trim().toLowerCase();
 		fetchQuoteHandler(endPoint);

@@ -1009,8 +1009,7 @@ var UI = /*#__PURE__*/function () {
       var value = e.currentTarget.title.value || e.currentTarget.character.value;
       e.currentTarget.reset();
 
-      if (!value || !value.trim() || value.length <= 1) {
-        throw new Error("Invalid user input");
+      if (!value || !value.trim() || value.length <= 1) {//REVIEW: show the user some feedback using toast
       }
 
       var endPoint = value.trim().toLowerCase();
