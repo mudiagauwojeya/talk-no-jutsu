@@ -20,7 +20,7 @@ window.addEventListener("DOMContentLoaded", () => {
 ui.navigate();
 
 //fetch random quotes
-const fetchRandomQuote = async (type) => {
+const fetchRandomQuote = async (type = "random") => {
 	try {
 		modal.show();
 		spinner.show();
