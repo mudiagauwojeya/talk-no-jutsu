@@ -40,8 +40,7 @@ class UI {
 			e.currentTarget.title.value || e.currentTarget.character.value;
 		e.currentTarget.reset();
 		const endPoint = value.trim().toLowerCase();
-		//TODO: configure fetchquote handler to receive argument to pass to api_endpoint
-		// fetchQuoteHandler()
+		fetchQuoteHandler(endPoint);
 	}
 
 	render(data) {

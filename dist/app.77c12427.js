@@ -1008,8 +1008,8 @@ var UI = /*#__PURE__*/function () {
       e.preventDefault();
       var value = e.currentTarget.title.value || e.currentTarget.character.value;
       e.currentTarget.reset();
-      var endPoint = value.trim().toLowerCase(); //TODO: configure fetchquote handler to receive argument to pass to api_endpoint
-      // fetchQuoteHandler()
+      var endPoint = value.trim().toLowerCase();
+      fetchQuoteHandler(endPoint);
     }
   }, {
     key: "render",
