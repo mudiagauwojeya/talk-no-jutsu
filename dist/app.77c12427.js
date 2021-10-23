@@ -984,8 +984,8 @@ var UI = /*#__PURE__*/function () {
       this.activeSection.classList.add("active");
     }
   }, {
-    key: "navigate",
-    value: function navigate() {
+    key: "onNavigate",
+    value: function onNavigate() {
       this.menu.addEventListener("click", this.switchTab);
     }
   }, {
@@ -1002,12 +1002,12 @@ var UI = /*#__PURE__*/function () {
       var _this = this;
 
       this.form.forEach(function (form) {
-        return form.addEventListener("submit", _this.handleSubmit.bind(_this, fetchQuoteHandler));
+        return form.addEventListener("submit", _this.onSubmit.bind(_this, fetchQuoteHandler));
       });
     }
   }, {
-    key: "handleSubmit",
-    value: function handleSubmit(fetchQuoteHandler, e) {
+    key: "onSubmit",
+    value: function onSubmit(fetchQuoteHandler, e) {
       e.preventDefault();
       var value = e.currentTarget.title.value || e.currentTarget.character.value;
       e.currentTarget.reset();
@@ -1283,7 +1283,7 @@ window.addEventListener("DOMContentLoaded", function () {
   console.log("loaded");
 }); //navigate sidebar tabs
 
-ui.navigate(); //fetch random quotes
+ui.onNavigate(); //fetch random quotes
 
 var fetchRandomQuote = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {

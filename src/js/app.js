@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 //navigate sidebar tabs
-ui.navigate();
+ui.onNavigate();
 
 //fetch random quotes
 const fetchRandomQuote = async (type = "random") => {

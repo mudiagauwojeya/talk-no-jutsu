@@ -20,7 +20,7 @@ class UI {
 		this.activeSection.classList.add("active");
 	}
 
-	navigate() {
+	onNavigate() {
 		this.menu.addEventListener("click", this.switchTab);
 	}
 
@@ -34,12 +34,12 @@ class UI {
 		this.form.forEach((form) =>
 			form.addEventListener(
 				"submit",
-				this.handleSubmit.bind(this, fetchQuoteHandler)
+				this.onSubmit.bind(this, fetchQuoteHandler)
 			)
 		);
 	}
 
-	handleSubmit(fetchQuoteHandler, e) {
+	onSubmit(fetchQuoteHandler, e) {
 		e.preventDefault();
 		const value =
 			e.currentTarget.title.value || e.currentTarget.character.value;
