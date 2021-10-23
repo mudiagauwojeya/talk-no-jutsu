@@ -252,7 +252,10 @@ body {
 }
 .content__section--favorites {
   align-self: flex-end;
+  border: 0.2rem solid rgba(194, 21, 0, 0.9);
+  border-radius: 0.4rem;
   margin-top: 1.5rem;
+  padding: 0.4rem;
 }
 .content__section--icon {
   height: 2.3rem;
