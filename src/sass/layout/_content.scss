@@ -82,6 +82,15 @@
 		display: inline-block;
 		margin-top: 1.5rem;
 		padding: 0.6rem 0.4rem;
+
+		&.favorited {
+			@include bgColor($font_color_light, 1, 0.4rem);
+			color: $ui_color_red;
+		}
+
+		&.favorited svg {
+			fill: $ui_color_red;
+		}
 	}
 
 	&__section--icon {
@@ -89,10 +98,6 @@
 		height: 2.3rem;
 		vertical-align: bottom;
 		width: 3rem;
-
-		&.favorited {
-			fill: $rgba_color;
-		}
 	}
 
 	&__section--random {
