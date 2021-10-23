@@ -24,7 +24,14 @@ class UI {
 		this.menu.addEventListener("click", this.switchTab);
 	}
 
-	onFavorite() {}
+	onFavorite() {
+		const favoriteBtn = document.querySelector(
+			".content__section--favorites"
+		);
+		favoriteBtn.addEventListener("click", (e) => {
+			console.log(e);
+		});
+	}
 
 	getRandomQuote(fetchQuoteHandler) {
 		this.randomBtn.addEventListener("click", fetchQuoteHandler);

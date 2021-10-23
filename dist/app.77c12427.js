@@ -990,7 +990,12 @@ var UI = /*#__PURE__*/function () {
     }
   }, {
     key: "onFavorite",
-    value: function onFavorite() {}
+    value: function onFavorite() {
+      var favoriteBtn = document.querySelector(".content__section--favorites");
+      favoriteBtn.addEventListener("click", function (e) {
+        console.log(e);
+      });
+    }
   }, {
     key: "getRandomQuote",
     value: function getRandomQuote(fetchQuoteHandler) {
