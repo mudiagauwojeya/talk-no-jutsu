@@ -48,7 +48,7 @@
 		padding: 1.5rem 0;
 
 		&-character {
-			@include bgColor($ui_color_red, 0.8, 0.4rem);
+			@include bgColor($ui_color_red, 0.9, 0.4rem);
 			border: none;
 			box-shadow: $box_shadow;
 			color: $font_color_light;
