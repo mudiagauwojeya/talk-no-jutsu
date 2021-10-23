@@ -75,19 +75,21 @@
 	&__section--favorites {
 		align-self: flex-end;
 
+		@include bgColor($ui_color_red, 0.9, 0.4rem);
 		border: 0.2rem solid $rgba_color;
-		border-radius: 0.4rem;
+		color: $font_color_light;
 		margin-top: 1.5rem;
 		padding: 0.4rem;
 	}
 
 	&__section--icon {
+		fill: $font_color_light;
 		height: 2.3rem;
 		vertical-align: bottom;
 		width: 3rem;
 
 		&.favorited {
-			fill: $ui_color_red;
+			fill: $rgba_color;
 		}
 	}
 

@@ -252,18 +252,21 @@ body {
 }
 .content__section--favorites {
   align-self: flex-end;
-  border: 0.2rem solid rgba(194, 21, 0, 0.9);
+  background-color: rgba(194, 21, 0, 0.9);
   border-radius: 0.4rem;
+  border: 0.2rem solid rgba(194, 21, 0, 0.9);
+  color: #f8f9fa;
   margin-top: 1.5rem;
   padding: 0.4rem;
 }
 .content__section--icon {
+  fill: #f8f9fa;
   height: 2.3rem;
   vertical-align: bottom;
   width: 3rem;
 }
 .content__section--icon.favorited {
-  fill: #c21500;
+  fill: rgba(194, 21, 0, 0.9);
 }
 .content__section--random {
   padding: 2.5rem 2rem 5rem;
