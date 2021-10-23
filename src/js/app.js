@@ -19,6 +19,9 @@ window.addEventListener("DOMContentLoaded", () => {
 //navigate sidebar tabs
 ui.onNavigate();
 
+//favorite manga
+ui.onFavorite();
+
 //fetch random quotes
 const fetchRandomQuote = async (type = "random") => {
 	try {

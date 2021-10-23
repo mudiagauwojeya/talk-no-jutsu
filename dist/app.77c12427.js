@@ -1288,7 +1288,9 @@ window.addEventListener("DOMContentLoaded", function () {
   console.log("loaded");
 }); //navigate sidebar tabs
 
-ui.onNavigate(); //fetch random quotes
+ui.onNavigate(); //favorite manga
+
+ui.onFavorite(); //fetch random quotes
 
 var fetchRandomQuote = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
