@@ -60,7 +60,7 @@
 		&-anime {
 			@include bgColor($font_color_light, 0.9, 0.4rem);
 			border: none;
-			color: $rgba_color;
+			color: $ui_color_red;
 			font-size: 1.4rem;
 			padding: 0.4rem;
 		}
