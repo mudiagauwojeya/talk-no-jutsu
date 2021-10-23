@@ -260,6 +260,17 @@ body {
   display: inline-block;
   margin-top: 1.5rem;
   padding: 0.6rem 0.4rem;
+  transition: transform 200ms ease-out;
+  will-change: transform;
+}
+.content__section--favorites:hover {
+  background-color: #c21500;
+  color: #f8f9fa;
+  transform: translateY(-0.3rem);
+}
+.content__section--favorites:active {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+  transform: translateY(0.2rem);
 }
 .content__section--favorites.favorited {
   background-color: #f8f9fa;
