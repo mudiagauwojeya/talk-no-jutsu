@@ -24,6 +24,8 @@ class UI {
 		this.menu.addEventListener("click", this.switchTab);
 	}
 
+	onFavorite() {}
+
 	getRandomQuote(fetchQuoteHandler) {
 		this.randomBtn.addEventListener("click", fetchQuoteHandler);
 	}

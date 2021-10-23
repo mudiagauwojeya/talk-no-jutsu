@@ -989,6 +989,9 @@ var UI = /*#__PURE__*/function () {
       this.menu.addEventListener("click", this.switchTab);
     }
   }, {
+    key: "onFavorite",
+    value: function onFavorite() {}
+  }, {
     key: "getRandomQuote",
     value: function getRandomQuote(fetchQuoteHandler) {
       this.randomBtn.addEventListener("click", fetchQuoteHandler);
