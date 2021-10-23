@@ -76,10 +76,12 @@
 		align-self: flex-end;
 
 		@include bgColor($ui_color_red, 0.9, 0.4rem);
-		border: 0.2rem solid $rgba_color;
+		box-shadow: $box_shadow;
 		color: $font_color_light;
+		cursor: pointer;
+		display: inline-block;
 		margin-top: 1.5rem;
-		padding: 0.4rem;
+		padding: 0.6rem 0.4rem;
 	}
 
 	&__section--icon {

@@ -254,10 +254,12 @@ body {
   align-self: flex-end;
   background-color: rgba(194, 21, 0, 0.9);
   border-radius: 0.4rem;
-  border: 0.2rem solid rgba(194, 21, 0, 0.9);
+  box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
   color: #f8f9fa;
+  cursor: pointer;
+  display: inline-block;
   margin-top: 1.5rem;
-  padding: 0.4rem;
+  padding: 0.6rem 0.4rem;
 }
 .content__section--icon {
   fill: #f8f9fa;
