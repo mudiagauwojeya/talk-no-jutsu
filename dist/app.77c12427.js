@@ -991,9 +991,11 @@ var UI = /*#__PURE__*/function () {
   }, {
     key: "onFavorite",
     value: function onFavorite() {
-      var favoriteBtn = document.querySelector(".content__section--favorites");
-      favoriteBtn.addEventListener("click", function (e) {
-        console.log(e);
+      var favoriteContainer = document.querySelectorAll(".content__section--display");
+      favoriteContainer.forEach(function (container) {
+        container.addEventListener("click", function (e) {
+          console.log(e);
+        });
       });
     }
   }, {

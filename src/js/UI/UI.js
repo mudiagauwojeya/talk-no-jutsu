@@ -25,11 +25,13 @@ class UI {
 	}
 
 	onFavorite() {
-		const favoriteBtn = document.querySelector(
-			".content__section--favorites"
+		const favoriteContainer = document.querySelectorAll(
+			".content__section--display"
 		);
-		favoriteBtn.addEventListener("click", (e) => {
-			console.log(e);
+		favoriteContainer.forEach((container) => {
+			container.addEventListener("click", (e) => {
+				console.log(e);
+			});
 		});
 	}
 
