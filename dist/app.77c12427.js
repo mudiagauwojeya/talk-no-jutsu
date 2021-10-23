@@ -1009,7 +1009,7 @@ var UI = /*#__PURE__*/function () {
       var value = e.currentTarget.title.value || e.currentTarget.character.value;
       e.currentTarget.reset();
 
-      if (!value || !value.trim() || value.length <= 1) {//REVIEW: show the user some feedback using toast
+      if (!value || !value.trim() || value.length <= 1) {//REVIEW: show the user some feedback using
       }
 
       var endPoint = value.trim().toLowerCase();
@@ -1274,7 +1274,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 var ui = new _UI.default();
 var spinner = new _spinner.default();
 var modal = new _modal.default();
-var toast = new _toast.default(); //TODO: add a DOMContentLoaded event to fetch a random quote initially
+var toast = new _toast.default(); //NOTE: add a DOMContentLoaded event to fetch a random quote initially
 
 window.addEventListener("DOMContentLoaded", function () {
   console.log("loaded");
@@ -1366,7 +1366,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49688" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64662" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
