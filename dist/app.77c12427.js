@@ -994,7 +994,10 @@ var UI = /*#__PURE__*/function () {
       var favoriteContainer = document.querySelectorAll(".content__section--display");
       favoriteContainer.forEach(function (container) {
         container.addEventListener("click", function (e) {
-          console.log(e);
+          var favoriteBtn = e.target.closest(".content__section--favorites");
+          if (!favoriteBtn) return; //NOTE:	add code to favorite manga
+
+          console.log(e.target.closest(".content__section--favorites"));
         });
       });
     }

@@ -30,7 +30,12 @@ class UI {
 		);
 		favoriteContainer.forEach((container) => {
 			container.addEventListener("click", (e) => {
-				console.log(e);
+				const favoriteBtn = e.target.closest(
+					".content__section--favorites"
+				);
+				if (!favoriteBtn) return;
+				//NOTE:	add code to favorite manga
+				console.log(e.target.closest(".content__section--favorites"));
 			});
 		});
 	}
