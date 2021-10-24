@@ -1004,6 +1004,7 @@ var UI = /*#__PURE__*/function () {
   }, {
     key: "getRandomQuote",
     value: function getRandomQuote(fetchQuoteHandler) {
+      //BUG: this is set to the button triggering the event
       this.randomBtn.addEventListener("click", fetchQuoteHandler);
     }
   }, {
