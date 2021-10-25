@@ -23,11 +23,11 @@ ui.onNavigate();
 ui.onFavorite();
 
 //fetch random quotes
-const fetchRandomQuote = async (type = "random") => {
+const fetchRandomQuote = async () => {
 	try {
 		modal.show();
 		spinner.show();
-		const quote = await fetchQuote(API_ENDPOINT(type));
+		const quote = await fetchQuote(API_ENDPOINT);
 		const [randomQuote] = manga.quotes.concat(quote);
 		ui.render(randomQuote);
 	} catch (error) {

@@ -1308,49 +1308,43 @@ ui.onFavorite(); //fetch random quotes
 
 var fetchRandomQuote = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-    var type,
-        quote,
-        _manga$quotes$concat,
-        _manga$quotes$concat2,
-        randomQuote,
-        _args = arguments;
+    var quote, _manga$quotes$concat, _manga$quotes$concat2, randomQuote;
 
     return regeneratorRuntime.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            type = _args.length > 0 && _args[0] !== undefined ? _args[0] : "random";
-            _context.prev = 1;
+            _context.prev = 0;
             modal.show();
             spinner.show();
-            _context.next = 6;
-            return (0, _helper.fetchQuote)((0, _config.API_ENDPOINT)(type));
+            _context.next = 5;
+            return (0, _helper.fetchQuote)(_config.API_ENDPOINT);
 
-          case 6:
+          case 5:
             quote = _context.sent;
             _manga$quotes$concat = _state.manga.quotes.concat(quote), _manga$quotes$concat2 = _slicedToArray(_manga$quotes$concat, 1), randomQuote = _manga$quotes$concat2[0];
             ui.render(randomQuote);
-            _context.next = 14;
+            _context.next = 13;
             break;
 
-          case 11:
-            _context.prev = 11;
-            _context.t0 = _context["catch"](1);
+          case 10:
+            _context.prev = 10;
+            _context.t0 = _context["catch"](0);
             //handle error
             console.error(_context.t0.message);
 
-          case 14:
-            _context.prev = 14;
+          case 13:
+            _context.prev = 13;
             modal.hide();
             spinner.hide();
-            return _context.finish(14);
+            return _context.finish(13);
 
-          case 18:
+          case 17:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, null, [[1, 11, 14, 18]]);
+    }, _callee, null, [[0, 10, 13, 17]]);
   }));
 
   return function fetchRandomQuote() {
