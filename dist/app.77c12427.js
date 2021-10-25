@@ -1049,14 +1049,22 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.API_ENDPOINT = void 0;
-
+exports.API_ANIME_TITLE = exports.API_CHARACTER_NAME = exports.API_ENDPOINT = void 0;
 //Add the configuration files for the project here
-var API_ENDPOINT = function API_ENDPOINT(type) {
-  return "https://animechan.vercel.app/api/".concat(type);
+var API_ENDPOINT = "https://animechan.vercel.app/api/random";
+exports.API_ENDPOINT = API_ENDPOINT;
+
+var API_CHARACTER_NAME = function API_CHARACTER_NAME(name) {
+  return "https://animechan.vercel.app/api/quotes/character?name=".concat(name);
 };
 
-exports.API_ENDPOINT = API_ENDPOINT;
+exports.API_CHARACTER_NAME = API_CHARACTER_NAME;
+
+var API_ANIME_TITLE = function API_ANIME_TITLE(title) {
+  return "https://animechan.vercel.app/api/quotes/anime?title=".concat(title);
+};
+
+exports.API_ANIME_TITLE = API_ANIME_TITLE;
 },{}],"src/js/state.js":[function(require,module,exports) {
 "use strict";
 
