@@ -997,7 +997,7 @@ var UI = /*#__PURE__*/function () {
           var favoriteBtn = e.target.closest(".content__section--favorites");
           if (!favoriteBtn) return; //NOTE:	add code to favorite manga
 
-          favoriteBtn.classList.add(".favorited");
+          favoriteBtn.classList.add("favorited");
         });
       });
     }
