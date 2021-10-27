@@ -1287,43 +1287,49 @@ ui.onFavorite(); //fetch random quotes
 
 var fetchRandom = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-    var quote, _manga$quotes$concat, _manga$quotes$concat2, randomQuote;
+    var url,
+        quote,
+        _manga$quotes$concat,
+        _manga$quotes$concat2,
+        randomQuote,
+        _args = arguments;
 
     return regeneratorRuntime.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            _context.prev = 0;
+            url = _args.length > 0 && _args[0] !== undefined ? _args[0] : _config.API_ENDPOINT;
+            _context.prev = 1;
             modal.show();
             spinner.show();
-            _context.next = 5;
-            return (0, _helper.fetchQuote)(_config.API_ENDPOINT);
+            _context.next = 6;
+            return (0, _helper.fetchQuote)(url);
 
-          case 5:
+          case 6:
             quote = _context.sent;
             _manga$quotes$concat = _state.manga.quotes.concat(quote), _manga$quotes$concat2 = _slicedToArray(_manga$quotes$concat, 1), randomQuote = _manga$quotes$concat2[0];
             ui.render(randomQuote);
-            _context.next = 13;
+            _context.next = 14;
             break;
 
-          case 10:
-            _context.prev = 10;
-            _context.t0 = _context["catch"](0);
+          case 11:
+            _context.prev = 11;
+            _context.t0 = _context["catch"](1);
             //handle error
             console.error(_context.t0.message);
 
-          case 13:
-            _context.prev = 13;
+          case 14:
+            _context.prev = 14;
             modal.hide();
             spinner.hide();
-            return _context.finish(13);
+            return _context.finish(14);
 
-          case 17:
+          case 18:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, null, [[0, 10, 13, 17]]);
+    }, _callee, null, [[1, 11, 14, 18]]);
   }));
 
   return function fetchRandom() {
