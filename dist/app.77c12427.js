@@ -1285,7 +1285,7 @@ ui.onNavigate(); //favorite manga
 
 ui.onFavorite(); //fetch random quotes
 
-var fetchRandom = /*#__PURE__*/function () {
+var fetchAllQuotes = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
     var url,
         quote,
@@ -1332,15 +1332,15 @@ var fetchRandom = /*#__PURE__*/function () {
     }, _callee, null, [[1, 11, 14, 18]]);
   }));
 
-  return function fetchRandom() {
+  return function fetchAllQuotes() {
     return _ref.apply(this, arguments);
   };
 }(); //fetch random quote
 
 
-ui.getRandomQuote(fetchRandom); //fetch specific quotes
+ui.getRandomQuote(fetchAllQuotes); //fetch specific quotes
 
-ui.getQuote(fetchRandomQuote);
+ui.getQuote(fetchAllQuotes);
 },{"./UI/UI":"src/js/UI/UI.js","./config":"src/js/config.js","./helper":"src/js/helper.js","./state":"src/js/state.js","./components/spinner":"src/js/components/spinner.js","./components/modal":"src/js/components/modal.js","./components/toast":"src/js/components/toast.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
