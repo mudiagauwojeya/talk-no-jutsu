@@ -1005,7 +1005,8 @@ var UI = /*#__PURE__*/function () {
       if (!value || !value.trim() || value.length <= 1) {//REVIEW: show the user some feedback using
       }
 
-      var endPoint = value.trim().toLowerCase();
+      var endPoint = value.trim().toLowerCase(); //NOTE: import and consume proper endpoint here
+
       fetchQuoteHandler(endPoint);
     }
   }, {

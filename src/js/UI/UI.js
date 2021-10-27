@@ -61,6 +61,7 @@ class UI {
 			//REVIEW: show the user some feedback using
 		}
 		const endPoint = value.trim().toLowerCase();
+		//NOTE: import and consume proper endpoint here
 		fetchQuoteHandler(endPoint);
 	}
 
