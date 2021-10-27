@@ -995,8 +995,7 @@ var UI = /*#__PURE__*/function () {
       favoriteContainer.forEach(function (container) {
         container.addEventListener("click", function (e) {
           var favoriteBtn = e.target.closest(".content__section--favorites");
-          if (!favoriteBtn) return; //NOTE:	add code to favorite manga
-
+          if (!favoriteBtn) return;
           favoriteBtn.classList.toggle("favorited");
         });
       });

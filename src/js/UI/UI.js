@@ -34,7 +34,6 @@ class UI {
 					".content__section--favorites"
 				);
 				if (!favoriteBtn) return;
-				//NOTE:	add code to favorite manga
 				favoriteBtn.classList.toggle("favorited");
 			});
 		});
