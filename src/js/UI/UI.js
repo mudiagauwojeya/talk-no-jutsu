@@ -41,7 +41,6 @@ class UI {
 	}
 
 	getRandomQuote(fetchQuoteHandler) {
-		//BUG: this is set to the button triggering the event
 		this.randomBtn.addEventListener(
 			"click",
 			fetchQuoteHandler.bind(null, "random")
