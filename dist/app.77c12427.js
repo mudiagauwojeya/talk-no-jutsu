@@ -901,44 +901,25 @@ exports.removeActiveClass = removeActiveClass;
 
 var fetchQuote = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(url) {
-    var response, data;
     return regeneratorRuntime.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            _context.prev = 0;
-            _context.next = 3;
-            return fetch(url);
+            fetch(url).then(function (response) {
+              if (!response.ok) throw new Error(response.statusText);
+              return response.json();
+            }).then(function (data) {
+              return data;
+            }).catch(function (error) {
+              throw error;
+            });
 
-          case 3:
-            response = _context.sent;
-
-            if (response.ok) {
-              _context.next = 6;
-              break;
-            }
-
-            throw new Error(response.statusText);
-
-          case 6:
-            _context.next = 8;
-            return response.json();
-
-          case 8:
-            data = _context.sent;
-            return _context.abrupt("return", data);
-
-          case 12:
-            _context.prev = 12;
-            _context.t0 = _context["catch"](0);
-            throw _context.t0;
-
-          case 15:
+          case 1:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, null, [[0, 12]]);
+    }, _callee);
   }));
 
   return function fetchQuote(_x) {
