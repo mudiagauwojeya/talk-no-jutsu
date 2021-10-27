@@ -1285,7 +1285,7 @@ ui.onNavigate(); //favorite manga
 
 ui.onFavorite(); //fetch random quotes
 
-var fetchRandomQuote = /*#__PURE__*/function () {
+var fetchRandom = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
     var quote, _manga$quotes$concat, _manga$quotes$concat2, randomQuote;
 
@@ -1326,13 +1326,13 @@ var fetchRandomQuote = /*#__PURE__*/function () {
     }, _callee, null, [[0, 10, 13, 17]]);
   }));
 
-  return function fetchRandomQuote() {
+  return function fetchRandom() {
     return _ref.apply(this, arguments);
   };
 }(); //fetch random quote
 
 
-ui.getRandomQuote(fetchRandomQuote); //fetch specific quotes
+ui.getRandomQuote(fetchRandom); //fetch specific quotes
 
 ui.getQuote(fetchRandomQuote);
 },{"./UI/UI":"src/js/UI/UI.js","./config":"src/js/config.js","./helper":"src/js/helper.js","./state":"src/js/state.js","./components/spinner":"src/js/components/spinner.js","./components/modal":"src/js/components/modal.js","./components/toast":"src/js/components/toast.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {

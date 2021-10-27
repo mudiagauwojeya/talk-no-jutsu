@@ -23,7 +23,7 @@ ui.onNavigate();
 ui.onFavorite();
 
 //fetch random quotes
-const fetchRandomQuote = async () => {
+const fetchRandom = async () => {
 	try {
 		modal.show();
 		spinner.show();
@@ -40,7 +40,7 @@ const fetchRandomQuote = async () => {
 };
 
 //fetch random quote
-ui.getRandomQuote(fetchRandomQuote);
+ui.getRandomQuote(fetchRandom);
 
 //fetch specific quotes
 ui.getQuote(fetchRandomQuote);
