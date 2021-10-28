@@ -1014,16 +1014,14 @@ var UI = /*#__PURE__*/function () {
   }, {
     key: "onSubmit",
     value: function onSubmit(args, e) {
-      var _e$currentTarget$titl, _e$currentTarget$char;
-
       var _args = _slicedToArray(args, 3),
           fetchAllQuotes = _args[0],
           API_ANIME_TITLE = _args[1],
           API_CHARACTER_NAME = _args[2];
 
       e.preventDefault();
-      var title = ((_e$currentTarget$titl = e.currentTarget.title.value.trim()) === null || _e$currentTarget$titl === void 0 ? void 0 : _e$currentTarget$titl.toLowerCase()) || null;
-      var name = ((_e$currentTarget$char = e.currentTarget.character.value.trim()) === null || _e$currentTarget$char === void 0 ? void 0 : _e$currentTarget$char.toLowerCase()) || null;
+      var title = e.currentTarget.title.value || null;
+      var name = e.currentTarget.character.value || null;
       e.currentTarget.reset();
 
       if ([title, name].every(Boolean)) {//REVIEW: show the user some feedback using
