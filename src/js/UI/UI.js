@@ -52,13 +52,14 @@ class UI {
 	onSubmit(args, e) {
 		const [fetchAllQuotes, API_ANIME_TITLE, API_CHARACTER_NAME] = args;
 		e.preventDefault();
-		const value =
-			e.currentTarget.title.value || e.currentTarget.character.value;
+		const title = e.currentTarget.title.value.trim()?.toLowerCase();
+		const name = e.currentTarget.character.value.trim()?.toLowerCase();
 		e.currentTarget.reset();
 		if (!value || !value.trim() || value.length <= 1) {
 			//REVIEW: show the user some feedback using
 		}
 		const endPoint = value.trim().toLowerCase();
+		endPoint;
 		//NOTE: import and consume proper endpoint here
 		fetchQuoteHandler(endPoint);
 	}

@@ -1014,19 +1014,23 @@ var UI = /*#__PURE__*/function () {
   }, {
     key: "onSubmit",
     value: function onSubmit(args, e) {
+      var _e$currentTarget$titl, _e$currentTarget$char;
+
       var _args = _slicedToArray(args, 3),
           fetchAllQuotes = _args[0],
           API_ANIME_TITLE = _args[1],
           API_CHARACTER_NAME = _args[2];
 
       e.preventDefault();
-      var value = e.currentTarget.title.value || e.currentTarget.character.value;
+      var title = (_e$currentTarget$titl = e.currentTarget.title.value.trim()) === null || _e$currentTarget$titl === void 0 ? void 0 : _e$currentTarget$titl.toLowerCase();
+      var name = (_e$currentTarget$char = e.currentTarget.character.value.trim()) === null || _e$currentTarget$char === void 0 ? void 0 : _e$currentTarget$char.toLowerCase();
       e.currentTarget.reset();
 
       if (!value || !value.trim() || value.length <= 1) {//REVIEW: show the user some feedback using
       }
 
-      var endPoint = value.trim().toLowerCase(); //NOTE: import and consume proper endpoint here
+      var endPoint = value.trim().toLowerCase();
+      endPoint; //NOTE: import and consume proper endpoint here
 
       fetchQuoteHandler(endPoint);
     }
