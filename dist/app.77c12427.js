@@ -1026,7 +1026,7 @@ var UI = /*#__PURE__*/function () {
       var name = (_e$currentTarget$char = e.currentTarget.character.value.trim()) === null || _e$currentTarget$char === void 0 ? void 0 : _e$currentTarget$char.toLowerCase();
       e.currentTarget.reset();
 
-      if (!value || !value.trim() || value.length <= 1) {//REVIEW: show the user some feedback using
+      if ([title, name].every(Boolean)) {//REVIEW: show the user some feedback using
       }
 
       var endPoint = value.trim().toLowerCase();

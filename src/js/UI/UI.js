@@ -55,7 +55,7 @@ class UI {
 		const title = e.currentTarget.title.value.trim()?.toLowerCase();
 		const name = e.currentTarget.character.value.trim()?.toLowerCase();
 		e.currentTarget.reset();
-		if (!value || !value.trim() || value.length <= 1) {
+		if ([title, name].every(Boolean)) {
 			//REVIEW: show the user some feedback using
 		}
 		const endPoint = value.trim().toLowerCase();
