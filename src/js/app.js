@@ -1,5 +1,5 @@
 import UI from "./UI/UI";
-import { API_ENDPOINT } from "./config";
+import { API_ENDPOINT, API_ANIME_TITLE, API_CHARACTER_NAME } from "./config";
 import { fetchQuote } from "./helper";
 import { manga } from "./state";
 import Spinner from "./components/spinner";
