@@ -43,16 +43,14 @@ class UI {
 		this.randomBtn.addEventListener("click", fetchQuoteHandler.bind(null));
 	}
 
-	getQuote(fetchQuoteHandler) {
+	getQuote(...args) {
 		this.form.forEach((form) =>
-			form.addEventListener(
-				"submit",
-				this.onSubmit.bind(this, fetchQuoteHandler)
-			)
+			form.addEventListener("submit", this.onSubmit.bind(this, args))
 		);
 	}
 
-	onSubmit(fetchQuoteHandler, e) {
+	onSubmit(args, e) {
+		const [fetchAllQuotes, API_ANIME_TITLE, API_CHARACTER_NAME] = args;
 		e.preventDefault();
 		const value =
 			e.currentTarget.title.value || e.currentTarget.character.value;
