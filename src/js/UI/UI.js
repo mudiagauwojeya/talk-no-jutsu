@@ -52,6 +52,7 @@ class UI {
 	onSubmit(args, e) {
 		const [fetchAllQuotes, API_ANIME_TITLE, API_CHARACTER_NAME] = args;
 		e.preventDefault();
+		//REVIEW: add some validation logic
 		const title = e.currentTarget.title?.value || null;
 		const name = e.currentTarget.character?.value || null;
 		e.currentTarget.reset();
@@ -62,7 +63,6 @@ class UI {
 			? API_ANIME_TITLE(title)
 			: API_CHARACTER_NAME(name);
 		endPoint;
-		//NOTE: import and consume proper endpoint here
 		fetchAllQuotes(endPoint);
 	}
 

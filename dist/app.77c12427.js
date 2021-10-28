@@ -1021,7 +1021,8 @@ var UI = /*#__PURE__*/function () {
           API_ANIME_TITLE = _args[1],
           API_CHARACTER_NAME = _args[2];
 
-      e.preventDefault();
+      e.preventDefault(); //REVIEW: add some validation logic
+
       var title = ((_e$currentTarget$titl = e.currentTarget.title) === null || _e$currentTarget$titl === void 0 ? void 0 : _e$currentTarget$titl.value) || null;
       var name = ((_e$currentTarget$char = e.currentTarget.character) === null || _e$currentTarget$char === void 0 ? void 0 : _e$currentTarget$char.value) || null;
       e.currentTarget.reset();
@@ -1030,8 +1031,7 @@ var UI = /*#__PURE__*/function () {
       }
 
       var endPoint = title ? API_ANIME_TITLE(title) : API_CHARACTER_NAME(name);
-      endPoint; //NOTE: import and consume proper endpoint here
-
+      endPoint;
       fetchAllQuotes(endPoint);
     }
   }, {
