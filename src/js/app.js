@@ -43,4 +43,4 @@ const fetchAllQuotes = async (url = API_ENDPOINT) => {
 ui.getRandomQuote(fetchAllQuotes);
 
 //fetch specific quotes
-ui.getQuote(fetchAllQuotes);
+ui.getQuote(fetchAllQuotes, API_CHARACTER_NAME, API_ANIME_TITLE);
