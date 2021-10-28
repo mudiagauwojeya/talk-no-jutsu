@@ -1022,8 +1022,8 @@ var UI = /*#__PURE__*/function () {
           API_CHARACTER_NAME = _args[2];
 
       e.preventDefault();
-      var title = (_e$currentTarget$titl = e.currentTarget.title.value.trim()) === null || _e$currentTarget$titl === void 0 ? void 0 : _e$currentTarget$titl.toLowerCase();
-      var name = (_e$currentTarget$char = e.currentTarget.character.value.trim()) === null || _e$currentTarget$char === void 0 ? void 0 : _e$currentTarget$char.toLowerCase();
+      var title = ((_e$currentTarget$titl = e.currentTarget.title.value.trim()) === null || _e$currentTarget$titl === void 0 ? void 0 : _e$currentTarget$titl.toLowerCase()) || null;
+      var name = ((_e$currentTarget$char = e.currentTarget.character.value.trim()) === null || _e$currentTarget$char === void 0 ? void 0 : _e$currentTarget$char.toLowerCase()) || null;
       e.currentTarget.reset();
 
       if ([title, name].every(Boolean)) {//REVIEW: show the user some feedback using

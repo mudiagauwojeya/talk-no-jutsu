@@ -52,8 +52,9 @@ class UI {
 	onSubmit(args, e) {
 		const [fetchAllQuotes, API_ANIME_TITLE, API_CHARACTER_NAME] = args;
 		e.preventDefault();
-		const title = e.currentTarget.title.value.trim()?.toLowerCase();
-		const name = e.currentTarget.character.value.trim()?.toLowerCase();
+		const title = e.currentTarget.title.value.trim()?.toLowerCase() || null;
+		const name =
+			e.currentTarget.character.value.trim()?.toLowerCase() || null;
 		e.currentTarget.reset();
 		if ([title, name].every(Boolean)) {
 			//REVIEW: show the user some feedback using
