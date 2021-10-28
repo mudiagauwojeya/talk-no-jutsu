@@ -58,10 +58,12 @@ class UI {
 		if ([title, name].every(Boolean)) {
 			//REVIEW: show the user some feedback using
 		}
-		const endPoint = value.trim().toLowerCase();
+		const endPoint = title
+			? API_ANIME_TITLE(title)
+			: API_CHARACTER_NAME(name);
 		endPoint;
 		//NOTE: import and consume proper endpoint here
-		fetchQuoteHandler(endPoint);
+		fetchAllQuotes(endPoint);
 	}
 
 	render(data) {

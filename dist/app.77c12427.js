@@ -1029,10 +1029,10 @@ var UI = /*#__PURE__*/function () {
       if ([title, name].every(Boolean)) {//REVIEW: show the user some feedback using
       }
 
-      var endPoint = value.trim().toLowerCase();
+      var endPoint = title ? API_ANIME_TITLE(title) : API_CHARACTER_NAME(name);
       endPoint; //NOTE: import and consume proper endpoint here
 
-      fetchQuoteHandler(endPoint);
+      fetchAllQuotes(endPoint);
     }
   }, {
     key: "render",
