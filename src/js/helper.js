@@ -13,6 +13,7 @@ export const removeActiveClass = (selector) => {
 export const fetchQuote = async (url) => {
 	fetch(url)
 		.then((response) => {
+			//BUG: There is an uncaught error
 			if (!response.ok) throw new Error(response.statusText);
 			return response.json();
 		})

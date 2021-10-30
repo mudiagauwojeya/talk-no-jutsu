@@ -906,6 +906,7 @@ var fetchQuote = /*#__PURE__*/function () {
         switch (_context.prev = _context.next) {
           case 0:
             fetch(url).then(function (response) {
+              //BUG: There is an uncaught error
               if (!response.ok) throw new Error(response.statusText);
               return response.json();
             }).catch(function (error) {
