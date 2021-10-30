@@ -908,8 +908,6 @@ var fetchQuote = /*#__PURE__*/function () {
             fetch(url).then(function (response) {
               if (!response.ok) throw new Error(response.statusText);
               return response.json();
-            }).then(function (data) {
-              return data;
             }).catch(function (error) {
               throw error;
             });

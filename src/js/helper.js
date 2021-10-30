@@ -16,7 +16,6 @@ export const fetchQuote = async (url) => {
 			if (!response.ok) throw new Error(response.statusText);
 			return response.json();
 		})
-		.then((data) => data)
 		.catch((error) => {
 			throw error;
 		});
