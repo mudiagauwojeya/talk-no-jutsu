@@ -905,7 +905,9 @@ var fetchQuote = /*#__PURE__*/function () {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            fetch(url).catch(function (error) {
+            fetch(url).then(function (response) {
+              return response.json();
+            }).catch(function (error) {
               throw error;
             });
 
