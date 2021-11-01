@@ -28,9 +28,7 @@ const fetchAllQuotes = async (url = API_ENDPOINT) => {
 		modal.show();
 		spinner.show();
 		const response = await fetchQuote(url);
-		if (!response.ok) throw new Error(response.statusText);
-		const quote = response.json();
-		const [randomQuote] = manga.quotes.concat(quote);
+		const [randomQuote] = manga.quotes.concat(response);
 		ui.render(randomQuote);
 	} catch (error) {
 		//handle error

@@ -1312,7 +1312,6 @@ var fetchAllQuotes = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
     var url,
         response,
-        quote,
         _manga$quotes$concat,
         _manga$quotes$concat2,
         randomQuote,
@@ -1331,39 +1330,29 @@ var fetchAllQuotes = /*#__PURE__*/function () {
 
           case 6:
             response = _context.sent;
-
-            if (response.ok) {
-              _context.next = 9;
-              break;
-            }
-
-            throw new Error(response.statusText);
-
-          case 9:
-            quote = response.json();
-            _manga$quotes$concat = _state.manga.quotes.concat(quote), _manga$quotes$concat2 = _slicedToArray(_manga$quotes$concat, 1), randomQuote = _manga$quotes$concat2[0];
+            _manga$quotes$concat = _state.manga.quotes.concat(response), _manga$quotes$concat2 = _slicedToArray(_manga$quotes$concat, 1), randomQuote = _manga$quotes$concat2[0];
             ui.render(randomQuote);
-            _context.next = 17;
+            _context.next = 14;
             break;
 
-          case 14:
-            _context.prev = 14;
+          case 11:
+            _context.prev = 11;
             _context.t0 = _context["catch"](1);
             //handle error
             console.error(_context.t0.message);
 
-          case 17:
-            _context.prev = 17;
+          case 14:
+            _context.prev = 14;
             modal.hide();
             spinner.hide();
-            return _context.finish(17);
+            return _context.finish(14);
 
-          case 21:
+          case 18:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, null, [[1, 14, 17, 21]]);
+    }, _callee, null, [[1, 11, 14, 18]]);
   }));
 
   return function fetchAllQuotes() {
