@@ -29,7 +29,7 @@ const fetchAllQuotes = async (url = API_ENDPOINT) => {
 		spinner.show();
 		const response = await fetchQuote(url);
 		const [randomQuote] = manga.quotes.concat(response);
-		ui.render(randomQuote);
+		randomQuote && ui.render(randomQuote);
 	} catch (error) {
 		//handle error
 		console.error(error.message);

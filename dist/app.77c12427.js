@@ -1331,7 +1331,7 @@ var fetchAllQuotes = /*#__PURE__*/function () {
           case 6:
             response = _context.sent;
             _manga$quotes$concat = _state.manga.quotes.concat(response), _manga$quotes$concat2 = _slicedToArray(_manga$quotes$concat, 1), randomQuote = _manga$quotes$concat2[0];
-            ui.render(randomQuote);
+            randomQuote && ui.render(randomQuote);
             _context.next = 14;
             break;
 
