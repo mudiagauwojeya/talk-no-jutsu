@@ -1354,27 +1354,29 @@ var fetchAllQuotes = /*#__PURE__*/function () {
             response = _context.sent;
             _manga$quotes$concat = _state.manga.quotes.concat(response), _manga$quotes$concat2 = _slicedToArray(_manga$quotes$concat, 1), randomQuote = _manga$quotes$concat2[0];
             randomQuote && ui.render(randomQuote);
-            _context.next = 14;
+            _context.next = 16;
             break;
 
           case 11:
             _context.prev = 11;
             _context.t0 = _context["catch"](1);
             //handle error
+            modal.show();
+            toast.show();
             console.error(_context.t0.message);
 
-          case 14:
-            _context.prev = 14;
+          case 16:
+            _context.prev = 16;
             modal.hide();
             spinner.hide();
-            return _context.finish(14);
+            return _context.finish(16);
 
-          case 18:
+          case 20:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, null, [[1, 11, 14, 18]]);
+    }, _callee, null, [[1, 11, 16, 20]]);
   }));
 
   return function fetchAllQuotes() {

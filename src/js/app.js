@@ -32,6 +32,8 @@ const fetchAllQuotes = async (url = API_ENDPOINT) => {
 		randomQuote && ui.render(randomQuote);
 	} catch (error) {
 		//handle error
+		modal.show();
+		toast.show();
 		console.error(error.message);
 	} finally {
 		modal.hide();
