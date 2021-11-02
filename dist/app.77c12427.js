@@ -912,6 +912,7 @@ var fetchQuote = /*#__PURE__*/function () {
 
               return response.json();
             }).catch(function (error) {
+              //BUG: Rethrow this error to the try-catch block to handle it
               throw error;
             });
 
