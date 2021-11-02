@@ -19,5 +19,4 @@ export const fetchQuote = async (url) => {
 	} catch (error) {
 		throw error;
 	}
-	//BUG: Rethrow this error to the try-catch block to handle it
 };
