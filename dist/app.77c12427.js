@@ -1364,7 +1364,7 @@ var fetchAllQuotes = /*#__PURE__*/function () {
             response = _context.sent;
             _manga$quotes$concat = _state.manga.quotes.concat(response), _manga$quotes$concat2 = _slicedToArray(_manga$quotes$concat, 1), randomQuote = _manga$quotes$concat2[0];
             randomQuote && ui.render(randomQuote);
-            _context.next = 16;
+            _context.next = 17;
             break;
 
           case 11:
@@ -1373,20 +1373,21 @@ var fetchAllQuotes = /*#__PURE__*/function () {
             message = _context.t0.message; //handle error
 
             modal.show();
-            ui.error(message, toast);
+            toast.show();
+            ui.error(message);
 
-          case 16:
-            _context.prev = 16;
+          case 17:
+            _context.prev = 17;
             modal.hide();
             spinner.hide();
-            return _context.finish(16);
+            return _context.finish(17);
 
-          case 20:
+          case 21:
           case "end":
             return _context.stop();
         }
       }
-    }, _callee, null, [[1, 11, 16, 20]]);
+    }, _callee, null, [[1, 11, 17, 21]]);
   }));
 
   return function fetchAllQuotes() {

@@ -34,7 +34,8 @@ const fetchAllQuotes = async (url = API_ENDPOINT) => {
 		const { message } = error;
 		//handle error
 		modal.show();
-		ui.error(message, toast);
+		toast.show();
+		ui.error(message);
 	} finally {
 		modal.hide();
 		spinner.hide();
