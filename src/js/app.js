@@ -31,10 +31,10 @@ const fetchAllQuotes = async (url = API_ENDPOINT) => {
 		const [randomQuote] = manga.quotes.concat(response);
 		randomQuote && ui.render(randomQuote);
 	} catch (error) {
+		const { message } = error;
 		//handle error
 		modal.show();
-		toast.show();
-		console.error(error.message);
+		ui.error(message, toast);
 	} finally {
 		modal.hide();
 		spinner.hide();

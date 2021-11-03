@@ -1347,6 +1347,7 @@ var fetchAllQuotes = /*#__PURE__*/function () {
         _manga$quotes$concat,
         _manga$quotes$concat2,
         randomQuote,
+        message,
         _args = arguments;
 
     return regeneratorRuntime.wrap(function _callee$(_context) {
@@ -1370,10 +1371,10 @@ var fetchAllQuotes = /*#__PURE__*/function () {
           case 11:
             _context.prev = 11;
             _context.t0 = _context["catch"](1);
-            //handle error
+            message = _context.t0.message; //handle error
+
             modal.show();
-            toast.show();
-            console.error(_context.t0.message);
+            ui.error(message, toast);
 
           case 16:
             _context.prev = 16;
