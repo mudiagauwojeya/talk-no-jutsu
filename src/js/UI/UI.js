@@ -85,7 +85,6 @@ class UI {
 			<h3 class="toast__header">Oops...!</h3>
 			<p class="toast__content">${message}</p>
 		`;
-		document.body.insertAdjacentElement("afterbegin", errorElement);
 	}
 }
 
