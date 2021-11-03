@@ -79,7 +79,7 @@ class UI {
 
 	error(message, toast) {
 		const templateElement = document.getElementById("template");
-		const errorContainer = document.importNode(templateElement, true);
+		const errorContainer = document.importNode(templateElement.content, true);
 		const errorElement = errorContainer.querySelector(".toast");
 		const errorContent = `
 			<h3 class="toast__header">Oops...!</h3>
