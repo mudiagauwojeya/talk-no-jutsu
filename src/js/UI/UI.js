@@ -77,7 +77,17 @@ class UI {
 		`;
 	}
 
-	error(message, display) {}
+	error(message, display) {
+		const templateElement = document.getElementById("template");
+		const errorContainer = document.importNode(templateElement, true);
+		const errorElement = errorContainer.querySelector(".toast");
+		const errorContent = `
+			<h3 class="toast__header">Oops...!</h3>
+			<p class="toast__content">${message}</p>
+		`;
+		errorElement.appendChild(errorContent);
+		display();
+	}
 }
 
 export default UI;
