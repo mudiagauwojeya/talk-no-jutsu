@@ -1067,7 +1067,7 @@ var UI = /*#__PURE__*/function () {
       var errorContainer = document.importNode(templateElement.content, true);
       var errorElement = errorContainer.querySelector(".toast");
       var errorContent = "\n\t\t\t<h3 class=\"toast__header\">Oops...!</h3>\n\t\t\t<p class=\"toast__content\">".concat(message, "</p>\n\t\t");
-      errorElement.appendChild(errorContent);
+      errorElement.innerHTML = errorContent;
       toast.show();
     }
   }]);

@@ -85,7 +85,7 @@ class UI {
 			<h3 class="toast__header">Oops...!</h3>
 			<p class="toast__content">${message}</p>
 		`;
-		errorElement.appendChild(errorContent);
+		errorElement.innerHTML = errorContent;
 		toast.show();
 	}
 }
