@@ -81,11 +81,11 @@ class UI {
 		const templateElement = document.getElementById("template");
 		const errorContainer = document.importNode(templateElement.content, true);
 		const errorElement = errorContainer.querySelector(".toast");
-		const errorContent = `
+		errorElement.innerHTML = `
 			<h3 class="toast__header">Oops...!</h3>
 			<p class="toast__content">${message}</p>
 		`;
-		errorElement.innerHTML = errorContent;
+		document.body.insertAdjacentElement("afterbegin", errorElement);
 	}
 }
 
