@@ -1060,6 +1060,9 @@ var UI = /*#__PURE__*/function () {
       this.viewElement.textContent = "";
       this.viewElement.innerHTML = "\n\t\t\t<h3 class=\"content__section--quotes-character\">".concat(data.character, ": <span class=\"content__section--quotes-anime\">").concat(data.anime, "</span></h3>\n\t\t\t<p class=\"content__section--quotes-quote\">").concat(data.quote, "</p>\n\t\t");
     }
+  }, {
+    key: "error",
+    value: function error(message, display) {}
   }]);
 
   return UI;

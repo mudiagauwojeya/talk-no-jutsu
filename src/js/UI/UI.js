@@ -76,6 +76,8 @@ class UI {
 			<p class="content__section--quotes-quote">${data.quote}</p>
 		`;
 	}
+
+	error(message, display) {}
 }
 
 export default UI;
