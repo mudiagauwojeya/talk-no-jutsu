@@ -77,7 +77,7 @@ class UI {
 		`;
 	}
 
-	error(message, toast) {
+	error(message) {
 		const templateElement = document.getElementById("template");
 		const errorContainer = document.importNode(templateElement.content, true);
 		const errorElement = errorContainer.querySelector(".toast");
@@ -86,7 +86,6 @@ class UI {
 			<p class="toast__content">${message}</p>
 		`;
 		errorElement.innerHTML = errorContent;
-		toast.show();
 	}
 }
 
