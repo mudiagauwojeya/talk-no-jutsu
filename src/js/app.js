@@ -24,6 +24,7 @@ ui.onFavorite();
 
 //fetch random quotes
 const fetchAllQuotes = async (url = API_ENDPOINT) => {
+	//BUG: modal does not close on error
 	try {
 		modal.show();
 		spinner.show();
