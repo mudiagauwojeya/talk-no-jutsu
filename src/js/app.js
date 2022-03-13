@@ -35,6 +35,7 @@ const fetchAllQuotes = async (url = API_ENDPOINT) => {
 		const { message } = error;
 		//handle error
 		modal.show();
+		//TODO: Give user button to remove toast
 		toast.show();
 		ui.error(message);
 	} finally {
