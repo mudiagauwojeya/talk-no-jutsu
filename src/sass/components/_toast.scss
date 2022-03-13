@@ -16,4 +16,9 @@
 		transform: translate(80%, 50%);
 		transition: transform 500ms ease-out;
 	}
+
+	//TODO: Add toast close button style
+	&__button {
+		display: block;
+	}
 }
