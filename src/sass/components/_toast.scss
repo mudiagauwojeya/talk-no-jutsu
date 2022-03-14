@@ -20,11 +20,14 @@
 	//TODO: Add toast close button style
 	&__button {
 		border: none;
+		border-top-right-radius: 1rem;
 		color: $ui_color_red;
 		cursor: pointer;
 		display: block;
 		font-size: 3rem;
+		padding: 1rem;
 
 		position: absolute;
+		right: 0;
 	}
 }
