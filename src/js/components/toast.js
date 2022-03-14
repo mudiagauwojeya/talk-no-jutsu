@@ -24,6 +24,8 @@ class Toast {
 	show() {
 		Toast.toggleModalAndSpinner();
 	}
+
+	//TODO: Add functionality for button to close toast
 }
 
 export default Toast;
