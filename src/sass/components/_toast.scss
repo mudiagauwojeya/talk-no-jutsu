@@ -18,10 +18,13 @@
 	}
 
 	//TODO: Add toast close button style
-	& > span {
+	&__button {
+		border: none;
+		color: $ui_color_red;
 		cursor: pointer;
 		display: block;
 		font-size: 3rem;
-		font-weight: bolder;
+
+		position: absolute;
 	}
 }
