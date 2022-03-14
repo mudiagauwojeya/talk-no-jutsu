@@ -1,3 +1,5 @@
+//REVIEW: Refactor this to extend a common base class
+
 class Modal {
 	template = null;
 	templateContent = null;
