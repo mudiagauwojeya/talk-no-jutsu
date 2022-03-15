@@ -26,6 +26,11 @@ class Modal {
 	show() {
 		Modal.toggleModalAndSpinner();
 	}
+
+	closeModal() {
+		this.modal = this.templateContent.querySelector(".modal");
+		this.modal.addEventListener("click", this.hide.bind(this))
+	}
 }
 
 export default Modal;
