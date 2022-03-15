@@ -27,6 +27,7 @@ class Modal {
 		Modal.toggleModalAndSpinner();
 	}
 
+	//TODO: Finish the closeModal method
 	closeModal() {
 		this.modal = this.templateContent.querySelector(".modal");
 		this.modal.addEventListener("click", this.hide.bind(this))
