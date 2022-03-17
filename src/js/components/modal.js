@@ -4,6 +4,8 @@ class Modal {
 	template = null;
 	templateContent = null;
 
+	//TODO: Find out how to declare a variable in a class that methods can share
+
 	static toggleModalAndSpinner(toggle = true) {
 		this.template = document.getElementById("template");
 		this.templateContent = document.importNode(this.template.content, true);
