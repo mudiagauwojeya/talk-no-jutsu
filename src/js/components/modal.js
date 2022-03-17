@@ -4,11 +4,6 @@ class Modal {
 	template = null;
 	templateContent = null;
 
-	constructor() {
-		this.template = document.getElementById("template");
-		this.templateContent = document.importNode(this.template.content, true);
-	}
-
 	static toggleModalAndSpinner(toggle = true) {
 		this.template = document.getElementById("template");
 		this.templateContent = document.importNode(this.template.content, true);
