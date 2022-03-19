@@ -16,15 +16,15 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/moody2times/Manga.git"
+		"url": "git+https://github.com/moody2times/talk-no-jutsu.git"
 	},
 	"keywords": [],
 	"author": "Mudiaga Moody",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/moody2times/Manga/issues"
+		"url": "https://github.com/moody2times/talk-no-jutsu/issues"
 	},
-	"homepage": "https://github.com/moody2times/Manga#readme",
+	"homepage": "https://github.com/moody2times/talk-no-jutsu#readme",
 	"devDependencies": {
 		"parcel-bundler": "^1.3.1",
 		"sass": "^1.39.2"
